@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { FC, createContext, useEffect, useState } from "react";
 import { ConfigProvider } from "antd";
 import { Locale } from "antd/lib/locale-provider";
@@ -16,7 +16,7 @@ import buildFormatter from "react-timeago/lib/formatters/buildFormatter";
 import { criticalError } from "@utils";
 
 import Debug from "debug";
-const debug = Debug("kristweb:locale-context");
+const debug = Debug("mistweb:locale-context");
 
 export const TimeagoFormatterContext = createContext<Formatter | undefined>(undefined);
 

@@ -1,16 +1,16 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Row } from "antd";
 
 import { useTranslation, Trans } from "react-i18next";
 import { Link } from "react-router-dom";
 
-import { KristName } from "@api/types";
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistName } from "@api/types";
+import { MistNameLink } from "@comp/names/MistNameLink";
 import { DateTime } from "@comp/DateTime";
 
-export function NameItem({ name }: { name: KristName }): JSX.Element {
+export function NameItem({ name }: { name: MistName }): JSX.Element {
   const { t } = useTranslation();
 
   // Display 'purchased' if this is the original owner, otherwise display
@@ -20,7 +20,7 @@ export function NameItem({ name }: { name: KristName }): JSX.Element {
   // rather than when they received it back. This may change in the future.
   const transferred = name.owner !== name.original_owner;
 
-  const nameEl = <KristNameLink name={name.name} />;
+  const nameEl = <MistNameLink name={name.name} />;
   const nameLink = "/network/names/" + encodeURIComponent(name.name);
   const nameTime = new Date(transferred && name.transferred
     ? name.transferred : name.registered);

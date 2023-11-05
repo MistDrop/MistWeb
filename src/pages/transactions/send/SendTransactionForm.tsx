@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useRef, useMemo, useEffect } from "react";
 import { Row, Col, Form, FormInstance, Input, Modal } from "antd";
 import { RefSelectProps } from "antd/lib/select";
@@ -19,7 +19,7 @@ import { sha256 } from "@utils/crypto";
 import { useBooleanSetting, useIntegerSetting } from "@utils/settings";
 
 import { useSyncNode } from "@api";
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 import { makeTransaction } from "@api/transactions";
 import { handleTransactionError } from "./handleErrors";
 import { useAuthFailedModal } from "@api/AuthFailed";
@@ -31,9 +31,9 @@ import { SendTransactionConfirmModalContents } from "./SendTransactionConfirmMod
 import awaitTo from "await-to-js";
 
 import Debug from "debug";
-const debug = Debug("kristweb:send-transaction-form");
+const debug = Debug("mistweb:send-transaction-form");
 
-// This is from https://github.com/tmpim/Krist/blob/a924f3f/src/controllers/transactions.js#L102
+// This is from https://github.com/MistDrop/Mist/blob/a924f3f/src/controllers/transactions.js#L102
 // except `+` is changed to `*`.
 export const METADATA_REGEXP = /^[\x20-\x7F\n]*$/i;
 
@@ -202,7 +202,7 @@ interface TransactionFormHookProps {
   amount?: number;
   metadata?: string;
   onError?: (err: Error) => void;
-  onSuccess?: (transaction: KristTransaction) => void;
+  onSuccess?: (transaction: MistTransaction) => void;
   allowClearOnSend?: boolean;
 }
 

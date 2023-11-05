@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Typography, Descriptions, Divider } from "antd";
 import { useTranslation, Trans } from "react-i18next";
 
@@ -39,7 +39,7 @@ export function CreditsPage(): JSX.Element {
   const pkgbuild: string = __PKGBUILD__;
 
   return <PageLayout siteTitleKey="credits.title" className="page-credits" noHeader>
-    <Title level={1}>KristWeb v2</Title>
+    <Title level={1}>MistWeb v2</Title>
 
     {/* Made by */}
     <div><Trans t={t} i18nKey="credits.madeBy">

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useEffect } from "react";
 import { message } from "antd";
 
@@ -11,21 +11,21 @@ import * as nodeActions from "@actions/NodeActions";
 import { store } from "@app";
 
 import * as api from "@api";
-import { KristMOTD, KristMOTDBase } from "@api/types";
+import { MistMOTD, MistMOTDBase } from "@api/types";
 
 import {
   recalculateWallets, useWallets, useMasterPasswordOnly
 } from "@wallets";
-import { useAddressPrefix } from "@utils/krist";
+import { useAddressPrefix } from "@utils/mist";
 
 import { criticalError } from "@utils";
 
 import Debug from "debug";
-const debug = Debug("kristweb:sync-motd");
+const debug = Debug("mistweb:sync-motd");
 
 export async function updateMOTD(): Promise<void> {
   debug("updating motd");
-  const data = await api.get<KristMOTD>("motd");
+  const data = await api.get<MistMOTD>("motd");
 
   debug("motd: %s", data.motd);
   store.dispatch(nodeActions.setPackage(data.package));
@@ -45,11 +45,11 @@ export async function updateMOTD(): Promise<void> {
     localStorage.setItem("miningEnabled", miningEnabledStr);
   }
 
-  const motdBase: KristMOTDBase = {
+  const motdBase: MistMOTDBase = {
     motd: data.motd,
     motdSet: new Date(data.motd_set),
     endpoint: data.public_url,
-    debugMode: data.debug_mode,
+    debugMode: false,
     miningEnabled: data.mining_enabled
   };
   store.dispatch(nodeActions.setMOTD(motdBase));
@@ -62,7 +62,7 @@ export async function updateMOTD(): Promise<void> {
   }
 }
 
-/** Sync the MOTD with the Krist node on startup. */
+/** Sync the MOTD with the Mist node on startup. */
 export function SyncMOTD(): JSX.Element | null {
   const syncNode = api.useSyncNode();
   const connectionState = useSelector((s: RootState) => s.websocket.connectionState);

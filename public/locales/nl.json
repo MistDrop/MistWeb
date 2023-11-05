@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -11,8 +11,8 @@
     },
 
     "search": {
-      "placeholder": "Doorzoek het Krist netwerk",
-      "placeholderShortcut": "Doorzoek het Krist netwerk ({{shortcut}})",
+      "placeholder": "Doorzoek het Mist netwerk",
+      "placeholderShortcut": "Doorzoek het Mist netwerk ({{shortcut}})",
       "placeholderShort": "Zoeken...",
       "rateLimitHit": "Niet zo snel alsjeblieft.",
       "noResults": "Geen resultaten.",
@@ -39,9 +39,9 @@
     },
 
     "send": "Verzenden",
-    "sendLong": "Krist verzenden",
+    "sendLong": "Mist verzenden",
     "request": "Ontvangen",
-    "requestLong": "Krist ontvangen",
+    "requestLong": "Mist ontvangen",
     "sort": "Sorteer resultaten",
 
     "settings": "Instellingen",
@@ -66,7 +66,7 @@
     "whatsNew": "What is er nieuw",
 
     "updateTitle": "Update beschikbaar!",
-    "updateDescription": "Een nieuwe versie van KristWeb is beschikbaar. Herlaad alstublieft.",
+    "updateDescription": "Een nieuwe versie van MistWeb is beschikbaar. Herlaad alstublieft.",
     "updateReload": "Herladen"
   },
 
@@ -86,7 +86,7 @@
   "error": "Fout",
   "errorBoundary": {
     "title": "Kritische fout",
-    "description": "Er is een kritieke fout opgetreden in KristWeb, dus deze pagina is beëindigd. Zie console voor details.",
+    "description": "Er is een kritieke fout opgetreden in MistWeb, dus deze pagina is beëindigd. Zie console voor details.",
     "sentryNote": "De fout is automatisch gerapporteerd."
   },
   "errorReported": "Er is automatisch een fout gemeld. Zie console voor details.",
@@ -104,7 +104,7 @@
   },
 
   "contextualAddressUnknown": "Onbekend",
-  "contextualAddressNonExistentTooltip": "Dit adres is nog niet geinitialiseerd op het Krist netwerk.",
+  "contextualAddressNonExistentTooltip": "Dit adres is nog niet geinitialiseerd op het Mist netwerk.",
   "contextualAddressNonExistentTooltip2": "Dit adres heeft nog geen transactiegeschiedenis.",
 
   "typeahead": {
@@ -184,7 +184,7 @@
 
     "actionsViewAddress": "Adres weergeven",
     "actionsEditTooltip": "Wallet bewerken",
-    "actionsSendTransaction": "Krist verzenden",
+    "actionsSendTransaction": "Mist verzenden",
     "actionsWalletInfo": "Wallet informatie",
     "actionsWalletForceCreate": "Forceer creëren",
     "actionsDelete": "Wallet verwijderen",
@@ -248,7 +248,7 @@
     "actionsViewAddress": "Toon address",
     "actionsViewName": "Toon naam",
     "actionsEditTooltip": "Bewerk contact",
-    "actionsSendTransaction": "Verzend Krist",
+    "actionsSendTransaction": "Verzend Mist",
     "actionsDelete": "Verwijder contact",
     "actionsDeleteConfirm": "Weet u zeker dat u dit contact wilt verwijderen?"
   },
@@ -294,13 +294,13 @@
     "advancedOptions": "Geavanceerde opties",
 
     "walletFormat": "Wallet formaat",
-    "walletFormatKristWallet": "KristWallet, KWallet (aanbevolen)",
-    "walletFormatKristWalletUsernameAppendhashes": "KW-Username (appendhashes)",
-    "walletFormatKristWalletUsername": "KW-Username (pre-appendhashes)",
+    "walletFormatMistWallet": "MistWallet, KWallet (aanbevolen)",
+    "walletFormatMistWalletUsernameAppendhashes": "KW-Username (appendhashes)",
+    "walletFormatMistWalletUsername": "KW-Username (pre-appendhashes)",
     "walletFormatJwalelset": "jwalelset",
     "walletFormatApi": "Rauw/API (geavanceerde gebruikers)",
 
-    "walletSave": "Sla deze wallet op in KristWeb",
+    "walletSave": "Sla deze wallet op in MistWeb",
 
     "messageSuccessAdd": "Wallet succesvol toegevoegd!",
     "messageSuccessCreate": "Wallet succesvol aangemaakt!",
@@ -349,8 +349,8 @@
   "dashboard": {
     "siteTitle": "Dashboard",
 
-    "inDevBanner": "Welkom bij de privé-bèta van KristWeb v2! Deze site is nog in ontwikkeling, dus de meeste features ontbreken momenteel. Rapporteer alstublieft alle bugs op <1>GitHub</1>. Bedankt!",
-    "inDevBanner2": "Welkom bij de privé-bèta van KristWeb v2! Deze site is nog relatief nieuw, dus rapporteer alstublieft alle bugs op <1>GitHub</1>. Bedankt!",
+    "inDevBanner": "Welkom bij de privé-bèta van MistWeb v2! Deze site is nog in ontwikkeling, dus de meeste features ontbreken momenteel. Rapporteer alstublieft alle bugs op <1>GitHub</1>. Bedankt!",
+    "inDevBanner2": "Welkom bij de privé-bèta van MistWeb v2! Deze site is nog relatief nieuw, dus rapporteer alstublieft alle bugs op <1>GitHub</1>. Bedankt!",
 
     "walletOverviewCardTitle": "Wallets",
     "walletOverviewTotalBalance": "Totaalbalans",
@@ -392,14 +392,14 @@
     "tipsPrevious": "Vorige",
     "tipsNext": "Volgende",
     "tips": {
-      "0": "Kijk wat er nieuw is in Krist en KristWeb op de [Wat is er nieuw pagina](/whatsnew)!",
+      "0": "Kijk wat er nieuw is in Mist en MistWeb op de [Wat is er nieuw pagina](/whatsnew)!",
       "1": "U kunt snel door tabellen navigeren met de pijltjestoetsen op de computer.",
       "2": "U kunt op tabelkoppen klikken om ze te sorteren.",
       "3": "U kunt filteren op categorieën op de pagina [Mijn Wallets](/wallets) door op het filterpictogram in de tabelkop te klikken.",
-      "4": "De [Instellingenpagina](/settings) heeft veel geavanceerde opties om uw KristWeb-ervaring te personaliseren.",
+      "4": "De [Instellingenpagina](/settings) heeft veel geavanceerde opties om uw MistWeb-ervaring te personaliseren.",
       "5": "Genereer vooraf ingevulde transactielinks met de nieuwe [Verzoeken pagina](/request).",
       "6": "Zorg ervoor dat u een back-up maakt van [uw wallets](/wallets)!",
-      "7": "Zoek snel in het Krist-netwerk met de sneltoets Ctrl + K (Cmd + K op macOS).",
+      "7": "Zoek snel in het Mist-netwerk met de sneltoets Ctrl + K (Cmd + K op macOS).",
       "8": "Voeg contacten toe aan het [adresboek](/contacts) om ze snel transacties te sturen.",
       "9": "Een 'bumped'-transactie is een transactie die van en naar hetzelfde adres wordt verzonden.",
       "10": "De 'blok moeilijkheidsgraad' grafiek kan worden weergegeven met een logaritmische schaal om kleine veranderingen gemakkelijker te zien bij lagere moeilijkheidsgraden.",
@@ -418,10 +418,10 @@
     "hostedBy": "Gehost by <1>{{host}}</1>",
     "supportersTitle": "Supporters",
     "supportersDescription": "Dit project is mogelijk gemaakt door de volgende geweldige supporters:",
-    "supportButton": "Support KristWeb",
+    "supportButton": "Support MistWeb",
     "translatorsTitle": "Vertalers",
     "translatorsDescription": "Dit project is vertaald door de volgende geweldige bijdragers:",
-    "translateButton": "Vertaal KristWeb",
+    "translateButton": "Vertaal MistWeb",
     "tmpim": "Gemaakt door tmpim",
 
     "versionInfo": {
@@ -434,12 +434,12 @@
 
     "privacyTitle": "Privacy",
     "privacy": {
-      "kristServer": "Kristserver",
-      "kristServerDesc": "De enige PII die de <1> Krist Server </1> opslaat, is uw IP-adres, User-Agent en Origin, als onderdeel van de webserverlogboeken. Deze informatie wordt automatisch na 30 dagen verwijderd.",
-      "kristweb": "KristWeb",
-      "kristwebDesc1": "KristWeb gebruikt een door zichzelf gehoste <1> Sentry </1> -server voor automatische foutrapportage. Dit systeem slaat uw IP-adres, User-Agent, Origin, breadcrumbs en de details op voor eventuele fouten die automatisch worden gerapporteerd. Deze informatie wordt automatisch na 30 dagen verwijderd.",
-      "kristwebDesc2": "Als je een advertentieblokkerende of trackerblokkerende extensie hebt, zoals <1> uBlock Origin </1> <strong> (aanbevolen) </strong>, is ons Sentry-systeem al geblokkeerd door de ingebouwde lijsten, dus je doet het u hoeft zich geen zorgen te maken over uw privacy. U kunt zich ook afmelden voor foutrapportage op de <4> instellingenpagina </4>. Dat gezegd hebbende, als u ons wilt helpen door meer gedetailleerde foutrapporten te verstrekken, overweeg dan om een uitzondering te maken voor KristWeb in uw tracker blocker-software. Deze site geeft geen advertenties weer.",
-      "kristwebDesc3": "Neem bij vragen of opmerkingen contact op met de ontwikkelaars."
+      "mistServer": "Mistserver",
+      "mistServerDesc": "De enige PII die de <1> Mist Server </1> opslaat, is uw IP-adres, User-Agent en Origin, als onderdeel van de webserverlogboeken. Deze informatie wordt automatisch na 30 dagen verwijderd.",
+      "mistweb": "MistWeb",
+      "mistwebDesc1": "MistWeb gebruikt een door zichzelf gehoste <1> Sentry </1> -server voor automatische foutrapportage. Dit systeem slaat uw IP-adres, User-Agent, Origin, breadcrumbs en de details op voor eventuele fouten die automatisch worden gerapporteerd. Deze informatie wordt automatisch na 30 dagen verwijderd.",
+      "mistwebDesc2": "Als je een advertentieblokkerende of trackerblokkerende extensie hebt, zoals <1> uBlock Origin </1> <strong> (aanbevolen) </strong>, is ons Sentry-systeem al geblokkeerd door de ingebouwde lijsten, dus je doet het u hoeft zich geen zorgen te maken over uw privacy. U kunt zich ook afmelden voor foutrapportage op de <4> instellingenpagina </4>. Dat gezegd hebbende, als u ons wilt helpen door meer gedetailleerde foutrapporten te verstrekken, overweeg dan om een uitzondering te maken voor MistWeb in uw tracker blocker-software. Deze site geeft geen advertenties weer.",
+      "mistwebDesc3": "Neem bij vragen of opmerkingen contact op met de ontwikkelaars."
     }
   },
 
@@ -481,7 +481,7 @@
     "transactionsHighlightVerified": "Markeer geverifieerde adressen in de transactietabel",
     "transactionDefaultRaw": "Laat standaard het tabblad 'Rauw' zien in plaats van 'CommonMeta' op de transactiepagina",
     "confirmTransactions": "Vraag om bevestiging voor alle transacties",
-    "clearTransactionForm": "Wis het formulier 'Krist Verzenden' nadat u op 'Verzenden' hebt geklikt",
+    "clearTransactionForm": "Wis het formulier 'Mist Verzenden' nadat u op 'Verzenden' hebt geklikt",
     "sendTransactionDelay": "Tijd om te wachten, in milliseconden, voordat een andere transactie kan worden verzonden",
     "defaultPageSize": "Standaard paginalengte voor tabellen",
     "tableHotkeys": "Sneltoetsen voor tabelnavigatie inschakelen (pijlen naar links en naar rechts)",
@@ -498,7 +498,7 @@
     "subTitleTranslations": "Vertalingen",
 
     "translations": {
-      "errorMissingLanguages": "Het bestand languages.json lijkt te ontbreken. Is KristWeb correct gecompileerd?",
+      "errorMissingLanguages": "Het bestand languages.json lijkt te ontbreken. Is MistWeb correct gecompileerd?",
       "errorNoKeys": "Geen vertalingssleutels",
 
       "columnLanguageCode": "Code",
@@ -528,12 +528,12 @@
   },
 
   "ws": {
-    "errorToken": "Er is een fout opgetreden bij het verbinden met de Krist websocket-server.",
-    "errorWS": "Er is een fout opgetreden bij het verbinden met de Krist websocket-server (code <1>{{code}}</1>)."
+    "errorToken": "Er is een fout opgetreden bij het verbinden met de Mist websocket-server.",
+    "errorWS": "Er is een fout opgetreden bij het verbinden met de Mist websocket-server (code <1>{{code}}</1>)."
   },
 
   "rateLimitTitle": "Verzoek-limiet bereikt",
-  "rateLimitDescription": "Er zijn in korte tijd te veel verzoeken naar de Krist-server gestuurd. Dit wordt waarschijnlijk veroorzaakt door een bug!",
+  "rateLimitDescription": "Er zijn in korte tijd te veel verzoeken naar de Mist-server gestuurd. Dit wordt waarschijnlijk veroorzaakt door een bug!",
 
   "address": {
     "title": "Adres",
@@ -549,8 +549,8 @@
     "nameCountEmpty": "Geen namen",
     "firstSeen": "Geïntroduceert",
 
-    "buttonSendKrist": "Verzend Krist naar {{address}}",
-    "buttonTransferKrist": "Maak Krist over naar {{address}}",
+    "buttonSendMist": "Verzend Mist naar {{address}}",
+    "buttonTransferMist": "Maak Mist over naar {{address}}",
     "buttonAddContact": "Toevoegen aan adresboek",
     "buttonEditContact": "Bewerken in adresboek",
     "buttonEditWallet": "Wallet bewerken",
@@ -568,9 +568,9 @@
     "namesSeeMore": "Zie alle {{count, number}}...",
 
     "resultInvalidTitle": "Foutief adres",
-    "resultInvalid": "Dat lijkt niet op een correct krist adres.",
+    "resultInvalid": "Dat lijkt niet op een correct mist adres.",
     "resultNotFoundTitle": "Adres niet gevonden",
-    "resultNotFound": "Dat adres is nog niet geinitialiseerd op het Krist netwerk",
+    "resultNotFound": "Dat adres is nog niet geinitialiseerd op het Mist netwerk",
     "resultNotFound2": "Dat adres heeft nog geen transactiegeschiedenis",
 
     "verifiedCardTitle": "Geverifieerd adres",
@@ -622,7 +622,7 @@
     "includeMined": "Inclusief gemijnde transacties",
 
     "resultInvalidTitle": "Foutief adres",
-    "resultInvalid": "Dat lijkt niet op een correct krist adres.",
+    "resultInvalid": "Dat lijkt niet op een correct mist adres.",
 
     "types": {
       "transferred": "Overgedragen",
@@ -671,8 +671,8 @@
     "actionsViewName": "Toon naam",
     "actionsViewOwner": "Toon het adres van de eigenaar",
     "actionsViewOriginalOwner": "Toon het adres van de originele eigenaar",
-    "actionsSendKrist": "Verzend Krist",
-    "actionsTransferKrist": "Maak Krist over",
+    "actionsSendMist": "Verzend Mist",
+    "actionsTransferMist": "Maak Mist over",
     "actionsUpdateData": "Werk data bij",
     "actionsTransferName": "Draag naam over",
 
@@ -681,7 +681,7 @@
     "tableTotalEmpty": "Geen namen",
 
     "resultInvalidTitle": "Foutief adres",
-    "resultInvalid": "Dat lijkt niet op een correct krist adres.",
+    "resultInvalid": "Dat lijkt niet op een correct mist adres.",
 
     "purchaseButton": "Koop naam"
   },
@@ -689,8 +689,8 @@
   "name": {
     "title": "Naam",
 
-    "buttonSendKrist": "Verzend Krist naar {{name}}",
-    "buttonTransferKrist": "Maak Krist over naar {{name}}",
+    "buttonSendMist": "Verzend Mist naar {{name}}",
+    "buttonTransferMist": "Maak Mist over naar {{name}}",
     "buttonARecord": "Werk A record bij",
     "buttonData": "Werk data bij",
     "buttonTransferName": "Naam overmaken",
@@ -712,7 +712,7 @@
     "historyError": "Er is een fout opgetreden bij het ophalen van de naamgeschiedenis. Zie de console voor details.",
 
     "resultInvalidTitle": "Foutieve naam",
-    "resultInvalid": "Dit lijkt niet op een correct krist adres.",
+    "resultInvalid": "Dit lijkt niet op een correct mist adres.",
     "resultNotFoundTitle": "Naam niet gevonden",
     "resultNotFound": "Die naam bestaat niet."
   },
@@ -794,7 +794,7 @@
     "commonMetaColumnValue": "Waarde",
 
     "cardRawDataTitle": "Rauwe gegevens",
-    "cardRawDataHelp": "De transactie zoals deze is geretourneerd door de Krist API.",
+    "cardRawDataHelp": "De transactie zoals deze is geretourneerd door de Mist API.",
 
     "rawDataColumnKey": "Sleutel",
     "rawDataColumnValue": "Waarde",
@@ -812,8 +812,8 @@
 
   "noWalletsResult": {
     "title": "Nog geen wallets",
-    "subTitle": "Je hebt momenteel geen wallets opgeslagen in KristWeb, dus er is hier nog niets te zien. Wil je een wallet toevoegen?",
-    "subTitleSendTransaction": "Je hebt momenteel geen wallets opgeslagen in KristWeb, dus je kan nog geen transactie uitvoeren. Wil je een wallet toevoegen?",
+    "subTitle": "Je hebt momenteel geen wallets opgeslagen in MistWeb, dus er is hier nog niets te zien. Wil je een wallet toevoegen?",
+    "subTitleSendTransaction": "Je hebt momenteel geen wallets opgeslagen in MistWeb, dus je kan nog geen transactie uitvoeren. Wil je een wallet toevoegen?",
     "button": "Wallets toevoegen",
     "buttonNetworkTransactions": "Netwerktransacties",
     "buttonNetworkNames": "Netwerknamen"
@@ -825,7 +825,7 @@
   },
 
   "import": {
-    "description": "Plak de back-upcode (of importeer uit een bestand hieronder) en voer het bijbehorende hoofdwachtwoord in. Back-ups van KristWeb v1 worden ook ondersteund.",
+    "description": "Plak de back-upcode (of importeer uit een bestand hieronder) en voer het bijbehorende hoofdwachtwoord in. Back-ups van MistWeb v1 worden ook ondersteund.",
 
     "masterPasswordPlaceholder": "Hoofdwachtwoord",
     "masterPasswordRequired": "Hoofdwachtwoord is vereist.",
@@ -845,8 +845,8 @@
     "modalButton": "Importeren",
 
     "detectedFormat": "<0>Gedetecteerd format:</0> <2 />",
-    "detectedFormatKristWebV1": "KristWeb v1",
-    "detectedFormatKristWebV2": "KristWeb v2",
+    "detectedFormatMistWebV1": "MistWeb v1",
+    "detectedFormatMistWebV2": "MistWeb v2",
     "detectedFormatInvalid": "Foutief!",
 
     "progress": "<1>{{count, number}}</1> item wordt geïporteerd...",
@@ -872,11 +872,11 @@
       "successSkippedNoOverwrite": "Er bestaat al een wallet met hetzelfde adres ({{address}}) en u heeft ervoor gekozen het label niet te overschrijven, dus het is overgeslagen.",
       "successImportSkipped": "Er is al een wallet met hetzelfde adres ({{address}}) geïmporteerd, dus deze is overgeslagen.",
 
-      "warningSyncNode": "Deze wallet had een aangepast synchronisatieknooppunt, dat niet wordt ondersteund in KristWeb v2. Het synchronisatieknooppunt is overgeslagen.",
-      "warningIcon": "Deze wallet had een aangepast pictogram, dat niet wordt ondersteund in KristWeb v2. Het pictogram is overgeslagen.",
+      "warningSyncNode": "Deze wallet had een aangepast synchronisatieknooppunt, dat niet wordt ondersteund in MistWeb v2. Het synchronisatieknooppunt is overgeslagen.",
+      "warningIcon": "Deze wallet had een aangepast pictogram, dat niet wordt ondersteund in MistWeb v2. Het pictogram is overgeslagen.",
       "warningLabelInvalid": "Het label voor deze wallet is ongeldig. Het label is overgeslagen.",
       "warningCategoryInvalid": "De categorie voor deze wallet is ongeldig. De categorie is overgeslagen.",
-      "warningAdvancedFormat": "Deze wallet gebruikt een geavanceerd formaat ({{format}}), dat beperkte ondersteuning heeft in KristWeb v2.",
+      "warningAdvancedFormat": "Deze wallet gebruikt een geavanceerd formaat ({{format}}), dat beperkte ondersteuning heeft in MistWeb v2.",
 
       "errorInvalidTypeString": "Deze wallet was geen string!",
       "errorInvalidTypeObject": "Deze wallet was geen object!",
@@ -902,8 +902,8 @@
       "successSkippedNoOverwrite": "Er bestaat al een contact met hetzelfde adres ({{address}}) en je hebt ervoor gekozen het label niet te overschrijven, dus het is overgeslagen.",
       "successImportSkipped": "Er is al een contactpersoon met hetzelfde adres ({{address}}) geïmporteerd, dus deze is overgeslagen.",
 
-      "warningSyncNode": "Deze contactpersoon had een aangepast synchronisatieknooppunt, dat niet wordt ondersteund in KristWeb v2. Het synchronisatieknooppunt is overgeslagen.",
-      "warningIcon": "Deze contactpersoon had een aangepast pictogram, dat niet wordt ondersteund in KristWeb v2. Het pictogram is overgeslagen.",
+      "warningSyncNode": "Deze contactpersoon had een aangepast synchronisatieknooppunt, dat niet wordt ondersteund in MistWeb v2. Het synchronisatieknooppunt is overgeslagen.",
+      "warningIcon": "Deze contactpersoon had een aangepast pictogram, dat niet wordt ondersteund in MistWeb v2. Het pictogram is overgeslagen.",
       "warningLabelInvalid": "Het label voor dit contact is ongeldig. Het label is overgeslagen.",
 
       "errorInvalidTypeString": "Dit contact was geen string!",
@@ -952,8 +952,8 @@
     "buttonCopy": "Kopieer naar klembord"
   },
 
-  "walletLimitMessage": "Je hebt meer wallets opgeslagen dan KristWeb ondersteunt. Dit werd veroorzaakt door een bug, of u hebt deze opzettelijk omzeild. Verwacht problemen met synchroniseren.",
-  "contactLimitMessage": "Er zijn meer contacten opgeslagen dan KristWeb ondersteunt. Dit werd veroorzaakt door een bug, of u hebt deze opzettelijk omzeild. Verwacht problemen met synchroniseren.",
+  "walletLimitMessage": "Je hebt meer wallets opgeslagen dan MistWeb ondersteunt. Dit werd veroorzaakt door een bug, of u hebt deze opzettelijk omzeild. Verwacht problemen met synchroniseren.",
+  "contactLimitMessage": "Er zijn meer contacten opgeslagen dan MistWeb ondersteunt. Dit werd veroorzaakt door een bug, of u hebt deze opzettelijk omzeild. Verwacht problemen met synchroniseren.",
 
   "optionalFieldUnset": "(geen waarde)",
 
@@ -1027,7 +1027,7 @@
     "payLargeConfirm": "Weet u zeker dat u <1 /> wilt verzenden?",
     "payLargeConfirmHalf": "Weet u zeker dat u <1 /> wilt verzenden? Dit is meer dan de helft van uw saldo!",
     "payLargeConfirmAll": "Weet u zeker dat u <1 /> wilt verzenden? Dit is je hele saldo!",
-    "payLargeConfirmDefault": "U staat op het punt om de privésleutel en het wachtwoord van uw portemonnee naar een niet-officiële Krist-server te sturen, die hen toegang zal geven tot uw Krist op de officiële server. Weet u zeker dat u dit wilt doen?",
+    "payLargeConfirmDefault": "U staat op het punt om de privésleutel en het wachtwoord van uw portemonnee naar een niet-officiële Mist-server te sturen, die hen toegang zal geven tot uw Mist op de officiële server. Weet u zeker dat u dit wilt doen?",
 
     "errorNotificationTitle": "Transactie mislukt",
     "successNotificationTitle": "Transactie geslaagd",
@@ -1038,8 +1038,8 @@
   },
 
   "request": {
-    "title": "Verzoek Krist",
-    "siteTitle": "Verzoek Krist",
+    "title": "Verzoek Mist",
+    "siteTitle": "Verzoek Mist",
 
     "labelTo": "Verzoek ontvanger",
     "labelAmount": "Verzoek bedrag",
@@ -1054,15 +1054,15 @@
     "title": "Authenticatie mislukt",
     "message": "U bent niet de eigenaar van dit adres.",
     "messageLocked": "Dit adres is vergrendeld.",
-    "alert": "Bericht van de Krist-server:"
+    "alert": "Bericht van de Mist-server:"
   },
 
   "whatsNew": {
     "title": "Wat is er nieuw",
     "siteTitle": "Wat is er nieuw",
 
-    "titleKrist": "Krist",
-    "titleKristWeb": "KristWeb",
+    "titleMist": "Mist",
+    "titleMistWeb": "MistWeb",
 
     "tooltipGitHub": "Toon op GitHub",
 
@@ -1079,7 +1079,7 @@
 
     "buttonAll": "Allen",
 
-    "warningTotalLimit": "Het lijkt erop dat u meer dan 1.000 namen heeft, wat nog niet wordt ondersteund in KristWeb v2. Plaats een probleem op GitHub.",
+    "warningTotalLimit": "Het lijkt erop dat u meer dan 1.000 namen heeft, wat nog niet wordt ondersteund in MistWeb v2. Plaats een probleem op GitHub.",
     "errorLookup": "Er is een fout opgetreden bij het ophalen van de namen. Zie de console voor details."
   },
 
@@ -1149,7 +1149,7 @@
 
   "noNamesResult": {
     "title": "Nog geen namen",
-    "subTitle": "Je hebt momenteel geen namen in je portemonnees die zijn opgeslagen in KristWeb, dus er is hier nog niets te zien. Wilt u een naam kopen?",
+    "subTitle": "Je hebt momenteel geen namen in je portemonnees die zijn opgeslagen in MistWeb, dus er is hier nog niets te zien. Wilt u een naam kopen?",
     "button": "Koop naam"
   },
 
@@ -1168,7 +1168,7 @@
     "errorInvalidName": "Ongeldige naam.",
     "errorNameTooLong": "Naam is te lang.",
     "errorNameTaken": "Die naam is al in gebruik!",
-    "errorInsufficientFunds": "Uw wallet heeft niet genoeg krist om een naam te kopen.",
+    "errorInsufficientFunds": "Uw wallet heeft niet genoeg mist om een naam te kopen.",
 
     "errorWalletGone": "Die portemonnee bestaat niet meer.",
     "errorWalletDecrypt": "De wallet \"{{adres}}\" kon niet worden gedecodeerd.",
@@ -1181,9 +1181,9 @@
     "nameAvailable": "Naam is beschikbaar!"
   },
 
-  "purchaseKrist": {
-    "modalTitle": "Koop Krist",
-    "connection": "Er is zojuist verbinding gemaakt met een niet-officiële Krist-server. Uw wachtwoorden en Krist-wallets lopen gevaar."
+  "purchaseMist": {
+    "modalTitle": "Koop Mist",
+    "connection": "Er is zojuist verbinding gemaakt met een niet-officiële Mist-server. Uw wachtwoorden en Mist-wallets lopen gevaar."
   },
 
   "syncWallets": {
@@ -1192,8 +1192,8 @@
   },
 
   "legacyMigration": {
-    "modalTitle": "KristWeb v1 migratie",
-    "description": "Welkom bij KristWeb v2! Het lijkt erop dat u KristWeb v1 eerder op dit domein heeft gebruikt. <br /> <br /><strong>Voer uw hoofdwachtwoord in om uw portemonnee naar het nieuwe formaat te migreren.</strong> U hoeft dit maar één keer te doen.",
+    "modalTitle": "MistWeb v1 migratie",
+    "description": "Welkom bij MistWeb v2! Het lijkt erop dat u MistWeb v1 eerder op dit domein heeft gebruikt. <br /> <br /><strong>Voer uw hoofdwachtwoord in om uw portemonnee naar het nieuwe formaat te migreren.</strong> U hoeft dit maar één keer te doen.",
 
     "walletCount": "<1>{{count, number}}</1> wallet gedetecteerd",
     "walletCount_plural": "<1>{{count, number}}</1> wallets gedetecteerd",
@@ -1213,7 +1213,7 @@
 
     "forgotPassword": {
       "modalTitle": "Sla v1 migratie over",
-      "modalContent": "Als je je hoofdwachtwoord voor KristWeb v1 bent vergeten, kan je portemonnee niet gemigreerd worden. Je wordt hiervoor niet opnieuw gevraagd. Weet je zeker dat je de migratie wilt overslaan?",
+      "modalContent": "Als je je hoofdwachtwoord voor MistWeb v1 bent vergeten, kan je portemonnee niet gemigreerd worden. Je wordt hiervoor niet opnieuw gevraagd. Weet je zeker dat je de migratie wilt overslaan?",
       "buttonSkip": "Overslaan"
     }
   },

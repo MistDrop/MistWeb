@@ -5,9 +5,9 @@
     "website": "https://sc3.io"
   },
   "kitsemmaya": {
-    "label": "BustAKrist",
-    "description": "This address holds the bankroll and player balances for BustAKrist, a Krist gambling site.",
-    "website": "https://bustakrist.its-em.ma"
+    "label": "BustAMist",
+    "description": "This address holds the bankroll and player balances for BustAMist, a Mist gambling site.",
+    "website": "https://bustamist.its-em.ma"
   },
   "k0resoaker": {
     "label": "Soak Bot",
@@ -21,7 +21,7 @@
   "knfe7aps4c": { "label": "KFaucet", "isActive": false },
   "kh9w36ea1b": { "label": "KLottery", "isActive": false },
   "klucky7942": { "label": "KLottery", "isActive": false },
-  "kmineqokuz": { "label": "KristMiner.cf", "isActive": false },
+  "kmineqokuz": { "label": "MistMiner.cf", "isActive": false },
   "kul2kr8t4l": { "label": "LurCraft", "isActive": false },
   "k5cfswitch": { "label": "SwitchMarket", "isActive": false },
   "kf4n3el1a5": { "label": "CodersNet Reimbursement", "isActive": false },

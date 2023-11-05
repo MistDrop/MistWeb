@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { message } from "antd";
 import i18n from "@utils/i18n";
 
@@ -9,7 +9,7 @@ import * as wsActions from "@actions/WebsocketActions";
 import * as nodeActions from "@actions/NodeActions";
 
 import * as api from "@api";
-import { KristAddress, KristBlock, KristTransaction, WSConnectionState, WSIncomingMessage, WSSubscriptionLevel } from "@api/types";
+import { MistAddress, MistBlock, MistTransaction, WSConnectionState, WSIncomingMessage, WSSubscriptionLevel } from "@api/types";
 import { Wallet, WalletMap, findWalletByAddress, syncWalletUpdate } from "@wallets";
 import WebSocketAsPromised from "websocket-as-promised";
 
@@ -18,7 +18,7 @@ import { WSSubscription } from "./WebsocketSubscription";
 import { throttle } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:websocket-connection");
+const debug = Debug("mistweb:websocket-connection");
 
 const REFRESH_THROTTLE_MS = 500;
 const DEFAULT_CONNECT_DEBOUNCE_MS = 1000;
@@ -53,8 +53,8 @@ export class WebsocketConnection {
 
     // Get a websocket token
     const { url } = await api.post<{ url: string }>("ws/start");
-    if (!url.startsWith("wss://ws.krist.dev/"))
-      message.warning(i18n.t("purchaseKrist.connection"), 20);
+    if (!url.startsWith("wss://mist.anti.money/"))
+      message.warning(i18n.t("purchaseMist.connection"), 20);
 
     this.setConnectionState("connecting");
 
@@ -134,7 +134,7 @@ export class WebsocketConnection {
       this.setConnectionState("connected");
     } else if (data.address && this.wallets) {
       // Probably a response to `refreshBalance`
-      const address: KristAddress = data.address;
+      const address: MistAddress = data.address;
       const wallet = findWalletByAddress(this.wallets, address.address);
       if (!wallet) return;
 
@@ -146,7 +146,7 @@ export class WebsocketConnection {
       case "transaction": {
         // If we receive a transaction relevant to any of our wallets, refresh
         // the balances.
-        const transaction = data.transaction as KristTransaction;
+        const transaction = data.transaction as MistTransaction;
         debug("transaction [%s] from %s to %s", transaction.type, transaction.from || "null", transaction.to || "null");
 
         const fromWallet = findWalletByAddress(this.wallets, transaction.from || undefined);
@@ -174,7 +174,7 @@ export class WebsocketConnection {
       case "block": {
         // Update the last block ID, which will trigger a re-fetch for
         // work-related and block value-related components.
-        const block = data.block as KristBlock;
+        const block = data.block as MistBlock;
         debug("block id now %d", block.height);
 
         store.dispatch(nodeActions.setLastBlockID(block.height));
@@ -185,7 +185,7 @@ export class WebsocketConnection {
     }
   }
 
-  private updateTransactionIDs(transaction: KristTransaction, fromWallet?: Wallet | null, toWallet?: Wallet | null) {
+  private updateTransactionIDs(transaction: MistTransaction, fromWallet?: Wallet | null, toWallet?: Wallet | null) {
     // Updating these last IDs will trigger auto-refreshes on pages that need
     // them
     const {
@@ -271,7 +271,7 @@ export class WebsocketConnection {
     });
   }
 
-  /** Subscribe to a Krist WS event. */
+  /** Subscribe to a Mist WS event. */
   subscribe(event: WSSubscriptionLevel): void {
     this.ws?.sendPacked({ type: "subscribe", event, id: this.messageID++ });
   }

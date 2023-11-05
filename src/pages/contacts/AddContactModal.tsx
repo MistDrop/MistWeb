@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo } from "react";
 import { Modal, Form, Input, message, notification } from "antd";
 
@@ -8,7 +8,7 @@ import { useTFns } from "@utils/i18n";
 
 import { ADDRESS_LIST_LIMIT } from "@wallets";
 import { Contact, useContacts, addContact, editContact } from "@contacts";
-import { useNameSuffix, getNameParts } from "@utils/krist";
+import { useNameSuffix, getNameParts } from "@utils/mist";
 
 import { AddressPicker } from "@comp/addresses/picker/AddressPicker";
 

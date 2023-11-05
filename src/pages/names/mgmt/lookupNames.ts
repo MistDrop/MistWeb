@@ -1,18 +1,18 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {  notification } from "antd";
 
 import { TFunction } from "react-i18next";
 
 import { Wallet, WalletAddressMap } from "@wallets";
-import { KristName } from "@api/types";
+import { MistName } from "@api/types";
 import { lookupNames } from "@api/lookup";
 
 import { groupBy } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:name-picker");
+const debug = Debug("mistweb:name-picker");
 
 export interface NameOptionGroup {
   key: string;
@@ -31,7 +31,7 @@ export interface NameOption {
 export function getNameOptions(
   nameSuffix: string,
   wallet: Wallet,
-  names: KristName[]
+  names: MistName[]
 ): NameOptionGroup {
   // Group by owning wallet
   return {

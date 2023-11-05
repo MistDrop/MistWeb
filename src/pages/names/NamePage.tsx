@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import { Row, Col, Skeleton, Typography, Tooltip } from "antd";
 import { EditOutlined } from "@ant-design/icons";
@@ -17,11 +17,11 @@ import { DateTime } from "@comp/DateTime";
 import { NameARecordLink } from "@comp/names/NameARecordLink";
 
 import * as api from "@api";
-import { KristName } from "@api/types";
+import { MistName } from "@api/types";
 import { LookupTransactionType as LookupTXType } from "@api/lookup";
 
 import { useWallets } from "@wallets";
-import { useNameSuffix } from "@utils/krist";
+import { useNameSuffix } from "@utils/mist";
 import { useSubscription } from "@global/ws/WebsocketSubscription";
 import { useBooleanSetting } from "@utils/settings";
 
@@ -41,7 +41,7 @@ interface ParamTypes {
 }
 
 interface PageContentsProps {
-  name: KristName;
+  name: MistName;
   nameWithSuffix: string;
   lastTransactionID: number;
 }
@@ -74,7 +74,7 @@ function PageContents({
         {nameWithSuffix}
       </Text>
 
-      {/* Buttons (e.g. Send Krist, transfer name, update A Record) */}
+      {/* Buttons (e.g. Send Mist, transfer name, update A Record) */}
       <NameButtonRow
         name={name}
         nameWithSuffix={nameWithSuffix}
@@ -199,7 +199,7 @@ export function NamePage(): JSX.Element {
   const nameSuffix = useNameSuffix();
 
   const { name } = useParams<ParamTypes>();
-  const [kristName, setKristName] = useState<KristName | undefined>();
+  const [mistName, setMistName] = useState<MistName | undefined>();
   const [error, setError] = useState<Error | undefined>();
 
   // Used to refresh the cards when a transaction is made to the name
@@ -209,17 +209,17 @@ export function NamePage(): JSX.Element {
 
   // Load the name on page load
   useEffect(() => {
-    api.get<{ name: KristName }>("names/" + encodeURIComponent(name))
-      .then(res => setKristName(res.name))
+    api.get<{ name: MistName }>("names/" + encodeURIComponent(name))
+      .then(res => setMistName(res.name))
       .catch(err => { console.error(err); setError(err); });
   }, [syncNode, name, usedRefreshID]);
 
-  const nameWithSuffix = kristName
-    ? `${kristName.name}.${nameSuffix}`
+  const nameWithSuffix = mistName
+    ? `${mistName.name}.${nameSuffix}`
     : undefined;
 
   // Change the page title depending on whether or not the name has loaded
-  const title = kristName
+  const title = mistName
     ? { siteTitle: nameWithSuffix, subTitle: nameWithSuffix }
     : { siteTitleKey: "name.title" };
 
@@ -241,10 +241,10 @@ export function NamePage(): JSX.Element {
           notFoundSubTitleKey="name.resultNotFound"
         />
       )
-      : (kristName
+      : (mistName
         ? (
           <PageContents
-            name={kristName}
+            name={mistName}
             nameWithSuffix={nameWithSuffix!}
             lastTransactionID={usedRefreshID}
           />

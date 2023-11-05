@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState } from "react";
 import { Button, Alert } from "antd";
 import { SendOutlined } from "@ant-design/icons";
@@ -14,7 +14,7 @@ import { useWallets } from "@wallets";
 import { NoWalletsResult } from "@comp/results/NoWalletsResult";
 import { AuthorisedAction } from "@comp/auth/AuthorisedAction";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 
 import { useTransactionForm } from "./SendTransactionForm";
 import { NotifSuccessContents, NotifSuccessButton } from "./Success";
@@ -84,7 +84,7 @@ export function SendTransactionPage(): JSX.Element {
   </PageLayout>;
 }
 
-function AlertSuccess({ tx }: { tx: KristTransaction }): JSX.Element {
+function AlertSuccess({ tx }: { tx: MistTransaction }): JSX.Element {
   const { t } = useTranslation();
 
   return <Alert

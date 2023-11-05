@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useSelector } from "react-redux";
 import { RootState } from "@store";
 import { store } from "@app";
@@ -9,7 +9,7 @@ import {
 } from "@actions/MiscActions";
 
 import Debug from "debug";
-const debug = Debug("kristweb:name-table-lock");
+const debug = Debug("mistweb:name-table-lock");
 
 export function useNameTableLock(): boolean {
   const nameTableLock = useSelector((s: RootState) => s.misc.nameTableLock);

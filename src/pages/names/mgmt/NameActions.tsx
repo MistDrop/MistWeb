@@ -1,21 +1,21 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useMemo } from "react";
 import { Button, Dropdown, Menu } from "antd";
 import { DownOutlined, SwapOutlined, SendOutlined, EditOutlined } from "@ant-design/icons";
 
 import { useTFns } from "@utils/i18n";
 
-import { KristName } from "@api/types";
-import { useNameSuffix } from "@utils/krist";
+import { MistName } from "@api/types";
+import { useNameSuffix } from "@utils/mist";
 
 import { useAuth } from "@comp/auth";
 import { OpenEditNameFn } from "./NameEditModalLink";
 import { OpenSendTxFn } from "@comp/transactions/SendTransactionModalLink";
 
 interface Props {
-  name: KristName;
+  name: MistName;
   isOwn: boolean;
 
   openNameEdit: OpenEditNameFn;
@@ -43,11 +43,11 @@ export function NameActions({
         trigger={["click"]}
         overlay={() => (
           <Menu>
-            {/* Transfer Krist button */}
+            {/* Transfer Mist button */}
             <Menu.Item key="1" icon={<SwapOutlined />}
               onClick={() => promptAuth(false, () =>
                 openSendTx(undefined, nameWithSuffix))}>
-              {tStr("actionsTransferKrist")}
+              {tStr("actionsTransferMist")}
             </Menu.Item>
 
             <Menu.Divider />
@@ -81,7 +81,7 @@ export function NameActions({
         onClick={() => promptAuth(false, () =>
           openSendTx(undefined, nameWithSuffix))}
       >
-        {tStr("actionsSendKrist")}
+        {tStr("actionsSendMist")}
       </Button>
     ),
   [tStr, isOwn, nameWithSuffix, openSendTx, name.a, name.name,

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import { Row, Col, Skeleton } from "antd";
 
@@ -13,13 +13,13 @@ import { APIErrorResult } from "@comp/results/APIErrorResult";
 import { Statistic } from "@comp/Statistic";
 import { TransactionType, TYPES_SHOW_VALUE } from "@comp/transactions/TransactionType";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
-import { KristNameLink } from "@comp/names/KristNameLink";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistNameLink } from "@comp/names/MistNameLink";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 import { NameARecordLink } from "@comp/names/NameARecordLink";
 
 import * as api from "@api";
-import { KristTransaction, KristTransactionType } from "@api/types";
+import { MistTransaction, MistTransactionType } from "@api/types";
 
 import { TransactionMetadataCard } from "./TransactionMetadataCard";
 import { TransactionRawDataCard } from "./TransactionRawDataCard";
@@ -28,7 +28,7 @@ import "./TransactionPage.less";
 
 /** Set of network transaction types that should only display a single address
  * instead of both 'from' and 'to' */
-const SINGLE_ADDRESS_TYPES: KristTransactionType[] = [
+const SINGLE_ADDRESS_TYPES: MistTransactionType[] = [
   "mined", "name_purchase", "name_a_record"
 ];
 
@@ -36,7 +36,7 @@ interface ParamTypes {
   id: string;
 }
 
-function PageContents({ transaction }: { transaction: KristTransaction }): JSX.Element {
+function PageContents({ transaction }: { transaction: MistTransaction }): JSX.Element {
   const { type, from, to, name, metadata } = transaction;
 
   // Whether or not a single address should be shown, instead of both 'from' and
@@ -87,7 +87,7 @@ function PageContents({ transaction }: { transaction: KristTransaction }): JSX.E
       {name && <Col span={24} md={12} lg={8}>
         <Statistic
           titleKey="transaction.name"
-          value={<KristNameLink name={name} />}
+          value={<MistNameLink name={name} />}
         />
       </Col>}
 
@@ -95,7 +95,7 @@ function PageContents({ transaction }: { transaction: KristTransaction }): JSX.E
       {TYPES_SHOW_VALUE.includes(type) && <Col span={24} md={12} lg={8}>
         <Statistic
           titleKey="transaction.value"
-          value={<KristValue value={transaction.value} green long />}
+          value={<MistValue value={transaction.value} green long />}
         />
       </Col>}
 
@@ -137,21 +137,21 @@ export function TransactionPage(): JSX.Element {
   const { t } = useTranslation();
 
   const { id } = useParams<ParamTypes>();
-  const [kristTransaction, setKristTransaction] = useState<KristTransaction | undefined>();
+  const [mistTransaction, setMistTransaction] = useState<MistTransaction | undefined>();
   const [error, setError] = useState<Error | undefined>();
 
   // Load the transaction on page load
   useEffect(() => {
-    api.get<{ transaction: KristTransaction }>("transactions/" + encodeURIComponent(id))
-      .then(res => setKristTransaction(res.transaction))
+    api.get<{ transaction: MistTransaction }>("transactions/" + encodeURIComponent(id))
+      .then(res => setMistTransaction(res.transaction))
       .catch(err => { console.error(err); setError(err); });
   }, [syncNode, id]);
 
   // Change the page title depending on whether or not the tx has loaded
-  const titleData = kristTransaction
+  const titleData = mistTransaction
     ? {
-      siteTitle: t("transaction.siteTitleTransaction", { id: kristTransaction.id }),
-      subTitle: t("transaction.subTitleTransaction", { id: kristTransaction.id })
+      siteTitle: t("transaction.siteTitleTransaction", { id: mistTransaction.id }),
+      subTitle: t("transaction.subTitleTransaction", { id: mistTransaction.id })
     }
     : { siteTitleKey: "transaction.siteTitle" };
 
@@ -173,8 +173,8 @@ export function TransactionPage(): JSX.Element {
           notFoundSubTitleKey="transaction.resultNotFound"
         />
       )
-      : (kristTransaction
-        ? <PageContents transaction={kristTransaction} />
+      : (mistTransaction
+        ? <PageContents transaction={mistTransaction} />
         : <Skeleton active />)}
   </PageLayout>;
 }

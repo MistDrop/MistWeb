@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -11,8 +11,8 @@
     },
 
     "search": {
-      "placeholder": "Krist ağını ara",
-      "placeholderShortcut": "Search the Krist network ({{shortcut}})",
+      "placeholder": "Mist ağını ara",
+      "placeholderShortcut": "Search the Mist network ({{shortcut}})",
       "placeholderShort": "Ara...",
       "rateLimitHit": "Lütfen yavaşlayın.",
       "noResults": "Sonuç yok.",
@@ -39,9 +39,9 @@
     },
 
     "send": "Gönder",
-    "sendLong": "Krist gönder",
+    "sendLong": "Mist gönder",
     "request": "İste",
-    "requestLong": "Krist iste",
+    "requestLong": "Mist iste",
     "sort": "Sonuçları sırala",
 
     "settings": "Ayarlar",
@@ -66,7 +66,7 @@
     "whatsNew": "Yenilikler",
 
     "updateTitle": "Güncelleme mevcut!",
-    "updateDescription": "KristWeb'in yeni bir sürümü mevcut. Lütfen sayfayı yeniden yükleyin.",
+    "updateDescription": "MistWeb'in yeni bir sürümü mevcut. Lütfen sayfayı yeniden yükleyin.",
     "updateReload": "Yeniden yükle"
   },
 
@@ -86,7 +86,7 @@
   "error": "Hata",
   "errorBoundary": {
     "title": "Kritik hata",
-    "description": "KristWeb'de kritik bir hata meydana geldi, bu sebepten dolayı bu sayfa sonlandırıldı. Detaylar için konsola bakınız.",
+    "description": "MistWeb'de kritik bir hata meydana geldi, bu sebepten dolayı bu sayfa sonlandırıldı. Detaylar için konsola bakınız.",
     "sentryNote": "Bu hata otomatik olarak rapor edilmiştir."
   },
   "errorReported": "Bir hata otomatik olarak rapor edildi. Detaylar için konsola bakın.",
@@ -104,7 +104,7 @@
   },
 
   "contextualAddressUnknown": "Bilinmiyor",
-  "contextualAddressNonExistentTooltip": "Bu adres daha Krist ağında etkinleştirilmedi.",
+  "contextualAddressNonExistentTooltip": "Bu adres daha Mist ağında etkinleştirilmedi.",
   "contextualAddressNonExistentTooltip2": "Bu adresin daha işlem geçmişi bulunmuyor.",
 
   "typeahead": {
@@ -184,7 +184,7 @@
 
     "actionsViewAddress": "Adresi görüntüle",
     "actionsEditTooltip": "Cüzdanı düzenle",
-    "actionsSendTransaction": "Krist gönder",
+    "actionsSendTransaction": "Mist gönder",
     "actionsWalletInfo": "Cüzdan bilgisi",
     "actionsWalletForceCreate": "Zorla oluştur",
     "actionsDelete": "Cüzdanı sil",
@@ -248,7 +248,7 @@
     "actionsViewAddress": "Adresi görüntüle",
     "actionsViewName": "İsmi görüntüle",
     "actionsEditTooltip": "Kişiyi düzenle",
-    "actionsSendTransaction": "Krist gönder",
+    "actionsSendTransaction": "Mist gönder",
     "actionsDelete": "Kişiyi sil",
     "actionsDeleteConfirm": "Bu kişiyi silmek istediğine emin misin?"
   },
@@ -294,13 +294,13 @@
     "advancedOptions": "Gelişmiş ayarlar",
 
     "walletFormat": "Cüzdan formatı",
-    "walletFormatKristWallet": "KristWallet, KWallet (önerilir)",
-    "walletFormatKristWalletUsernameAppendhashes": "KW-Username (appendhashes)",
-    "walletFormatKristWalletUsername": "KW-Username (pre-appendhashes)",
+    "walletFormatMistWallet": "MistWallet, KWallet (önerilir)",
+    "walletFormatMistWalletUsernameAppendhashes": "KW-Username (appendhashes)",
+    "walletFormatMistWalletUsername": "KW-Username (pre-appendhashes)",
     "walletFormatJwalelset": "jwalelset",
     "walletFormatApi": "Raw/API (gelişmiş kullanıcılar)",
 
-    "walletSave": "Bu cüzdanı KristWeb'e kaydet",
+    "walletSave": "Bu cüzdanı MistWeb'e kaydet",
 
     "messageSuccessAdd": "Cüzdan başarıyla eklendi!",
     "messageSuccessCreate": "Cüzdan başarıyla oluşturuldu!",
@@ -349,8 +349,8 @@
   "dashboard": {
     "siteTitle": "Gösterge Paneli",
 
-    "inDevBanner": "KristWeb v2 kapalı betasına hoşgeldiniz! Bu site hala geliştirilme aşamasındadır, bundan dolayı çoğu özellik bulunmamaktadır. Lütfen bulduğunuz bütün bugları <1>GitHub</1>'da rapor edin. Teşekkürler!",
-    "inDevBanner2": "KristWeb v2 açık betasına hoşgeldiniz! Bu site nispeten yeni, bu yüzden bulduğunuz herhangi bir bugu <1>GitHub</1>'da rapor edin. Teşekkürler!",
+    "inDevBanner": "MistWeb v2 kapalı betasına hoşgeldiniz! Bu site hala geliştirilme aşamasındadır, bundan dolayı çoğu özellik bulunmamaktadır. Lütfen bulduğunuz bütün bugları <1>GitHub</1>'da rapor edin. Teşekkürler!",
+    "inDevBanner2": "MistWeb v2 açık betasına hoşgeldiniz! Bu site nispeten yeni, bu yüzden bulduğunuz herhangi bir bugu <1>GitHub</1>'da rapor edin. Teşekkürler!",
 
     "walletOverviewCardTitle": "Cüzdanlar",
     "walletOverviewTotalBalance": "Toplam bakiye",
@@ -392,14 +392,14 @@
     "tipsPrevious": "Önceki",
     "tipsNext": "Sonraki",
     "tips": {
-      "0": "Krist ve KristWeb'deki yenilikleri [Yenilikler](/whatsnew) sayfasından takip edin!",
+      "0": "Mist ve MistWeb'deki yenilikleri [Yenilikler](/whatsnew) sayfasından takip edin!",
       "1": "Masaüstünde ok tuşlarını kullanarak tablolar arasında hızlıca geçiş yapabilirsiniz.",
       "2": "Tabloları sütun başlıklarına tıklayarak sıralayabilirsiniz.",
       "3": "[Cüzdanlarım](/wallets) sayfasını tablo başlığındaki filtre tuşuna tıklayarak kategorilere göre sıralayabilirsiniz.",
-      "4": "[Ayarlar sayfası](/settings) KristWeb deneyiminizi kişiselleştirmek için bir çok gelişmiş ayara sahip.",
+      "4": "[Ayarlar sayfası](/settings) MistWeb deneyiminizi kişiselleştirmek için bir çok gelişmiş ayara sahip.",
       "5": "Yeni [İstek sayfası](/request) ile önceden doldurulmuş işlem linkleri oluşturabilirsiniz.",
       "6": "[Cüzdanlarınızı](/wallets) yedeklemeyi unutmayın!",
-      "7": "Krist ağını Ctrl+K (macOS'te Cmd+K) klavye kısayolu ile hızlıca arayabilirsiniz.",
+      "7": "Mist ağını Ctrl+K (macOS'te Cmd+K) klavye kısayolu ile hızlıca arayabilirsiniz.",
       "8": "Birilerine hızlıca işlem göndermek için [adres defterine](/contacts) kişi ekleyebilirsiniz.",
       "9": "A 'bumped' transaction is a transaction sent to and from the same address.",
       "10": "'Blok zorluğu' grafiği alçak zorluklardaki küçük değişiklikleri daha kolay görmek için logaritmik ölçekte gösterilebilir.",
@@ -418,10 +418,10 @@
     "hostedBy": "<1>{{host}}</1> tarafından sunuldu",
     "supportersTitle": "Destekçiler",
     "supportersDescription": "Bu proje aşağıdaki muhteşem destekçiler sayesinde mümkün oldu:",
-    "supportButton": "KristWeb'i destekle",
+    "supportButton": "MistWeb'i destekle",
     "translatorsTitle": "Tercümanlar",
     "translatorsDescription": "Bu proje aşağıdaki muhteşem katkıda bulunanlar sayesinde tercüme edildi:",
-    "translateButton": "KristWeb'i tercüme et",
+    "translateButton": "MistWeb'i tercüme et",
     "tmpim": "tmpim tarafından oluşturuldu",
 
     "versionInfo": {
@@ -434,12 +434,12 @@
 
     "privacyTitle": "Gizlilik",
     "privacy": {
-      "kristServer": "Krist Sunucusu",
-      "kristServerDesc": "<1>Krist Sunucusunun</1> sakladığı tek özel veriler, web sunucusunun kayıtlarının parçası olan IP adresiniz, User-Agent ve Origin'inizdir. Bu bilgiler 30 gün sonra otomatik olarak silinir.",
-      "kristweb": "KristWeb",
-      "kristwebDesc1": "KristWeb otomatik hata raporları için kendi üzerinde sunulan bir <1>Sentry</1> sunucusu kullanır. Bu sistem sizin IP adresiniz, User-Agent, Origin, breadcrumb'larınız, ve otomatik olarak rapor edilen herhangi bir hatanın detaylarını saklar. Bu bilgiler 30 gün sonra otomatik olarak silinir.",
-      "kristwebDesc2": "<1>uBlock Origin</1> <strong>(önerilir)</strong> gibi bir reklam-engelleyici veya takip-engelleyici bir tarayıcı eklentisine sahip iseniz, Sentry sistemimiz zaten eklentiye dahil engel listeleri tarafından engellenir, bu yüzden gizliliğiniz hakkında endişe duymanıza gerek yok. Ayrıca <4>ayarlar sayfası</4>nda hata raporlarını devre dışı bırakablirsiniz. Eğer daha detaylı hata raporları sunarak bize yardımcı olmak istiyorsanız, lütfen takip-engelleyici yazılımınızda KristWeb için bir istisna oluşturmayı düşünün. Bu site reklam sunmaz.",
-      "kristwebDesc3": "Herhangi bir sorunuz veya endişeniz var ise, lütfen geliştiricilerle iletişime geçin."
+      "mistServer": "Mist Sunucusu",
+      "mistServerDesc": "<1>Mist Sunucusunun</1> sakladığı tek özel veriler, web sunucusunun kayıtlarının parçası olan IP adresiniz, User-Agent ve Origin'inizdir. Bu bilgiler 30 gün sonra otomatik olarak silinir.",
+      "mistweb": "MistWeb",
+      "mistwebDesc1": "MistWeb otomatik hata raporları için kendi üzerinde sunulan bir <1>Sentry</1> sunucusu kullanır. Bu sistem sizin IP adresiniz, User-Agent, Origin, breadcrumb'larınız, ve otomatik olarak rapor edilen herhangi bir hatanın detaylarını saklar. Bu bilgiler 30 gün sonra otomatik olarak silinir.",
+      "mistwebDesc2": "<1>uBlock Origin</1> <strong>(önerilir)</strong> gibi bir reklam-engelleyici veya takip-engelleyici bir tarayıcı eklentisine sahip iseniz, Sentry sistemimiz zaten eklentiye dahil engel listeleri tarafından engellenir, bu yüzden gizliliğiniz hakkında endişe duymanıza gerek yok. Ayrıca <4>ayarlar sayfası</4>nda hata raporlarını devre dışı bırakablirsiniz. Eğer daha detaylı hata raporları sunarak bize yardımcı olmak istiyorsanız, lütfen takip-engelleyici yazılımınızda MistWeb için bir istisna oluşturmayı düşünün. Bu site reklam sunmaz.",
+      "mistwebDesc3": "Herhangi bir sorunuz veya endişeniz var ise, lütfen geliştiricilerle iletişime geçin."
     }
   },
 
@@ -498,7 +498,7 @@
     "subTitleTranslations": "Tercümeler",
 
     "translations": {
-      "errorMissingLanguages": "languages.json dosyası eksik. KristWeb doğru bir şekilde derlendi mi?",
+      "errorMissingLanguages": "languages.json dosyası eksik. MistWeb doğru bir şekilde derlendi mi?",
       "errorNoKeys": "Tercüme anahtarı bulunmamaktadır",
 
       "columnLanguageCode": "Kod",
@@ -528,12 +528,12 @@
   },
 
   "ws": {
-    "errorToken": "Krist websocket sunucusuna bağlanırken bir hata meydana geldi.",
-    "errorWS": "Krist websocket sunucusuna bağlanırken bir hata meydana geldi (code <1>{{code}}</1>)."
+    "errorToken": "Mist websocket sunucusuna bağlanırken bir hata meydana geldi.",
+    "errorWS": "Mist websocket sunucusuna bağlanırken bir hata meydana geldi (code <1>{{code}}</1>)."
   },
 
   "rateLimitTitle": "İstek limitine ulaşıldı",
-  "rateLimitDescription": "Krist sunucusuna kısa bir süre içince çok fazla istek gönderildi. Bu büyük ihtimalle bir bugdan kaynaklanıyor!",
+  "rateLimitDescription": "Mist sunucusuna kısa bir süre içince çok fazla istek gönderildi. Bu büyük ihtimalle bir bugdan kaynaklanıyor!",
 
   "address": {
     "title": "Adres",
@@ -549,8 +549,8 @@
     "nameCountEmpty": "İsim bulunmuyor",
     "firstSeen": "İlk görüldüğü tarih",
 
-    "buttonSendKrist": "{{address}}'e Krist gönder",
-    "buttonTransferKrist": "Transfer Krist to {{address}}'e Krist transfer et",
+    "buttonSendMist": "{{address}}'e Mist gönder",
+    "buttonTransferMist": "Transfer Mist to {{address}}'e Mist transfer et",
     "buttonAddContact": "Adres defterine ekle",
     "buttonEditContact": "Kişiyi düzenle",
     "buttonEditWallet": "Cüzdanı düzenle",
@@ -568,9 +568,9 @@
     "namesSeeMore": "{{count, number}} tane ismin hepsini gör",
 
     "resultInvalidTitle": "Geçersiz adres",
-    "resultInvalid": "Bu geçerli bir Krist adresi gibi görünmüyor.",
+    "resultInvalid": "Bu geçerli bir Mist adresi gibi görünmüyor.",
     "resultNotFoundTitle": "Adres bulunamadı",
-    "resultNotFound": "Bu adres daha Krist ağında etkinleştirilmedi.",
+    "resultNotFound": "Bu adres daha Mist ağında etkinleştirilmedi.",
     "resultNotFound2": "Bu adresin daha işlem geçmişi yok.",
 
     "verifiedCardTitle": "Doğrulanmış adres",
@@ -622,7 +622,7 @@
     "includeMined": "Kazılmış işlemleri dahil et",
 
     "resultInvalidTitle": "Geçersiz adres",
-    "resultInvalid": "Bu geçerli bir Krist adresi gibi görünmüyor.",
+    "resultInvalid": "Bu geçerli bir Mist adresi gibi görünmüyor.",
 
     "types": {
       "transferred": "Transfer edilmiş",
@@ -669,8 +669,8 @@
     "actionsViewName": "İsmi görüntüle",
     "actionsViewOwner": "Sahibinin adresini görüntüle",
     "actionsViewOriginalOwner": "Orjinal sahibinin adresini görüntüle",
-    "actionsSendKrist": "Krist gönder",
-    "actionsTransferKrist": "Krist transfer et",
+    "actionsSendMist": "Mist gönder",
+    "actionsTransferMist": "Mist transfer et",
     "actionsUpdateData": "Veriyi güncelle",
     "actionsTransferName": "İsmi transfer et",
 
@@ -679,7 +679,7 @@
     "tableTotalEmpty": "İsim bulunmuyor",
 
     "resultInvalidTitle": "Geçersiz adres",
-    "resultInvalid": "Bu geçerli bir Krist adresi gibi görünmüyor.",
+    "resultInvalid": "Bu geçerli bir Mist adresi gibi görünmüyor.",
 
     "purchaseButton": "İsmi satın al"
   },
@@ -687,8 +687,8 @@
   "name": {
     "title": "İsim",
 
-    "buttonSendKrist": "{{name}}'e Krist gönder",
-    "buttonTransferKrist": "{{name}}'e Krist transfer et",
+    "buttonSendMist": "{{name}}'e Mist gönder",
+    "buttonTransferMist": "{{name}}'e Mist transfer et",
     "buttonData": "Veriyi güncelle",
     "buttonTransferName": "İsmi transfer et",
 
@@ -709,7 +709,7 @@
     "historyError": "İsim geçmişini alırken bir sorun meydana geldi. Detaylar için konsola bakın.",
 
     "resultInvalidTitle": "Geçersiz isim",
-    "resultInvalid": "Bu geçerli bir Krist ismi gibi görünmüyor.",
+    "resultInvalid": "Bu geçerli bir Mist ismi gibi görünmüyor.",
     "resultNotFoundTitle": "İsim bulunamadı",
     "resultNotFound": "Bu isim bulunmuyor."
   },

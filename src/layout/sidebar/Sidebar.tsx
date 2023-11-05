@@ -1,9 +1,9 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo, Dispatch, SetStateAction } from "react";
 import { Layout, Menu, MenuItemProps } from "antd";
-import { HomeOutlined, WalletOutlined, TeamOutlined, BankOutlined, TagOutlined, TagsOutlined, CreditCardOutlined } from "@ant-design/icons";
+import { HomeOutlined, WalletOutlined, TeamOutlined, BankOutlined, TagOutlined, TagsOutlined, CreditCardOutlined, BlockOutlined } from "@ant-design/icons";
 
 import { TFunction, useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
@@ -36,6 +36,7 @@ const sidebarItems: SidebarItemProps[] = [
 
   { group: "global", icon: <BankOutlined />,  name: "allTransactions", to: "/network/transactions" },
   { group: "global", icon: <TagsOutlined />,  name: "allNames",        to: "/network/names" },
+  { group: "global", icon: <BlockOutlined />,  name: "blocks",        to: "/network/blocks" },
 ];
 
 function getSidebarItems(t: TFunction, group?: string) {

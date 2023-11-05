@@ -1,18 +1,18 @@
 {
-  "name": "kristweb2",
+  "name": "mistweb",
   "version": "2.3.0-static",
-  "description": "Client-side web wallet for Krist",
+  "description": "Client-side web wallet for Mist",
   "homepage": "https://krist.club",
   "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tmpim/KristWeb2.git"
+    "url": "https://github.com/MistDrop/MistWeb.git"
   },
   "author": "Lemmmy",
-  "defaultSyncNode": "https://krist.dev",
+  "defaultSyncNode": "https://mist.anti.money",
   "supportURL": "https://donate.lemmmy.pw",
   "supportersURL": "https://donate.lemmmy.pw/supporters.json",
-  "translateURL": "https://github.com/tmpim/KristWeb2/blob/master/README.md#contributing-translations",
+  "translateURL": "https://github.com/MistDrop/MistWeb/blob/master/README.md#contributing-translations",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.5.0",

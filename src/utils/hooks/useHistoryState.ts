@@ -1,11 +1,11 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
 import Debug from "debug";
-const debug = Debug("kristweb:useHistoryState");
+const debug = Debug("mistweb:useHistoryState");
 
 /**
  * Wrapper for useState that saves its value in the browser history stack

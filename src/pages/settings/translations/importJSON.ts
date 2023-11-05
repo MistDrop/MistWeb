@@ -11,7 +11,7 @@ import { setImportedLang } from "@store/actions/SettingsActions";
 import { getEnglishData, analyseLanguage } from "./analyseLangs";
 
 import Debug from "debug";
-const debug = Debug("kristweb:settings-import-json");
+const debug = Debug("mistweb:settings-import-json");
 
 async function importLanguage(contents: string) {
   // Parse the imported language

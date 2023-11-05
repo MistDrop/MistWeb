@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useMemo, useEffect } from "react";
 import { Switch } from "antd";
 
@@ -23,7 +23,7 @@ import { useBooleanSetting } from "@utils/settings";
 import { useLinkedPagination } from "@utils/table/table";
 import { useTopMenuOptions } from "@layout/nav/TopMenu";
 import { useHistoryState } from "@utils/hooks";
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistNameLink } from "@comp/names/MistNameLink";
 
 import "./TransactionsPage.less";
 
@@ -105,7 +105,7 @@ function getSubTitle(t: TFunction, listingType: ListingType, params: ParamTypes)
   // Name lookups show the name
   case ListingType.NAME_HISTORY:
   case ListingType.NAME_SENT:
-    return <KristNameLink noLink name={params.name || ""} neverCopyable />;
+    return <MistNameLink noLink name={params.name || ""} neverCopyable />;
 
   // The searches show a special sub title for each type of query
   case ListingType.SEARCH_ADDRESS:

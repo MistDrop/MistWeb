@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Row, Col, Tooltip, } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 
@@ -8,7 +8,7 @@ import { useTFns } from "@utils/i18n";
 
 import { Link } from "react-router-dom";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 import { WalletAddressMap, Wallet } from "@wallets";
 import { useBreakpoint } from "@utils/hooks";
 
@@ -21,7 +21,7 @@ import {
 } from "./TransactionType";
 
 interface Props {
-  transaction: KristTransaction;
+  transaction: MistTransaction;
 
   /** [address]: Wallet */
   wallets: WalletAddressMap;
@@ -30,7 +30,7 @@ interface Props {
 interface ItemProps {
   type: InternalTransactionType;
 
-  tx: KristTransaction;
+  tx: MistTransaction;
   txTime: Date;
   txLink: string;
 

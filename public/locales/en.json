@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -11,8 +11,8 @@
     },
 
     "search": {
-      "placeholder": "Search the Krist network",
-      "placeholderShortcut": "Search the Krist network ({{shortcut}})",
+      "placeholder": "Search the Mist network",
+      "placeholderShortcut": "Search the Mist network ({{shortcut}})",
       "placeholderShort": "Search...",
       "rateLimitHit": "Please slow down.",
       "noResults": "No results.",
@@ -39,9 +39,9 @@
     },
 
     "send": "Send",
-    "sendLong": "Send Krist",
+    "sendLong": "Send Mist",
     "request": "Request",
-    "requestLong": "Request Krist",
+    "requestLong": "Request Mist",
     "sort": "Sort results",
 
     "settings": "Settings",
@@ -69,7 +69,7 @@
     "whatsNew": "What's new",
 
     "updateTitle": "Update available!",
-    "updateDescription": "A new version of KristWeb is available. Please reload.",
+    "updateDescription": "A new version of MistWeb is available. Please reload.",
     "updateReload": "Reload"
   },
 
@@ -89,7 +89,7 @@
   "error": "Error",
   "errorBoundary": {
     "title": "Critical error",
-    "description": "A critical error has occurred in KristWeb, so this page was terminated. See console for details.",
+    "description": "A critical error has occurred in MistWeb, so this page was terminated. See console for details.",
     "sentryNote": "This error was automatically reported."
   },
   "errorReported": "An error was automatically reported. See console for details.",
@@ -107,7 +107,7 @@
   },
 
   "contextualAddressUnknown": "Unknown",
-  "contextualAddressNonExistentTooltip": "This address has not yet been initialised on the Krist network.",
+  "contextualAddressNonExistentTooltip": "This address has not yet been initialised on the Mist network.",
   "contextualAddressNonExistentTooltip2": "This address has no transaction history yet.",
 
   "typeahead": {
@@ -187,7 +187,7 @@
 
     "actionsViewAddress": "View address",
     "actionsEditTooltip": "Edit wallet",
-    "actionsSendTransaction": "Send Krist",
+    "actionsSendTransaction": "Send Mist",
     "actionsWalletInfo": "Wallet info",
     "actionsWalletForceCreate": "Force create",
     "actionsDelete": "Delete wallet",
@@ -251,7 +251,7 @@
     "actionsViewAddress": "View address",
     "actionsViewName": "View name",
     "actionsEditTooltip": "Edit contact",
-    "actionsSendTransaction": "Send Krist",
+    "actionsSendTransaction": "Send Mist",
     "actionsDelete": "Delete contact",
     "actionsDeleteConfirm": "Are you sure you want to delete this contact?"
   },
@@ -297,13 +297,13 @@
     "advancedOptions": "Advanced options",
 
     "walletFormat": "Wallet format",
-    "walletFormatKristWallet": "KristWallet, KWallet (recommended)",
-    "walletFormatKristWalletUsernameAppendhashes": "KW-Username (appendhashes)",
-    "walletFormatKristWalletUsername": "KW-Username (pre-appendhashes)",
+    "walletFormatMistWallet": "MistWallet, KWallet (recommended)",
+    "walletFormatMistWalletUsernameAppendhashes": "KW-Username (appendhashes)",
+    "walletFormatMistWalletUsername": "KW-Username (pre-appendhashes)",
     "walletFormatJwalelset": "jwalelset",
     "walletFormatApi": "Raw/API (advanced users)",
 
-    "walletSave": "Save this wallet in KristWeb",
+    "walletSave": "Save this wallet in MistWeb",
 
     "messageSuccessAdd": "Added wallet successfully!",
     "messageSuccessCreate": "Created wallet successfully!",
@@ -352,8 +352,8 @@
   "dashboard": {
     "siteTitle": "Dashboard",
 
-    "inDevBanner": "Welcome to the KristWeb v2 private beta! This site is still in development, so most features are currently missing. Please report all bugs on <1>GitHub</1>. Thanks!",
-    "inDevBanner2": "Welcome to the KristWeb v2 public beta! This site is relatively new, so please report any bugs on <1>GitHub</1>. Thanks!",
+    "inDevBanner": "Welcome to the MistWeb v2 private beta! This site is still in development, so most features are currently missing. Please report all bugs on <1>GitHub</1>. Thanks!",
+    "inDevBanner2": "Welcome to the MistWeb v2 public beta! This site is relatively new, so please report any bugs on <1>GitHub</1>. Thanks!",
 
     "walletOverviewCardTitle": "Wallets",
     "walletOverviewTotalBalance": "Total balance",
@@ -395,14 +395,14 @@
     "tipsPrevious": "Prev",
     "tipsNext": "Next",
     "tips": {
-      "0": "Check out what's new in Krist and KristWeb on the [What's New page](/whatsnew)!",
+      "0": "Check out what's new in Mist and MistWeb on the [What's New page](/whatsnew)!",
       "1": "You can quickly navigate through tables with the arrow keys on desktop.",
       "2": "You can click on table headers to sort them.",
       "3": "You can filter by categories in the [My Wallets](/wallets) page by clicking the filter icon in the table header.",
-      "4": "The [settings page](/settings) has many advanced options to personalise your KristWeb experience.",
+      "4": "The [settings page](/settings) has many advanced options to personalise your MistWeb experience.",
       "5": "Generate pre-filled transaction links with the new [Request page](/request).",
       "6": "Be sure to backup [your wallets](/wallets)!",
-      "7": "Quickly search the Krist network with the keyboard shortcut Ctrl+K (Cmd+K on macOS).",
+      "7": "Quickly search the Mist network with the keyboard shortcut Ctrl+K (Cmd+K on macOS).",
       "8": "Add contacts in the [address book](/contacts) to quickly send them transactions.",
       "9": "A 'bumped' transaction is a transaction sent to and from the same address.",
       "10": "The 'block difficulty' chart can be shown with a logarithmic scale to see small changes easier at lower difficulties.",
@@ -421,10 +421,10 @@
     "hostedBy": "Hosted by <1>{{host}}</1>",
     "supportersTitle": "Supporters",
     "supportersDescription": "This project was made possible by the following amazing supporters:",
-    "supportButton": "Support KristWeb",
+    "supportButton": "Support MistWeb",
     "translatorsTitle": "Translators",
     "translatorsDescription": "This project was translated by the following amazing contributors:",
-    "translateButton": "Translate KristWeb",
+    "translateButton": "Translate MistWeb",
     "tmpim": "Created by tmpim",
 
     "versionInfo": {
@@ -437,12 +437,12 @@
 
     "privacyTitle": "Privacy",
     "privacy": {
-      "kristServer": "Krist Server",
-      "kristServerDesc": "The only PII that the <1>Krist Server</1> stores is your IP address, User-Agent and Origin, as part of the webserver logs. This information is automatically purged after 30 days.",
-      "kristweb": "KristWeb",
-      "kristwebDesc1": "KristWeb uses a self-hosted <1>Sentry</1> server for automatic error reporting. This system stores your IP address, User-Agent, Origin, breadcrumbs, and the details for any errors that get automatically reported. This information is automatically purged after 30 days.",
-      "kristwebDesc2": "If you have an ad-blocking or tracker-blocking extension such as <1>uBlock Origin</1> <strong>(recommended)</strong>, our Sentry system is already blocked by the built-in lists, so you do not have to worry about your privacy. You can also opt-out of error reporting in the <4>settings page</4>. That said, if you’d like to help us by providing more detailed error reports, then please consider making an exception for KristWeb in your tracker blocker software. This site does not serve ads.",
-      "kristwebDesc3": "If you have any questions or concerns, please contact the developers."
+      "mistServer": "Mist Server",
+      "mistServerDesc": "The only PII that the <1>Mist Server</1> stores is your IP address, User-Agent and Origin, as part of the webserver logs. This information is automatically purged after 30 days.",
+      "mistweb": "MistWeb",
+      "mistwebDesc1": "MistWeb uses a self-hosted <1>Sentry</1> server for automatic error reporting. This system stores your IP address, User-Agent, Origin, breadcrumbs, and the details for any errors that get automatically reported. This information is automatically purged after 30 days.",
+      "mistwebDesc2": "If you have an ad-blocking or tracker-blocking extension such as <1>uBlock Origin</1> <strong>(recommended)</strong>, our Sentry system is already blocked by the built-in lists, so you do not have to worry about your privacy. You can also opt-out of error reporting in the <4>settings page</4>. That said, if you’d like to help us by providing more detailed error reports, then please consider making an exception for MistWeb in your tracker blocker software. This site does not serve ads.",
+      "mistwebDesc3": "If you have any questions or concerns, please contact the developers."
     }
   },
 
@@ -501,7 +501,7 @@
     "subTitleTranslations": "Translations",
 
     "translations": {
-      "errorMissingLanguages": "The languages.json file seems to be missing. Was KristWeb compiled correctly?",
+      "errorMissingLanguages": "The languages.json file seems to be missing. Was MistWeb compiled correctly?",
       "errorNoKeys": "No translation keys",
 
       "columnLanguageCode": "Code",
@@ -531,12 +531,12 @@
   },
 
   "ws": {
-    "errorToken": "There was an error connecting to the Krist websocket server.",
-    "errorWS": "There was an error connecting to the Krist websocket server (code <1>{{code}}</1>)."
+    "errorToken": "There was an error connecting to the Mist websocket server.",
+    "errorWS": "There was an error connecting to the Mist websocket server (code <1>{{code}}</1>)."
   },
 
   "rateLimitTitle": "Rate limit hit",
-  "rateLimitDescription": "Too many requests were sent to the Krist server in a short period of time. This is probably caused by a bug!",
+  "rateLimitDescription": "Too many requests were sent to the Mist server in a short period of time. This is probably caused by a bug!",
 
   "address": {
     "title": "Address",
@@ -552,8 +552,8 @@
     "nameCountEmpty": "No names",
     "firstSeen": "First seen",
 
-    "buttonSendKrist": "Send Krist to {{address}}",
-    "buttonTransferKrist": "Transfer Krist to {{address}}",
+    "buttonSendMist": "Send Mist to {{address}}",
+    "buttonTransferMist": "Transfer Mist to {{address}}",
     "buttonAddContact": "Add to address book",
     "buttonEditContact": "Edit contact",
     "buttonEditWallet": "Edit wallet",
@@ -571,9 +571,9 @@
     "namesSeeMore": "See all {{count, number}}...",
 
     "resultInvalidTitle": "Invalid address",
-    "resultInvalid": "That does not look like a valid Krist address.",
+    "resultInvalid": "That does not look like a valid Mist address.",
     "resultNotFoundTitle": "Address not found",
-    "resultNotFound": "That address has not yet been initialised on the Krist network.",
+    "resultNotFound": "That address has not yet been initialised on the Mist network.",
     "resultNotFound2": "That address has no transaction history yet.",
 
     "verifiedCardTitle": "Verified address",
@@ -625,7 +625,7 @@
     "includeMined": "Include mined transactions",
 
     "resultInvalidTitle": "Invalid address",
-    "resultInvalid": "That does not look like a valid Krist address.",
+    "resultInvalid": "That does not look like a valid Mist address.",
 
     "types": {
       "transferred": "Transferred",
@@ -673,8 +673,8 @@
     "actionsViewName": "View name",
     "actionsViewOwner": "View owner's address",
     "actionsViewOriginalOwner": "View original owner's address",
-    "actionsSendKrist": "Send Krist",
-    "actionsTransferKrist": "Transfer Krist",
+    "actionsSendMist": "Send Mist",
+    "actionsTransferMist": "Transfer Mist",
     "actionsUpdateData": "Update data",
     "actionsTransferName": "Transfer name",
 
@@ -683,7 +683,7 @@
     "tableTotalEmpty": "No names",
 
     "resultInvalidTitle": "Invalid address",
-    "resultInvalid": "That does not look like a valid Krist address.",
+    "resultInvalid": "That does not look like a valid Mist address.",
 
     "purchaseButton": "Purchase name"
   },
@@ -691,8 +691,8 @@
   "name": {
     "title": "Name",
 
-    "buttonSendKrist": "Send Krist to {{name}}",
-    "buttonTransferKrist": "Transfer Krist to {{name}}",
+    "buttonSendMist": "Send Mist to {{name}}",
+    "buttonTransferMist": "Transfer Mist to {{name}}",
     "buttonData": "Update data",
     "buttonTransferName": "Transfer name",
 
@@ -713,7 +713,7 @@
     "historyError": "There was an error fetching the name history. See the console for details.",
 
     "resultInvalidTitle": "Invalid name",
-    "resultInvalid": "That does not look like a valid Krist name.",
+    "resultInvalid": "That does not look like a valid Mist name.",
     "resultNotFoundTitle": "Name not found",
     "resultNotFound": "That name does not exist."
   },
@@ -753,6 +753,10 @@
     "time": "Time",
     "hash": "Hash",
     "difficulty": "Difficulty",
+
+    "x": "X",
+    "y": "Y",
+    "z": "Z",
 
     "previous": "Prev",
     "previousTooltip": "Previous block (#{{id, number}})",
@@ -795,7 +799,7 @@
     "commonMetaColumnValue": "Value",
 
     "cardRawDataTitle": "Raw data",
-    "cardRawDataHelp": "The transaction exactly as it was returned by the Krist API.",
+    "cardRawDataHelp": "The transaction exactly as it was returned by the Mist API.",
 
     "rawDataColumnKey": "Key",
     "rawDataColumnValue": "Value",
@@ -813,8 +817,8 @@
 
   "noWalletsResult": {
     "title": "No wallets yet",
-    "subTitle": "You currently have no wallets saved in KristWeb, so there is nothing to see here yet. Would you like to add a wallet?",
-    "subTitleSendTransaction": "You currently have no wallets saved in KristWeb, so you can't make a transaction yet. Would you like to add a wallet?",
+    "subTitle": "You currently have no wallets saved in MistWeb, so there is nothing to see here yet. Would you like to add a wallet?",
+    "subTitleSendTransaction": "You currently have no wallets saved in MistWeb, so you can't make a transaction yet. Would you like to add a wallet?",
     "button": "Add wallets",
     "buttonNetworkTransactions": "Network transactions",
     "buttonNetworkNames": "Network names"
@@ -826,7 +830,7 @@
   },
 
   "import": {
-    "description": "Paste the backup code (or import from a file below) and enter the corresponding master password. Backups from KristWeb v1 are also supported.",
+    "description": "Paste the backup code (or import from a file below) and enter the corresponding master password. Backups from MistWeb v1 are also supported.",
 
     "masterPasswordPlaceholder": "Master password",
     "masterPasswordRequired": "Master password is required.",
@@ -846,8 +850,8 @@
     "modalButton": "Import",
 
     "detectedFormat": "<0>Detected format:</0> <2 />",
-    "detectedFormatKristWebV1": "KristWeb v1",
-    "detectedFormatKristWebV2": "KristWeb v2",
+    "detectedFormatMistWebV1": "MistWeb v1",
+    "detectedFormatMistWebV2": "MistWeb v2",
     "detectedFormatInvalid": "Invalid!",
 
     "progress": "Importing <1>{{count, number}}</1> item...",
@@ -873,11 +877,11 @@
       "successSkippedNoOverwrite": "A wallet with the same address ({{address}}) already exists, and you chose not to overwrite the label, so it was skipped.",
       "successImportSkipped": "A wallet with the same address ({{address}}) was already imported, so it was skipped.",
 
-      "warningSyncNode": "This wallet had a custom sync node, which is not supported in KristWeb v2. The sync node was skipped.",
-      "warningIcon": "This wallet had a custom icon, which is not supported in KristWeb v2. The icon was skipped.",
+      "warningSyncNode": "This wallet had a custom sync node, which is not supported in MistWeb v2. The sync node was skipped.",
+      "warningIcon": "This wallet had a custom icon, which is not supported in MistWeb v2. The icon was skipped.",
       "warningLabelInvalid": "The label for this wallet was invalid. The label was skipped.",
       "warningCategoryInvalid": "The category for this wallet was invalid. The category was skipped.",
-      "warningAdvancedFormat": "This wallet uses an advanced format ({{format}}), which has limited support in KristWeb v2.",
+      "warningAdvancedFormat": "This wallet uses an advanced format ({{format}}), which has limited support in MistWeb v2.",
 
       "errorInvalidTypeString": "This wallet was not a string!",
       "errorInvalidTypeObject": "This wallet was not an object!",
@@ -903,8 +907,8 @@
       "successSkippedNoOverwrite": "A contact with the same address ({{address}}) already exists, and you chose not to overwrite the label, so it was skipped.",
       "successImportSkipped": "A contact with the same address ({{address}}) was already imported, so it was skipped.",
 
-      "warningSyncNode": "This contact had a custom sync node, which is not supported in KristWeb v2. The sync node was skipped.",
-      "warningIcon": "This contact had a custom icon, which is not supported in KristWeb v2. The icon was skipped.",
+      "warningSyncNode": "This contact had a custom sync node, which is not supported in MistWeb v2. The sync node was skipped.",
+      "warningIcon": "This contact had a custom icon, which is not supported in MistWeb v2. The icon was skipped.",
       "warningLabelInvalid": "The label for this contact was invalid. The label was skipped.",
 
       "errorInvalidTypeString": "This contact was not a string!",
@@ -953,8 +957,8 @@
     "buttonCopy": "Copy to clipboard"
   },
 
-  "walletLimitMessage": "You have more wallets stored than KristWeb supports. This was either caused by a bug, or you bypassed it intentionally. Expect issues with syncing.",
-  "contactLimitMessage": "You have more contacts stored than KristWeb supports. This was either caused by a bug, or you bypassed it intentionally. Expect issues with syncing.",
+  "walletLimitMessage": "You have more wallets stored than MistWeb supports. This was either caused by a bug, or you bypassed it intentionally. Expect issues with syncing.",
+  "contactLimitMessage": "You have more contacts stored than MistWeb supports. This was either caused by a bug, or you bypassed it intentionally. Expect issues with syncing.",
 
   "optionalFieldUnset": "(unset)",
 
@@ -1028,7 +1032,7 @@
     "payLargeConfirm": "Are you sure you want to send <1 />?",
     "payLargeConfirmHalf": "Are you sure you want to send <1 />? This is over half your balance!",
     "payLargeConfirmAll": "Are you sure you want to send <1 />? This is your entire balance!",
-    "payLargeConfirmDefault": "You are about to send your wallet private key and password to an unofficial Krist server, which will give them access to your Krist on the official server. Are you sure you want to do this?",
+    "payLargeConfirmDefault": "You are about to send your wallet private key and password to an unofficial Mist server, which will give them access to your Mist on the official server. Are you sure you want to do this?",
 
     "errorNotificationTitle": "Transaction failed",
     "successNotificationTitle": "Transaction successful",
@@ -1039,8 +1043,8 @@
   },
 
   "request": {
-    "title": "Request Krist",
-    "siteTitle": "Request Krist",
+    "title": "Request Mist",
+    "siteTitle": "Request Mist",
 
     "labelTo": "Request recipient",
     "labelAmount": "Request amount",
@@ -1055,15 +1059,15 @@
     "title": "Auth failed",
     "message": "You do not own this address.",
     "messageLocked": "This address was locked.",
-    "alert": "Message from the Krist server:"
+    "alert": "Message from the Mist server:"
   },
 
   "whatsNew": {
     "title": "What's new",
     "siteTitle": "What's new",
 
-    "titleKrist": "Krist",
-    "titleKristWeb": "KristWeb",
+    "titleMist": "Mist",
+    "titleMistWeb": "MistWeb",
 
     "tooltipGitHub": "View on GitHub",
 
@@ -1080,7 +1084,7 @@
 
     "buttonAll": "All",
 
-    "warningTotalLimit": "You seem to have more than 1,000 names, which is not yet supported in KristWeb v2. Please post an issue on GitHub.",
+    "warningTotalLimit": "You seem to have more than 1,000 names, which is not yet supported in MistWeb v2. Please post an issue on GitHub.",
     "errorLookup": "There was an error fetching the names. See the console for details."
   },
 
@@ -1150,7 +1154,7 @@
 
   "noNamesResult": {
     "title": "No names yet",
-    "subTitle": "You currently have no names in any of your wallets saved in KristWeb, so there is nothing to see here yet. Would you like to purchase a name?",
+    "subTitle": "You currently have no names in any of your wallets saved in MistWeb, so there is nothing to see here yet. Would you like to purchase a name?",
     "button": "Purchase name"
   },
 
@@ -1182,9 +1186,9 @@
     "nameAvailable": "Name is available!"
   },
 
-  "purchaseKrist": {
-    "modalTitle": "Purchase Krist",
-    "connection": "A connection was just made to an unofficial Krist server. Your passwords and Krist wallets are at risk."
+  "purchaseMist": {
+    "modalTitle": "Purchase Mist",
+    "connection": "A connection was just made to an unofficial Mist server. Your passwords and Mist wallets are at risk."
   },
 
   "syncWallets": {
@@ -1193,8 +1197,8 @@
   },
 
   "legacyMigration": {
-    "modalTitle": "KristWeb v1 migration",
-    "description": "Welcome to KristWeb v2! It looks like you have used KristWeb v1 on this domain before.<br /><br /><strong>Please enter your master password to migrate your wallets to the new format.</strong> You will only have to do this once.",
+    "modalTitle": "MistWeb v1 migration",
+    "description": "Welcome to MistWeb v2! It looks like you have used MistWeb v1 on this domain before.<br /><br /><strong>Please enter your master password to migrate your wallets to the new format.</strong> You will only have to do this once.",
 
     "walletCount": "Detected <1>{{count, number}}</1> wallet",
     "walletCount_plural": "Detected <1>{{count, number}}</1> wallets",
@@ -1214,7 +1218,7 @@
 
     "forgotPassword": {
       "modalTitle": "Skip v1 migration",
-      "modalContent": "If you forgot your master password for KristWeb v1, then you will not be able to migrate your wallets. You will never be asked again. Are you sure you want to skip migration?",
+      "modalContent": "If you forgot your master password for MistWeb v1, then you will not be able to migrate your wallets. You will never be asked again. Are you sure you want to skip migration?",
       "buttonSkip": "Skip"
     }
   },

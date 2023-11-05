@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import { Row, Col, Skeleton, Tag, Typography } from "antd";
 
@@ -11,11 +11,11 @@ import { PageLayout } from "@layout/PageLayout";
 import { APIErrorResult } from "@comp/results/APIErrorResult";
 
 import { Statistic } from "@comp/Statistic";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 
 import * as api from "@api";
-import { lookupAddress, KristAddressWithNames } from "@api/lookup";
+import { lookupAddress, MistAddressWithNames } from "@api/lookup";
 import { useWallets } from "@wallets";
 import { useContacts } from "@contacts";
 import { useSubscription } from "@global/ws/WebsocketSubscription";
@@ -40,7 +40,7 @@ interface ParamTypes {
 }
 
 interface PageContentsProps {
-  address: KristAddressWithNames;
+  address: MistAddressWithNames;
   lastTransactionID: number;
 }
 
@@ -70,7 +70,7 @@ function PageContents({ address, lastTransactionID }: PageContentsProps): JSX.El
         {address.address}
       </Text>
 
-      {/* Buttons (e.g. Send Krist, Add contact) */}
+      {/* Buttons (e.g. Send Mist, Add contact) */}
       <AddressButtonRow
         address={address.address}
         myWallet={myWallet}
@@ -118,7 +118,7 @@ function PageContents({ address, lastTransactionID }: PageContentsProps): JSX.El
       <Col span={24} md={12} lg={8}>
         <Statistic
           titleKey="address.balance"
-          value={<KristValue long green highlightZero value={address.balance} />}
+          value={<MistValue long green highlightZero value={address.balance} />}
         />
       </Col>
 
@@ -174,7 +174,7 @@ export function AddressPage(): JSX.Element {
   const syncNode = api.useSyncNode();
 
   const { address } = useParams<ParamTypes>();
-  const [kristAddress, setKristAddress] = useState<KristAddressWithNames | undefined>();
+  const [mistAddress, setMistAddress] = useState<MistAddressWithNames | undefined>();
   const [error, setError] = useState<Error | undefined>();
 
   // Used to refresh the address data when a transaction is made to it
@@ -196,13 +196,13 @@ export function AddressPage(): JSX.Element {
   //         usability testing.
   useEffect(() => {
     lookupAddress(address, true)
-      .then(setKristAddress)
+      .then(setMistAddress)
       .catch(setError);
   }, [syncNode, address, usedRefreshID]);
 
   // Change the page title depending on whether or not the address has loaded
-  const title = kristAddress
-    ? { siteTitle: kristAddress.address, subTitle: kristAddress.address }
+  const title = mistAddress
+    ? { siteTitle: mistAddress.address, subTitle: mistAddress.address }
     : { siteTitleKey: "address.title" };
 
   return <PageLayout
@@ -223,10 +223,10 @@ export function AddressPage(): JSX.Element {
           notFoundSubTitleKey="address.resultNotFound2"
         />
       )
-      : (kristAddress
+      : (mistAddress
         ? (
           <PageContents
-            address={kristAddress}
+            address={mistAddress}
             lastTransactionID={usedRefreshID}
           />
         )

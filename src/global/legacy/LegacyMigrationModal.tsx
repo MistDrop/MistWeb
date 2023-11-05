@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState } from "react";
 import { Modal, Button } from "antd";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
@@ -9,17 +9,17 @@ import { useTFns } from "@utils/i18n";
 
 import { useLegacyMigrationForm } from "./LegacyMigrationForm";
 
-import { BackupKristWebV1 } from "@pages/backup/backupFormats";
+import { BackupMistWebV1 } from "@pages/backup/backupFormats";
 import { useImportProgress } from "@pages/backup/ImportProgress";
 import { BackupResults } from "@pages/backup/backupResults";
 import { BackupResultsSummary } from "@pages/backup/BackupResultsSummary";
 import { BackupResultsTree } from "@pages/backup/BackupResultsTree";
 
 import Debug from "debug";
-const debug = Debug("kristweb:legacy-migration-modal");
+const debug = Debug("mistweb:legacy-migration-modal");
 
 interface Props {
-  backup: BackupKristWebV1;
+  backup: BackupMistWebV1;
   setVisible: (visible: boolean) => void;
 }
 

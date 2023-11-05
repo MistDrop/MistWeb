@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { FC, useEffect } from "react";
 import classNames from "classnames";
 import { PageHeader } from "antd";
@@ -46,8 +46,8 @@ export const PageLayout: FC<PageLayoutProps> = ({
   const history = useHistory();
 
   useEffect(() => {
-    if      (siteTitle)    document.title = `${siteTitle} - KristWeb`;
-    else if (siteTitleKey) document.title = `${t(siteTitleKey)} - KristWeb`;
+    if      (siteTitle)    document.title = `${siteTitle} - MistWeb`;
+    else if (siteTitleKey) document.title = `${t(siteTitleKey)} - MistWeb`;
   }, [t, siteTitle, siteTitleKey]);
 
   const classes = classNames("page-layout", className, {

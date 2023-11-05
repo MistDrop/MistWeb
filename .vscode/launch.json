@@ -14,7 +14,7 @@
       "name": "Launch Firefox against localhost",
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}",
-      "profile": "kristweb",
+      "profile": "mistweb",
       "keepProfileChanges": true,
       "reAttach": true
     },

@@ -1,12 +1,12 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useMemo } from "react";
 import { Card, Table, TableProps, Typography } from "antd";
 
 import { useTranslation } from "react-i18next";
 
-import { parseCommonMeta, useNameSuffix } from "@utils/krist";
+import { parseCommonMeta, useNameSuffix } from "@utils/mist";
 
 import { HelpIcon } from "@comp/HelpIcon";
 import { useBooleanSetting } from "@utils/settings";

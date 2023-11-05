@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -10,7 +10,7 @@
       "connecting": "Đang kết nối"
     },
 
-    "search": "Tiềm kiếm mạng Krist",
+    "search": "Tiềm kiếm mạng Mist",
 
     "send": "Gửi",
     "request": "Yêu cầu"
@@ -52,9 +52,9 @@
     "createPassword": "Tạo mật khẩu",
     "logIn": "Đăng nhập",
     "forgotPassword": "Bạn quên mật khẩu?",
-    "intro": "Nhập mật khẩu chính để mã hóa ví của bạn hoặc sử dụng KristWeb với tư cách khách. <1></1>.",
+    "intro": "Nhập mật khẩu chính để mã hóa ví của bạn hoặc sử dụng MistWeb với tư cách khách. <1></1>.",
     "dontForgetPassword": "Không bao giờ quên mật khẩu này. Nếu bạn quên nó, bạn sẽ phải tạo một mật khẩu chánh mới và thêm ví của bạn trên một lần nữa.",
-    "loginIntro": "Nhập mật khẩu chính để truy cập ví của bạn hoặc duyệt KristWeb với tư cách khách.",
+    "loginIntro": "Nhập mật khẩu chính để truy cập ví của bạn hoặc duyệt MistWeb với tư cách khách.",
     "learnMore": "Tìm hiểu thêm",
     "errorPasswordRequired": "Mật khẩu là bắc buộc.",
     "errorPasswordUnset": "Mậc khẩu chính chưa đuộc thiết lạp.",
@@ -62,7 +62,7 @@
     "errorStorageCorrupt": "Chỗ lưu trữ ví bị hỏng.",
     "errorUnknown": "Lỗi không xác định.",
     "helpWalletStorageTitle": "Trợ giúp: Lưu trữ ví",
-    "helpWalletStorage": "Khi bạn thêm ví vào KristWeb, mã khóa bí mật của ví sẽ được lưu vào bộ nhớ cục bộ của trình duyệt và được mã hóa bằng mật khẩu chính của bạn.\nMọi ví của bạn lưu đều được mã hóa bằng cùng một mật khẩu chính và bạn sẽ cần nhập mật khẩu đó mỗi khi mở KristWeb. Ví Krist thực tế của bạn không được sửa đổi theo bất kỳ cách nào.\nKhi duyệt KristWeb với tư cách khách, bạn không cần phải nhập mật khẩu chính, nhưng điều đó cũng có nghĩa là bạn sẽ không thể thêm hoặc sử dụng bất cứ ví nào. Bạn vẫn có thể khám phá mạng Krist."
+    "helpWalletStorage": "Khi bạn thêm ví vào MistWeb, mã khóa bí mật của ví sẽ được lưu vào bộ nhớ cục bộ của trình duyệt và được mã hóa bằng mật khẩu chính của bạn.\nMọi ví của bạn lưu đều được mã hóa bằng cùng một mật khẩu chính và bạn sẽ cần nhập mật khẩu đó mỗi khi mở MistWeb. Ví Mist thực tế của bạn không được sửa đổi theo bất kỳ cách nào.\nKhi duyệt MistWeb với tư cách khách, bạn không cần phải nhập mật khẩu chính, nhưng điều đó cũng có nghĩa là bạn sẽ không thể thêm hoặc sử dụng bất cứ ví nào. Bạn vẫn có thể khám phá mạng Mist."
   },
 
   "myWallets": {
@@ -101,9 +101,9 @@
     "madeBy": "Thực hiện bởi <1>{{authorName}}</1>",
     "supportersTitle": "Người ủng hộ",
     "supportersDescription": "Dự án này đã được thực hiện bởi những người ủng hộ tuyệt vời sau đây:",
-    "supportButton": "Ủng hộ KristWeb",
+    "supportButton": "Ủng hộ MistWeb",
     "translatorsTitle": "Người dịch",
     "translatorsDescription": "Dự án này đã được dịch bởi những người đóng góp tuyệt vời sau đây:",
-    "translateButton": "Dịch KristWeb"
+    "translateButton": "Dịch MistWeb"
   }
 }

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useCallback, useMemo, Dispatch, SetStateAction } from "react";
 import { TablePaginationConfig, TableProps, Pagination } from "antd";
 import { SorterResult } from "antd/lib/table/interface";
@@ -14,7 +14,7 @@ import { GlobalHotKeys } from "react-hotkeys";
 import { useHistory, useLocation } from "react-router-dom";
 
 import Debug from "debug";
-const debug = Debug("kristweb:table");
+const debug = Debug("mistweb:table");
 
 export interface LookupFilterOptionsBase<FieldsT extends string> {
   limit?: number;

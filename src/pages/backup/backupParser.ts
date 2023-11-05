@@ -1,9 +1,9 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {
   Backup, BackupFormatType,
-  BackupKristWebV1, BackupKristWebV2
+  BackupMistWebV1, BackupMistWebV2
 } from "./backupFormats";
 import { decode } from "js-base64";
 
@@ -38,13 +38,13 @@ export function decodeBackup(rawData: string): Backup {
 
     // Determine the format
     if (data.version === 2) {
-      // KristWeb v2
+      // MistWeb v2
       data.type = BackupFormatType.KRISTWEB_V2;
-      return data as BackupKristWebV2;
+      return data as BackupMistWebV2;
     } else {
-      // KristWeb v1
+      // MistWeb v1
       data.type = BackupFormatType.KRISTWEB_V1;
-      return data as BackupKristWebV1;
+      return data as BackupMistWebV1;
     }
   } catch (err) {
     // Invalid base64

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {
   BackupResults, BackupWalletError, BackupContactError, MessageType
 } from "./backupResults";
@@ -12,10 +12,10 @@ import {
 } from "@wallets";
 import { ContactMap, Contact, addContact, editContactLabel } from "@contacts";
 
-import { isValidAddress, getNameParts } from "@utils/krist";
+import { isValidAddress, getNameParts } from "@utils/mist";
 
 import Debug from "debug";
-const debug = Debug("kristweb:backup-import-utils");
+const debug = Debug("mistweb:backup-import-utils");
 
 export interface Shorthands {
   warn: (message: MessageType) => void;
@@ -57,7 +57,7 @@ export const str = (val: any): val is string => val && typeof val === "string";
 // -----------------------------------------------------------------------------
 /** Converts a v1 format name to a v2 format name. */
 const _upgradeFormatName = (name: string): WalletFormatName =>
-  name === "krist" ? "api" : name as WalletFormatName;
+  name === "mist" ? "api" : name as WalletFormatName;
 
 /** Verifies that the wallet's format is valid, upgrade it if necessary,
  * and check if it's an advanced format. */
@@ -69,8 +69,8 @@ export function checkFormat(
   username?: string;
 } {
   // Check if the wallet format is supported (converting the old format name
-  // `krist` to `api` if necessary)
-  const format = _upgradeFormatName(wallet.format || "kristwallet");
+  // `mist` to `api` if necessary)
+  const format = _upgradeFormatName(wallet.format || "mistwallet");
   if (!WALLET_FORMATS[format]) throw new BackupWalletError("errorUnknownFormat");
 
   // Check if the wallet is using an advanced (unsupported) format
@@ -149,7 +149,7 @@ export async function checkAddress(
   // Calculate the address in advance, to check for existing wallets
   const { privatekey, address } = await calculateAddress(
     addressPrefix,
-    format || "kristwallet",
+    format || "mistwallet",
     password,
     username
   );

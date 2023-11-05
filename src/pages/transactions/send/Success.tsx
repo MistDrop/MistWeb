@@ -1,22 +1,22 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Button } from "antd";
 
 import { useTranslation, Trans } from "react-i18next";
 
 import { Link } from "react-router-dom";
 
-import { KristTransaction } from "@api/types";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistTransaction } from "@api/types";
+import { MistValue } from "@comp/mist/MistValue";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 
-export function NotifSuccessContents({ tx }: { tx: KristTransaction }): JSX.Element {
+export function NotifSuccessContents({ tx }: { tx: MistTransaction }): JSX.Element {
   const { t } = useTranslation();
 
   return <Trans t={t} i18nKey="sendTransaction.successNotificationContent">
     You sent
-    <KristValue value={tx.value} />
+    <MistValue value={tx.value} />
     from
     <ContextualAddress
       address={tx.from || "UNKNOWN"}
@@ -33,7 +33,7 @@ export function NotifSuccessContents({ tx }: { tx: KristTransaction }): JSX.Elem
   </Trans>;
 }
 
-export function NotifSuccessButton({ tx }: { tx: KristTransaction }): JSX.Element {
+export function NotifSuccessButton({ tx }: { tx: MistTransaction }): JSX.Element {
   const { t } = useTranslation();
 
   return <Link to={"/network/transactions/" + encodeURIComponent(tx.id)}>

@@ -1,10 +1,10 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useTranslation } from "react-i18next";
 
 import { useWallets } from "@wallets";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 
 export function SidebarTotalBalance(): JSX.Element {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ export function SidebarTotalBalance(): JSX.Element {
   return (
     <div className="site-sidebar-header site-sidebar-total-balance">
       <h5>{t("sidebar.totalBalance")}</h5>
-      <KristValue value={balance} long />
+      <MistValue value={balance} long />
     </div>
   );
 }

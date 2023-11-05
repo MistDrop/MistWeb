@@ -1,16 +1,16 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useMemo } from "react";
 import { Collapse, Tag } from "antd";
 
 import { Trans } from "react-i18next";
 import { useTFns } from "@utils/i18n";
 
-import { KristName } from "@api/types";
+import { MistName } from "@api/types";
 import { useWallets } from "@wallets";
 
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistNameLink } from "@comp/names/MistNameLink";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { DateTime } from "@comp/DateTime";
 
@@ -22,7 +22,7 @@ import { useMiningEnabled } from "@api";
 import dayjs from "dayjs";
 
 interface Props {
-  name: KristName;
+  name: MistName;
 
   openNameEdit: OpenEditNameFn;
   openSendTx: OpenSendTxFn;
@@ -67,7 +67,7 @@ export function NameMobileItem({
       </div>}
 
       {/* Name */}
-      <KristNameLink name={name.name} noLink className="name-name" />
+      <MistNameLink name={name.name} noLink className="name-name" />
 
       {/* Owner */}
       <div className="name-owner">

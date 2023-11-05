@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useRef, Dispatch, SetStateAction } from "react";
 import { Modal, Button, Input } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
@@ -51,7 +51,7 @@ export function ExportBackupModal({
 
   function saveToFile() {
     const blob = new Blob([code], { type: "text/plain;charset=utf-8" });
-    saveAs(blob, `KristWeb2-export-${dayjs().format("YYYY-MM-DD--HH-mm-ss")}.txt`);
+    saveAs(blob, `MistWeb2-export-${dayjs().format("YYYY-MM-DD--HH-mm-ss")}.txt`);
     closeModal();
   }
 

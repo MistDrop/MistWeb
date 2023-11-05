@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 // -----------------------------------------------------------------------------
 // This is essentially a combination of ant's useBreakpoint hook and
 // responsiveObserve, except that it will ALWAYS return the matches. Ant's

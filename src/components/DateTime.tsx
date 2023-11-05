@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useContext } from "react";
 import classNames from "classnames";
 import { Tooltip } from "antd";
@@ -15,7 +15,7 @@ import TimeAgo from "react-timeago";
 import "./styles/DateTime.less";
 
 import Debug from "debug";
-const debug = Debug("kristweb:date-time");
+const debug = Debug("mistweb:date-time");
 
 interface OwnProps {
   date?: Date | string | null;

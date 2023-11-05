@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Switch, Route, Redirect } from "react-router-dom";
 import { ErrorBoundary } from "@global/ErrorBoundary";
 
@@ -108,7 +108,7 @@ export function AppRouter(): JSX.Element {
       )
     ))}
 
-    {/* Redirects from KristWeb v1 router */}
+    {/* Redirects from MistWeb v1 router */}
     <Redirect from="/overview"    to="/" />
     <Redirect from="/addressbook" to="/contacts" />
     <Redirect from="/friends"     to="/contacts" />

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Dispatch, SetStateAction } from "react";
 import { Modal, notification } from "antd";
 
@@ -10,7 +10,7 @@ import { translateError } from "@utils/i18n";
 import { useWallets, Wallet } from "@wallets";
 import { NoWalletsModal } from "@comp/results/NoWalletsResult";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 
 import { useTransactionForm } from "./SendTransactionForm";
 import { NotifSuccessContents, NotifSuccessButton } from "./Success";
@@ -40,7 +40,7 @@ export function SendTransactionModal({
     to,
 
     // Display a success notification when the transaction is made
-    onSuccess(tx: KristTransaction) {
+    onSuccess(tx: MistTransaction) {
       notif.success({
         message: t("sendTransaction.successNotificationTitle"),
         description: <NotifSuccessContents tx={tx} />,

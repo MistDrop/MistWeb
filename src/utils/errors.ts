@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import * as Sentry from "@sentry/react";
 import { CaptureContext } from "@sentry/types";
 import { Integrations } from "@sentry/tracing";
@@ -19,7 +19,7 @@ Sentry.init({
   dsn: errorReporting
     ? "https://51a018424102449b88f94c795cf62bb7@sentry.lemmmy.pw/2"
     : undefined,
-  release: "kristweb2-react@" + gitVersion,
+  release: "mistweb2-react@" + gitVersion,
   integrations: [new Integrations.BrowserTracing()],
 
   // Disable Sentry error reporting if the setting is disabled:

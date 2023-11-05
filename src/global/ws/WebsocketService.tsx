@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useEffect, useContext } from "react";
 
 import { WebsocketContext } from "./WebsocketProvider";
@@ -10,7 +10,7 @@ import * as api from "@api";
 import { useWallets } from "@wallets";
 
 import Debug from "debug";
-const debug = Debug("kristweb:websocket-service");
+const debug = Debug("mistweb:websocket-service");
 
 export function WebsocketService(): JSX.Element | null {
   const { wallets } = useWallets();
@@ -33,7 +33,7 @@ export function WebsocketService(): JSX.Element | null {
       return;
     }
 
-    // Connect to the Krist websocket server
+    // Connect to the Mist websocket server
     setConnection(new WebsocketConnection(syncNode));
 
     // On unmount, force close the existing connection

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Menu } from "antd";
 import {
   ProfileOutlined, SwapOutlined, SendOutlined, EditOutlined
@@ -10,15 +10,15 @@ import { useTFns } from "@utils/i18n";
 
 import { useHistory } from "react-router-dom";
 
-import { KristName } from "@api/types";
-import { useNameSuffix } from "@utils/krist";
+import { MistName } from "@api/types";
+import { useNameSuffix } from "@utils/mist";
 
 import { useAuth } from "@comp/auth";
 import { OpenEditNameFn } from "./mgmt/NameEditModalLink";
 import { OpenSendTxFn } from "@comp/transactions/SendTransactionModalLink";
 
 interface Props {
-  name: KristName;
+  name: MistName;
   isOwn: boolean;
 
   openNameEdit: OpenEditNameFn;
@@ -63,11 +63,11 @@ export function NameMobileItemActions({
       {tStr("actionsViewOriginalOwner")}
     </Menu.Item>}
 
-    {/* Send/transfer Krist */}
+    {/* Send/transfer Mist */}
     <Menu.Item key="4" icon={isOwn ? <SwapOutlined /> : <SendOutlined />}
       onClick={() => promptAuth(false, () =>
         openSendTx(undefined, nameWithSuffix))}>
-      {tStr(isOwn ? "actionsTransferKrist" : "actionsSendKrist")}
+      {tStr(isOwn ? "actionsTransferMist" : "actionsSendMist")}
     </Menu.Item>
 
     {/* Name management actions if we own the name */}

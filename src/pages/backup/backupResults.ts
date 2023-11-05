@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 
 import { TranslatedError } from "@utils/i18n";
 
@@ -10,7 +10,7 @@ import { Contact } from "@contacts";
 import { IncrProgressFn, InitProgressFn } from "./ImportProgress";
 
 import Debug from "debug";
-const debug = Debug("kristweb:backup-results");
+const debug = Debug("mistweb:backup-results");
 
 export interface TranslatedMessage {
   key: string;

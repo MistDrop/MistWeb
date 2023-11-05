@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo } from "react";
 import classNames from "classnames";
 import { Card, Skeleton, Empty } from "antd";
@@ -18,7 +18,7 @@ import { SmallResult } from "@comp/results/SmallResult";
 import { trailingThrottleState } from "@utils";
 
 import Debug from "debug";
-const debug = Debug("kristweb:transactions-card");
+const debug = Debug("mistweb:transactions-card");
 
 const TRANSACTION_THROTTLE = 300;
 async function _fetchTransactions(wallets: WalletMap): Promise<LookupTransactionsResponse> {

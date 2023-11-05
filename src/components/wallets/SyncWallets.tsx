@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useEffect } from "react";
 import { message, notification } from "antd";
 
@@ -14,9 +14,9 @@ import { useContacts } from "@contacts";
 import { criticalError } from "@utils";
 
 import Debug from "debug";
-const debug = Debug("kristweb:sync-wallets");
+const debug = Debug("mistweb:sync-wallets");
 
-/** Sync the wallets with the Krist node when connected. */
+/** Sync the wallets with the Mist node when connected. */
 export function SyncWallets(): JSX.Element | null {
   const { t } = useTranslation();
 

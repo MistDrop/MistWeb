@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useCallback, useMemo, Dispatch, SetStateAction } from "react";
 import { Table, TablePaginationConfig, Tag } from "antd";
 import { ColumnsType, ColumnType } from "antd/lib/table";
 
 import { useTFns, TStrFn } from "@utils/i18n";
 
-import { KristName } from "@api/types";
+import { MistName } from "@api/types";
 import {
   lookupNames, LookupNamesOptions, LookupNamesResponse,
   SortableNameFields
@@ -27,7 +27,7 @@ import { useNameTableLock } from "./tableLock";
 
 import { useMiningEnabled } from "@api";
 
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistNameLink } from "@comp/names/MistNameLink";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { TransactionConciseMetadata } from "@comp/transactions/TransactionConciseMetadata";
 import { DateTime } from "@comp/DateTime";
@@ -35,7 +35,7 @@ import { DateTime } from "@comp/DateTime";
 import dayjs from "dayjs";
 
 import Debug from "debug";
-const debug = Debug("kristweb:names-table");
+const debug = Debug("mistweb:names-table");
 
 function getColumns(
   tStr: TStrFn,
@@ -46,14 +46,14 @@ function getColumns(
   twoDaysAgo: Date,
   openNameEdit: OpenEditNameFn,
   openSendTx: OpenSendTxFn
-): ColumnsType<KristName> {
+): ColumnsType<MistName> {
   return [
     // Name
     {
       title: tStr("columnName"),
       dataIndex: "name", key: "name",
 
-      render: name => <KristNameLink name={name} />,
+      render: name => <MistNameLink name={name} />,
 
       sorter: true,
       defaultSortOrder: sortNew ? undefined : "ascend"
@@ -112,7 +112,7 @@ function getColumns(
       width: 50,
 
       sorter: true
-    } as ColumnType<KristName>] : []),
+    } as ColumnType<MistName>] : []),
 
     // Registered time
     {
@@ -258,7 +258,7 @@ export function NamesTable({
 
   debug("results? %b  res.names.length: %d  res.count: %d  res.total: %d", !!res, res?.names?.length, res?.count, res?.total);
 
-  const renderMobileItem: RenderItem<KristName> = useCallback(name => (
+  const renderMobileItem: RenderItem<MistName> = useCallback(name => (
     <NameMobileItem
       name={name}
       openNameEdit={openNameEdit}
@@ -298,7 +298,7 @@ interface DesktopViewProps {
 
   sortNew?: boolean;
 
-  paginationTableProps: PaginationTableProps<KristName>;
+  paginationTableProps: PaginationTableProps<MistName>;
 
   openNameEdit: OpenEditNameFn;
   openSendTx: OpenSendTxFn;
@@ -328,7 +328,7 @@ function DesktopView({
   ), [tStr, dateColumnWidth, sortNew, joinedAddressList, miningEnabled,
     twoDaysAgo, openNameEdit, openSendTx]);
 
-  const getRowClasses = useCallback((name: KristName): string => {
+  const getRowClasses = useCallback((name: MistName): string => {
     // If mining is enabled, then show the unpaid highlight based on the actual
     // unpaid blocks count. Otherwise, show the highlight for 48 hours since
     // the name was purchased (approximately over the time it takes to mine 500
@@ -339,7 +339,7 @@ function DesktopView({
     return unpaid ? "name-row-unpaid" : "";
   }, [miningEnabled, twoDaysAgo]);
 
-  return <Table<KristName>
+  return <Table<MistName>
     className="names-table"
     size="small"
     scroll={{ x: true }}
@@ -356,6 +356,6 @@ function DesktopView({
   />;
 }
 
-function isNameNew(name: KristName, twoDaysAgo: Date): boolean {
+function isNameNew(name: MistName, twoDaysAgo: Date): boolean {
   return new Date(name.registered) > twoDaysAgo;
 }

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 
 // This optional code is used to register a service worker.
 // register() is not called by default.
@@ -18,7 +18,7 @@ import { isLocalhost } from "./";
 
 import { criticalError } from "@utils";
 import Debug from "debug";
-const debug = Debug("kristweb:service-worker");
+const debug = Debug("mistweb:service-worker");
 
 interface Config {
   onSuccess?: (registration: ServiceWorkerRegistration) => void;

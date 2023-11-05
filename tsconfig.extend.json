@@ -14,16 +14,17 @@
       "@layout/*": ["./layout/*"],
       "@pages/*": ["./pages/*"],
 
-      "@api": ["./krist/api"],
-      "@api/*": ["./krist/api/*"],
-      "@wallets": ["./krist/wallets"],
-      "@wallets/*": ["./krist/wallets/*"],
-      "@contacts": ["./krist/contacts"],
-      "@contacts/*": ["./krist/contacts/*"],
-      "@krist/*": ["./krist/*"],
+      "@api": ["./mist/api"],
+      "@api/*": ["./mist/api/*"],
+      "@wallets": ["./mist/wallets"],
+      "@wallets/*": ["./mist/wallets/*"],
+      "@contacts": ["./mist/contacts"],
+      "@contacts/*": ["./mist/contacts/*"],
+      "@mist/*": ["./mist/*"],
       "@global/*": ["./global/*"],
 
       "@utils": ["./utils"],
+      "@utils/mist": ["./utils/mist"],
       "@utils/*": ["./utils/*"]
     }
   }

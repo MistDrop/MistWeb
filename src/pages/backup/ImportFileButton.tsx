@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import React from "react";
 import { notification } from "antd";
 
 import { useTFns } from "@utils/i18n";
 
 import Debug from "debug";
-const debug = Debug("kristweb:import-file-button");
+const debug = Debug("mistweb:import-file-button");
 
 interface Props {
   setCode: (code: string) => void;

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Layout, Menu, Grid } from "antd";
 import { SendOutlined, DownloadOutlined } from "@ant-design/icons";
 
@@ -43,14 +43,14 @@ export function AppHeader({ sidebarCollapsed, setSidebarCollapsed }: Props): JSX
 
     {/* Send and request buttons */}
     {bps.md && <Menu theme="dark" mode="horizontal" selectable={false} forceSubMenuRender={true} className="site-header-nav">
-      {/* Send Krist */}
+      {/* Send Mist */}
       <Menu.Item key="1" icon={<SendOutlined />}>
         <ConditionalLink to="/send" matchTo aria-label={t("nav.send")}>
           {t("nav.send")}
         </ConditionalLink>
       </Menu.Item>
 
-      {/* Request Krist */}
+      {/* Request Mist */}
       <Menu.Item key="2" icon={<DownloadOutlined />}>
         <ConditionalLink to="/request" matchTo aria-label={t("nav.request")}>
           {t("nav.request")}

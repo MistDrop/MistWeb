@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useCallback } from "react";
 
 import { Trans } from "react-i18next";
@@ -8,14 +8,14 @@ import { useTFns } from "@utils/i18n";
 
 import { Link } from "react-router-dom";
 
-import { KristBlock } from "@api/types";
+import { MistBlock } from "@api/types";
 
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { DateTime } from "@comp/DateTime";
 
 interface Props {
-  block: KristBlock;
+  block: MistBlock;
 }
 
 export function BlockMobileItem({ block }: Props): JSX.Element {
@@ -38,7 +38,7 @@ export function BlockMobileItem({ block }: Props): JSX.Element {
   return <Link to={blockLink} className="card-list-item block-mobile-item">
     {/* Block value */}
     <div className="block-value">
-      <KristValue value={block.value} />
+      <MistValue value={block.value} />
     </div>
 
     {/* Block height */}

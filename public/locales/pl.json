@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -11,8 +11,8 @@
     },
 
     "search": {
-      "placeholder": "Przeszukaj sieć Krist",
-      "placeholderShortcut": "Przeszukaj sieć Krist ({{shortcut}})",
+      "placeholder": "Przeszukaj sieć Mist",
+      "placeholderShortcut": "Przeszukaj sieć Mist ({{shortcut}})",
       "placeholderShort": "Przeszukaj...",
       "rateLimitHit": "Proszę zwolnij.",
       "noResults": "Brak wyników.",
@@ -42,9 +42,9 @@
     },
 
     "send": "Wyślij",
-    "sendLong": "Wyślij Krist",
+    "sendLong": "Wyślij Mist",
     "request": "Zażądaj",
-    "requestLong": "Zażądaj Krist",
+    "requestLong": "Zażądaj Mist",
     "sort": "Sortuj wyniki",
 
     "settings": "Ustawienia",
@@ -69,7 +69,7 @@
     "whatsNew": "Nowości",
 
     "updateTitle": "Dostępna aktualizacja!",
-    "updateDescription": "Dostępna jest nowa wersja KristWeb. Proszę odświeżyć stronę.",
+    "updateDescription": "Dostępna jest nowa wersja MistWeb. Proszę odświeżyć stronę.",
     "updateReload": "Odśwież"
   },
 
@@ -89,7 +89,7 @@
   "error": "Błąd",
   "errorBoundary": {
     "title": "Błąd krytyczny",
-    "description": "Wystąpił błąd krytyczny w KristWeb, więc ta strona została zamknięta. Szczegółowe informacje można znaleźć w konsoli.",
+    "description": "Wystąpił błąd krytyczny w MistWeb, więc ta strona została zamknięta. Szczegółowe informacje można znaleźć w konsoli.",
     "sentryNote": "Ten błąd został zgłoszony automatycznie."
   },
   "errorReported": "Błąd został zgłoszony automatycznie. Szczegółowe informacje można znaleźć w konsoli.",
@@ -107,7 +107,7 @@
   },
 
   "contextualAddressUnknown": "Nieznany",
-  "contextualAddressNonExistentTooltip": "Ten adres nie został jeszcze zainicjowany w sieci Krist.",
+  "contextualAddressNonExistentTooltip": "Ten adres nie został jeszcze zainicjowany w sieci Mist.",
   "contextualAddressNonExistentTooltip2": "Ten adres nia ma jeszcze historii transakcji.",
 
   "typeahead": {
@@ -189,7 +189,7 @@
 
     "actionsViewAddress": "Wyświetl adres",
     "actionsEditTooltip": "Edytuj portfel",
-    "actionsSendTransaction": "Wyślij Krist",
+    "actionsSendTransaction": "Wyślij Mist",
     "actionsWalletInfo": "Informacje o portfelu",
     "actionsWalletForceCreate": "Wymuś utworzenie",
     "actionsDelete": "Usuń portfel",
@@ -254,7 +254,7 @@
     "actionsViewAddress": "Wyświetl adres",
     "actionsViewName": "Wyświetl nazwę",
     "actionsEditTooltip": "Edytuj kontakt",
-    "actionsSendTransaction": "Wyślij Krist",
+    "actionsSendTransaction": "Wyślij Mist",
     "actionsDelete": "Usuń kontakt",
     "actionsDeleteConfirm": "Czy na pewno chcesz usunąć ten kontakt?"
   },
@@ -300,13 +300,13 @@
     "advancedOptions": "Zaawansowane opcje",
 
     "walletFormat": "Format portfela",
-    "walletFormatKristWallet": "KristWallet, KWallet (zalecany)",
-    "walletFormatKristWalletUsernameAppendhashes": "KW-Username (appendhashes)",
-    "walletFormatKristWalletUsername": "KW-Username (pre-appendhashes)",
+    "walletFormatMistWallet": "MistWallet, KWallet (zalecany)",
+    "walletFormatMistWalletUsernameAppendhashes": "KW-Username (appendhashes)",
+    "walletFormatMistWalletUsername": "KW-Username (pre-appendhashes)",
     "walletFormatJwalelset": "jwalelset",
     "walletFormatApi": "Raw/API (advanced users)",
 
-    "walletSave": "Zapisz ten portfel w KristWeb",
+    "walletSave": "Zapisz ten portfel w MistWeb",
 
     "messageSuccessAdd": "Pomyślnie dodano portfel!",
     "messageSuccessCreate": "Pomyślnie utworzono portfel!",
@@ -355,8 +355,8 @@
   "dashboard": {
     "siteTitle": "Pulpit nawigacyjny",
 
-    "inDevBanner": "Witamy w prywatnej wersji beta KristWeb v2! Ta strona jest wciąż w fazie rozwoju, więc obecnie brakuje większości funkcji. Prosimy o zgłaszanie wszystkich błędów na <1> GitHub </1>. Dzięki!",
-    "inDevBanner2": "Witamy w publicznej wersji beta KristWeb v2! Ta strona jest wciąż dość nowa, więc prosimy o zgłaszanie wszystkich błędów na <1> GitHub </1>. Dzięki!",
+    "inDevBanner": "Witamy w prywatnej wersji beta MistWeb v2! Ta strona jest wciąż w fazie rozwoju, więc obecnie brakuje większości funkcji. Prosimy o zgłaszanie wszystkich błędów na <1> GitHub </1>. Dzięki!",
+    "inDevBanner2": "Witamy w publicznej wersji beta MistWeb v2! Ta strona jest wciąż dość nowa, więc prosimy o zgłaszanie wszystkich błędów na <1> GitHub </1>. Dzięki!",
 
     "walletOverviewCardTitle": "Portfele",
     "walletOverviewTotalBalance": "Saldo całkowite",
@@ -402,14 +402,14 @@
     "tipsPrevious": "Poprzedni",
     "tipsNext": "Następny",
     "tips": {
-      "0": "Sprawdź, co nowego w Krist i KristWeb na stronie [Co nowego](/whatsnew)!",
+      "0": "Sprawdź, co nowego w Mist i MistWeb na stronie [Co nowego](/whatsnew)!",
       "1": "Możesz szybko poruszać się po tabelach za pomocą klawiszy strzałek na pulpicie.",
       "2": "Możesz kliknąć nagłówki tabeli, aby je posortować.",
       "3": "Możesz filtrować według kategorii na stronie [Moje portfele](/wallets), klikając ikonę filtru w nagłówku tabeli.",
-      "4": "Na [stronie ustawień](/settings) dostępnych jest wiele zaawansowanych opcji umożliwiających personalizację korzystania z KristWeb.",
+      "4": "Na [stronie ustawień](/settings) dostępnych jest wiele zaawansowanych opcji umożliwiających personalizację korzystania z MistWeb.",
       "5": "Wygeneruj wstępnie wypełnione linki do transakcji za pomocą nowej strony [Żądania](/request).",
       "6": "Pamiętaj, aby wykonać kopię zapasową [swoich portfeli](/wallets)!",
-      "7": "Szybko przeszukaj sieć Krist za pomocą skrótu klawiaturowego Ctrl + K (Cmd + K w systemie macOS).",
+      "7": "Szybko przeszukaj sieć Mist za pomocą skrótu klawiaturowego Ctrl + K (Cmd + K w systemie macOS).",
       "8": "Dodawaj kontakty w [książce adresowej](/contacts), aby szybko wysyłać im transakcje.",
       "9": "Transakcja „podbita” to transakcja wysyłana z adresu do tego samego adresu.",
       "10": "Wykres „trudności bloku” może być przedstawiony w skali logarytmicznej, aby łatwiej dostrzec małe zmiany przy niższych trudnościach.",
@@ -428,10 +428,10 @@
     "hostedBy": "Hostowany przez <1>{{host}}</1>",
     "supportersTitle": "Darczyńcy",
     "supportersDescription": "Ten projekt był możliwy dzięki następującym niesamowitym darczyńcom:",
-    "supportButton": "Wesprzyj KristWeb",
+    "supportButton": "Wesprzyj MistWeb",
     "translatorsTitle": "Tłumacze",
     "translatorsDescription": "Ten projekt został przetłumaczony przez następujących niesamowitych współpracowników:",
-    "translateButton": "Przetłumacz KristWeb",
+    "translateButton": "Przetłumacz MistWeb",
     "tmpim": "Stworzony przez tmpim",
 
     "versionInfo": {
@@ -444,12 +444,12 @@
 
     "privacyTitle": "Prywatność",
     "privacy": {
-      "kristServer": "Server Krist",
-      "kristServerDesc": "Jedyne informacje umożliwiające identyfikację, które przechowuje <1>Krist Server</1>, to Twój adres IP, User-Agent i Origin w dziennikach serwera internetowego. Te informacje są automatycznie usuwane po 30 dniach.",
-      "kristweb": "KristWeb",
-      "kristwebDesc1": "KristWeb używa samoobsługowego serwera <1>Sentry</1> do automatycznego raportowania błędów. Ten system przechowuje Twój adres IP, User-Agent, Origin, okruszki chleba i szczegóły wszelkich błędów, które są automatycznie zgłaszane. Te informacje są automatycznie usuwane po 30 dniach.",
-      "kristwebDesc2": "Jeśli masz rozszerzenie blokujące reklamy lub śledzące, takie jak <1>uBlock Origin</1> <strong>(zalecane)</strong>, nasz system Sentry jest już blokowany przez wbudowane listy, więc nie musisz martwić się o swoją prywatność. Możesz również zrezygnować z raportowania błędów na <4>stronie ustawień</4>. To powiedziawszy, jeśli chcesz nam pomóc, dostarczając bardziej szczegółowe raporty o błędach, rozważ zrobienie wyjątku dla KristWeb w swoim oprogramowaniu do blokowania elementów śledzących. Ta witryna nie wyświetla reklam.",
-      "kristwebDesc3": "Jeśli masz jakieś pytania lub wątpliwości, skontaktuj się z programistami."
+      "mistServer": "Server Mist",
+      "mistServerDesc": "Jedyne informacje umożliwiające identyfikację, które przechowuje <1>Mist Server</1>, to Twój adres IP, User-Agent i Origin w dziennikach serwera internetowego. Te informacje są automatycznie usuwane po 30 dniach.",
+      "mistweb": "MistWeb",
+      "mistwebDesc1": "MistWeb używa samoobsługowego serwera <1>Sentry</1> do automatycznego raportowania błędów. Ten system przechowuje Twój adres IP, User-Agent, Origin, okruszki chleba i szczegóły wszelkich błędów, które są automatycznie zgłaszane. Te informacje są automatycznie usuwane po 30 dniach.",
+      "mistwebDesc2": "Jeśli masz rozszerzenie blokujące reklamy lub śledzące, takie jak <1>uBlock Origin</1> <strong>(zalecane)</strong>, nasz system Sentry jest już blokowany przez wbudowane listy, więc nie musisz martwić się o swoją prywatność. Możesz również zrezygnować z raportowania błędów na <4>stronie ustawień</4>. To powiedziawszy, jeśli chcesz nam pomóc, dostarczając bardziej szczegółowe raporty o błędach, rozważ zrobienie wyjątku dla MistWeb w swoim oprogramowaniu do blokowania elementów śledzących. Ta witryna nie wyświetla reklam.",
+      "mistwebDesc3": "Jeśli masz jakieś pytania lub wątpliwości, skontaktuj się z programistami."
     }
   },
 
@@ -508,7 +508,7 @@
     "subTitleTranslations": "Tłumaczenia",
 
     "translations": {
-      "errorMissingLanguages": "Wydaje się, że brakuje pliku languages.json. Czy KristWeb został poprawnie skompilowany?",
+      "errorMissingLanguages": "Wydaje się, że brakuje pliku languages.json. Czy MistWeb został poprawnie skompilowany?",
       "errorNoKeys": "Brak kluczy tłumaczenia",
 
       "columnLanguageCode": "Kod",
@@ -538,12 +538,12 @@
   },
 
   "ws": {
-    "errorToken": "Wystąpił błąd podczas łączenia się z serwerem websocket Krist.",
-    "errorWS": "Wystąpił błąd podczas łączenia się z serwerem websocket Krist (code <1>{{code}}</1>)."
+    "errorToken": "Wystąpił błąd podczas łączenia się z serwerem websocket Mist.",
+    "errorWS": "Wystąpił błąd podczas łączenia się z serwerem websocket Mist (code <1>{{code}}</1>)."
   },
 
   "rateLimitTitle": "Osiągnięto limit częstotliwości",
-  "rateLimitDescription": "Zbyt wiele żądań zostało wysłanych do serwera Krist w krótkim czasie. Jest to prawdopodobnie spowodowane błędem!",
+  "rateLimitDescription": "Zbyt wiele żądań zostało wysłanych do serwera Mist w krótkim czasie. Jest to prawdopodobnie spowodowane błędem!",
 
   "address": {
     "title": "Adres",
@@ -560,8 +560,8 @@
     "nameCountEmpty": "Brak nazw",
     "firstSeen": "Pierwszy raz widziany",
 
-    "buttonSendKrist": "Wyślij Krist do {{address}}",
-    "buttonTransferKrist": "Przenieś Krist do {{address}}",
+    "buttonSendMist": "Wyślij Mist do {{address}}",
+    "buttonTransferMist": "Przenieś Mist do {{address}}",
     "buttonAddContact": "Dodaj do książki adresowej",
     "buttonEditContact": "Edytuj w książce adresowej",
     "buttonEditWallet": "Edytuj portfel",
@@ -579,9 +579,9 @@
     "namesSeeMore": "Zobacz wszystkie {{count, number}}...",
 
     "resultInvalidTitle": "Nieprawidłowy adres",
-    "resultInvalid": "To nie wygląda na prawidłowy adres Krist.",
+    "resultInvalid": "To nie wygląda na prawidłowy adres Mist.",
     "resultNotFoundTitle": "Adres nie znaleziony",
-    "resultNotFound": "Ten adres nie został jeszcze zainicjowany w sieci Krist.",
+    "resultNotFound": "Ten adres nie został jeszcze zainicjowany w sieci Mist.",
     "resultNotFound2": "Ten adres nia ma jeszcze historii transakcji.",																						
 
     "verifiedCardTitle": "Zweryfikowany adres",
@@ -634,7 +634,7 @@
     "includeMined": "Uwzględnij transakcje wydobycia",
 
     "resultInvalidTitle": "Nieprawidłowy adres.",
-    "resultInvalid": "To nie wygląda na prawidłowy adres Krist.",
+    "resultInvalid": "To nie wygląda na prawidłowy adres Mist.",
 
     "types": {
       "transferred": "Transfer",
@@ -684,8 +684,8 @@
     "actionsViewName": "Wyświetl nazwę",
     "actionsViewOwner": "Wyświetl adres właściciela",
     "actionsViewOriginalOwner": "Wyświetl adres pierwotnego właściciela",
-    "actionsSendKrist": "Wyślij Krist",
-    "actionsTransferKrist": "Przenieś Krist",
+    "actionsSendMist": "Wyślij Mist",
+    "actionsTransferMist": "Przenieś Mist",
     "actionsUpdateData": "Zaktualizuj dane",
     "actionsTransferName": "Przenieś nazwę",
 
@@ -695,7 +695,7 @@
     "tableTotalEmpty": "Brak nazw",
 
     "resultInvalidTitle": "Nieprawidłowy adres.",
-    "resultInvalid": "To nie wygląda na prawidłowy adres Krist.",
+    "resultInvalid": "To nie wygląda na prawidłowy adres Mist.",
 
     "purchaseButton": "Zakup nazwę"
   },
@@ -703,8 +703,8 @@
   "name": {
     "title": "Nazwa",
 
-    "buttonSendKrist": "Wyślij Krist do {{name}}",
-    "buttonTransferKrist": "Przenieś Krist do {{name}}",
+    "buttonSendMist": "Wyślij Mist do {{name}}",
+    "buttonTransferMist": "Przenieś Mist do {{name}}",
     "buttonData": "Zaktualizuj dane",
     "buttonTransferName": "Przenieś nazwę",
 
@@ -726,7 +726,7 @@
     "historyError": "Wystąpił błąd podczas pobierania historii nazw. Zobacz konsolę, aby uzyskać szczegółowe informacje.",
 
     "resultInvalidTitle": "Błędna nazwa",
-    "resultInvalid": "To nie wygląda na prawidłowe imię Krist.",
+    "resultInvalid": "To nie wygląda na prawidłowe imię Mist.",
     "resultNotFoundTitle": "Nie znaleziono nazwy",
     "resultNotFound": "Ta nazwa nie istnieje."
   },
@@ -809,7 +809,7 @@
     "commonMetaColumnValue": "Wartość",
 
     "cardRawDataTitle": "Nieprzetworzone",
-    "cardRawDataHelp": "Transakcja dokładnie tak, jak została zwrócona przez Krist API.",
+    "cardRawDataHelp": "Transakcja dokładnie tak, jak została zwrócona przez Mist API.",
 
     "rawDataColumnKey": "Klucz",
     "rawDataColumnValue": "Wartość",
@@ -827,8 +827,8 @@
 
   "noWalletsResult": {
     "title": "Nie ma jeszcze portfeli",
-    "subTitle": "Obecnie nie masz żadnych portfeli zapisanych w KristWeb, więc nie ma tu jeszcze nic do oglądania. Chcesz dodać portfel?",
-    "subTitleSendTransaction": "Obecnie nie masz żadnych portfeli zapisanych w KristWeb, więc nie możesz jeszcze dokonać transakcji. Chcesz dodać portfel?",
+    "subTitle": "Obecnie nie masz żadnych portfeli zapisanych w MistWeb, więc nie ma tu jeszcze nic do oglądania. Chcesz dodać portfel?",
+    "subTitleSendTransaction": "Obecnie nie masz żadnych portfeli zapisanych w MistWeb, więc nie możesz jeszcze dokonać transakcji. Chcesz dodać portfel?",
     "button": "Dodaj portfele",
     "buttonNetworkTransactions": "Wszystkie transakcje",
     "buttonNetworkNames": "Wszystkie nazwy"
@@ -840,7 +840,7 @@
   },
 
   "import": {
-    "description": "Wklej kod zapasowy (lub zaimportuj z pliku poniżej) i wprowadź odpowiednie hasło główne. Obsługiwane są również kopie zapasowe z KristWeb v1.",
+    "description": "Wklej kod zapasowy (lub zaimportuj z pliku poniżej) i wprowadź odpowiednie hasło główne. Obsługiwane są również kopie zapasowe z MistWeb v1.",
 
     "masterPasswordPlaceholder": "Hasło główne",
     "masterPasswordRequired": "Wymagane jest hasło główne.",
@@ -860,8 +860,8 @@
     "modalButton": "Importuj",
 
     "detectedFormat": "<0>Wykryty format:</0> <2 />",
-    "detectedFormatKristWebV1": "KristWeb v1",
-    "detectedFormatKristWebV2": "KristWeb v2",
+    "detectedFormatMistWebV1": "MistWeb v1",
+    "detectedFormatMistWebV2": "MistWeb v2",
     "detectedFormatInvalid": "Niepoprawny!",
 
     "progress_0": "Importowanie <1>{{count, number}}</1> pozycji...",
@@ -888,11 +888,11 @@
       "successSkippedNoOverwrite": "Portfel o tym samym adresie ({{address}}) już istnieje, a Ty zdecydowałeś nie nadpisywać etykiety, więc został pominięty.",
       "successImportSkipped": "Portfel z tym samym adresem ({{address}}) został już zaimportowany, więc został pominięty.",
 
-      "warningSyncNode": "Ten portfel miał niestandardowy węzeł synchronizacji, który nie jest obsługiwany w KristWeb v2. Węzeł synchronizacji został pominięty.",
-      "warningIcon": "Ten portfel miał niestandardową ikonę, która nie jest obsługiwana w KristWeb v2. Ikona została pominięta.",
+      "warningSyncNode": "Ten portfel miał niestandardowy węzeł synchronizacji, który nie jest obsługiwany w MistWeb v2. Węzeł synchronizacji został pominięty.",
+      "warningIcon": "Ten portfel miał niestandardową ikonę, która nie jest obsługiwana w MistWeb v2. Ikona została pominięta.",
       "warningLabelInvalid": "Etykieta tego portfela jest nieprawidłowa. Etykieta została pominięta.",
       "warningCategoryInvalid": "Kategoria tego portfela jest nieprawidłowa. Kategoria została pominięta.",
-      "warningAdvancedFormat": "Ten portfel wykorzystuje zaawansowany format ({{format}}), który ma ograniczone wsparcie w KristWeb v2.",
+      "warningAdvancedFormat": "Ten portfel wykorzystuje zaawansowany format ({{format}}), który ma ograniczone wsparcie w MistWeb v2.",
 
       "errorInvalidTypeString": "Ten portfel nie był ciągiem znaków!",
       "errorInvalidTypeObject": "Ten portfel nie był obiektem!",
@@ -918,8 +918,8 @@
       "successSkippedNoOverwrite": "Kontakt o tym samym adresie ({{address}}) już istnieje, a użytkownik zdecydował się nie nadpisywać etykiety, więc został pominięty.",
       "successImportSkipped": "Kontakt o tym samym adresie ({{address}}) został już zaimportowany, więc został pominięty.",
 
-      "warningSyncNode": "Ten kontakt miał niestandardowy węzeł synchronizacji, który nie jest obsługiwany w KristWeb v2. Węzeł synchronizacji został pominięty.",
-      "warningIcon": "Ten kontakt miał niestandardową ikonę, która nie jest obsługiwana w KristWeb v2. Ikona została pominięta.",
+      "warningSyncNode": "Ten kontakt miał niestandardowy węzeł synchronizacji, który nie jest obsługiwany w MistWeb v2. Węzeł synchronizacji został pominięty.",
+      "warningIcon": "Ten kontakt miał niestandardową ikonę, która nie jest obsługiwana w MistWeb v2. Ikona została pominięta.",
       "warningLabelInvalid": "Etykieta tego kontaktu była nieprawidłowa. Etykieta została pominięta.",
 
       "errorInvalidTypeString": "Ten kontakt nie był ciągiem znaków!",
@@ -974,8 +974,8 @@
     "buttonCopy": "Skopiuj do schowka"
   },
 
-  "walletLimitMessage": "Masz więcej portfeli niż obsługuje KristWeb. Było to spowodowane przez błąd lub celowo pominąłeś ten limit. Spodziewaj się problemów z synchronizacją.",
-  "contactLimitMessage": "Masz więcej zapisanych kontaktów niż obsługuje KristWeb. Było to spowodowane przez błąd lub celowo pominąłeś ten limit. Spodziewaj się problemów z synchronizacją.",
+  "walletLimitMessage": "Masz więcej portfeli niż obsługuje MistWeb. Było to spowodowane przez błąd lub celowo pominąłeś ten limit. Spodziewaj się problemów z synchronizacją.",
+  "contactLimitMessage": "Masz więcej zapisanych kontaktów niż obsługuje MistWeb. Było to spowodowane przez błąd lub celowo pominąłeś ten limit. Spodziewaj się problemów z synchronizacją.",
 
   "optionalFieldUnset": "(nieustawione)",
 
@@ -1049,7 +1049,7 @@
     "payLargeConfirm": "Czy na pewno chcesz wysłać <1 />?",
     "payLargeConfirmHalf": "Czy na pewno chcesz wysłać <1 />? To ponad połowa Twojego salda!",
     "payLargeConfirmAll": "Czy na pewno chcesz wysłać <1 />? To jest całe Twojego saldo!",
-    "payLargeConfirmDefault": "Zamierzasz wysłać klucz prywatny i hasło do swojego portfela na nieoficjalny serwer Krist, który da im dostęp do Twoich Krist na oficjalnym serwerze. Czy na pewno chcesz to zrobić?",
+    "payLargeConfirmDefault": "Zamierzasz wysłać klucz prywatny i hasło do swojego portfela na nieoficjalny serwer Mist, który da im dostęp do Twoich Mist na oficjalnym serwerze. Czy na pewno chcesz to zrobić?",
 
     "errorNotificationTitle": "Transakcja nie powiodła się",
     "successNotificationTitle": "Transakcja zakończona sukcesem",
@@ -1060,8 +1060,8 @@
   },
 
   "request": {
-    "title": "Zażądaj Krist",
-    "siteTitle": "Zażądaj Krist",
+    "title": "Zażądaj Mist",
+    "siteTitle": "Zażądaj Mist",
 
     "labelTo": "Odbiorca żądania",
     "labelAmount": "Żądana kwota",
@@ -1076,15 +1076,15 @@
     "title": "Autoryzacja nie powiodła się",
     "message": "Nie jesteś właścicielem tego adresu.",
     "messageLocked": "Ten adres był zablokowany.",
-    "alert": "Wiadomość z serwera Krist:"
+    "alert": "Wiadomość z serwera Mist:"
   },
 
   "whatsNew": {
     "title": "Nowości",
     "siteTitle": "Nowości",
 
-    "titleKrist": "Krist",
-    "titleKristWeb": "KristWeb",
+    "titleMist": "Mist",
+    "titleMistWeb": "MistWeb",
 
     "tooltipGitHub": "Wyświetl w GitHub",
 
@@ -1101,7 +1101,7 @@
 
     "buttonAll": "Wszystkie",
 
-    "warningTotalLimit": "Wygląda na to, że masz ponad 1000 nazw, co nie jest jeszcze obsługiwane w KristWeb v2. Możesz zgłosić problem na GitHub.",
+    "warningTotalLimit": "Wygląda na to, że masz ponad 1000 nazw, co nie jest jeszcze obsługiwane w MistWeb v2. Możesz zgłosić problem na GitHub.",
     "errorLookup": "Wystąpił błąd podczas pobierania nazw. Zobacz konsolę, aby uzyskać szczegółowe informacje."
   },
 
@@ -1179,7 +1179,7 @@
 
   "noNamesResult": {
     "title": "Nie ma jeszcze nazw",
-    "subTitle": "Obecnie nie masz nazw w żadnym ze swoich portfeli zapisanych w KristWeb, więc nie ma tu jeszcze nic do oglądania. Chcesz kupić nazwę?",
+    "subTitle": "Obecnie nie masz nazw w żadnym ze swoich portfeli zapisanych w MistWeb, więc nie ma tu jeszcze nic do oglądania. Chcesz kupić nazwę?",
     "button": "Zakup nazwę"
   },
 
@@ -1211,9 +1211,9 @@
     "nameAvailable": "Nazwa jest dostępna!"
   },
 
-  "purchaseKrist": {
-    "modalTitle": "Zakup Krist",
-    "connection": "Właśnie nawiązano połączenie z nieoficjalnym serwerem Krist. Twoje hasła i portfele Krist są zagrożone."
+  "purchaseMist": {
+    "modalTitle": "Zakup Mist",
+    "connection": "Właśnie nawiązano połączenie z nieoficjalnym serwerem Mist. Twoje hasła i portfele Mist są zagrożone."
   },
 
   "syncWallets": {
@@ -1222,8 +1222,8 @@
   },
 
   "legacyMigration": {
-    "modalTitle": "Migracja KristWeb v1",
-    "description": "Witamy w KristWeb v2! Wygląda na to, że korzystałeś już wcześniej z KristWeb v1 w tej domenie. <br /><br /><strong>Wprowadź swoje hasło główne, aby przeprowadzić migrację swoich portfeli do nowego formatu.</strong> Wystarczy to zrobić tylko raz .",
+    "modalTitle": "Migracja MistWeb v1",
+    "description": "Witamy w MistWeb v2! Wygląda na to, że korzystałeś już wcześniej z MistWeb v1 w tej domenie. <br /><br /><strong>Wprowadź swoje hasło główne, aby przeprowadzić migrację swoich portfeli do nowego formatu.</strong> Wystarczy to zrobić tylko raz .",
 
     "walletCount_0": "Wykryto <1>{{count, number}}</1> portfel",
     "walletCount_1": "Wykryto <1>{{count, number}}</1> portfele",
@@ -1245,7 +1245,7 @@
 
     "forgotPassword": {
       "modalTitle": "Pomiń migrację z wersji 1",
-      "modalContent": "Jeśli zapomniałeś hasła głównego do KristWeb v1, nie będziesz mógł migrować swoich portfeli. Nigdy więcej nie zostaniesz zapytany. Czy na pewno chcesz pominąć migrację?",
+      "modalContent": "Jeśli zapomniałeś hasła głównego do MistWeb v1, nie będziesz mógł migrować swoich portfeli. Nigdy więcej nie zostaniesz zapytany. Czy na pewno chcesz pominąć migrację?",
       "buttonSkip": "Pomiń"
     }
   },

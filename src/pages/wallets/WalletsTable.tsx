@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useMemo, useCallback } from "react";
 import { Table, Tooltip, Tag } from "antd";
 import { ColumnsType } from "antd/lib/table";
@@ -8,7 +8,7 @@ import { ColumnsType } from "antd/lib/table";
 import { useTFns, TStrFn } from "@utils/i18n";
 
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 
 import { useWallets, useWalletCategories, Wallet } from "@wallets";
@@ -76,7 +76,7 @@ function getColumns(
       dataIndex: "balance", key: "balance",
 
       width: 140,
-      render: balance => <KristValue value={balance} hideNullish />,
+      render: balance => <MistValue value={balance} hideNullish />,
       sorter: keyedNullSort("balance"),
       defaultSortOrder: "descend"
     },

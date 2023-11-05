@@ -1,15 +1,15 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { ReactNode } from "react";
 import { Form, Input, InputNumber, Button } from "antd";
 
 import { useTranslation } from "react-i18next";
 
 import { useWallets } from "@wallets";
-import { useCurrency } from "@utils/krist";
+import { useCurrency } from "@utils/mist";
 
-import { KristSymbol } from "@comp/krist/KristSymbol";
+import { MistSymbol } from "@comp/mist/MistSymbol";
 
 interface Props {
   from?: string;
@@ -55,11 +55,11 @@ export function AmountInput({
     {...props}
   >
     <Input.Group compact style={{ display: "flex" }}>
-      {/* Prepend the Krist symbol if possible. Note that ant's InputNumber
+      {/* Prepend the Mist symbol if possible. Note that ant's InputNumber
         * doesn't support addons, so this has to be done manually. */}
       {(currency_symbol || "KST") === "KST" && (
         <span className="ant-input-group-addon kw-fake-addon currency-prefix">
-          <KristSymbol />
+          <MistSymbol />
         </span>
       )}
 

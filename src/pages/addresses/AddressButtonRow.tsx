@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useEffect } from "react";
 import { Button, Tooltip, Menu } from "antd";
 import { SendOutlined, SwapOutlined, UserAddOutlined, EditOutlined } from "@ant-design/icons";
 
 import { useTFns } from "@utils/i18n";
 
-import { isV1Address } from "@utils/krist";
+import { isV1Address } from "@utils/mist";
 
 import { Wallet } from "@wallets";
 import { Contact } from "@contacts";
@@ -46,7 +46,7 @@ export function AddressButtonRow({
   const [usingTopMenu, set, unset] = useTopMenuOptions();
   useEffect(() => {
     set(<>
-      {/* Send/transfer Krist */}
+      {/* Send/transfer Mist */}
       <Menu.Item
         icon={myWallet ? <SwapOutlined /> : <SendOutlined />}
         disabled={isV1}
@@ -54,7 +54,7 @@ export function AddressButtonRow({
           openSendTx(undefined, address))}
       >
         {t(
-          tKey(myWallet ? "buttonTransferKrist" : "buttonSendKrist"),
+          tKey(myWallet ? "buttonTransferMist" : "buttonSendMist"),
           { address }
         )}
       </Menu.Item>
@@ -123,13 +123,13 @@ function Buttons({
       openSendTx(undefined, address))}
   >
     {t(
-      tKey(myWallet ? "buttonTransferKrist" : "buttonSendKrist"),
+      tKey(myWallet ? "buttonTransferMist" : "buttonSendMist"),
       { address }
     )}
   </Button>;
 
   return <>
-    {/* Send/transfer Krist button */}
+    {/* Send/transfer Mist button */}
     {isV1
       ? ( // Disable the button and show a tooltip for V1 addresses
         <Tooltip title={tStr("tooltipV1Address")}>

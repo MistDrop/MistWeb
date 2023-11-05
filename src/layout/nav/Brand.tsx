@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Tag } from "antd";
 
 import { useTranslation } from "react-i18next";
@@ -28,7 +28,8 @@ const GIT_RE = /^\d+-g[a-f0-9]{5,32}(?:-dirty)?$/;
 export function Brand(): JSX.Element {
   const { t } = useTranslation();
 
-  const gitVersion: string = __GIT_VERSION__;
+  const gitVersion: string = '1.0.0';//__GIT_VERSION__;
+  // console.log("gitVersion", gitVersion)
 
   const major = semverMajor(gitVersion);
   const minor = semverMinor(gitVersion);
@@ -40,7 +41,7 @@ export function Brand(): JSX.Element {
   const { isDirty, isDev } = getDevState();
 
   // Convert semver prerelease parts to Bootstrap badge
-  const tagContents = isDirty || isDev
+  const tagContents = isDirty || isDev 
     ? ["dev"]
     : (isGit ? null : prerelease);
   let tag = null;

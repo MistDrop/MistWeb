@@ -1,17 +1,17 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Tooltip } from "antd";
 
 import { Trans } from "react-i18next";
 import { useTFns, TKeyFn } from "@utils/i18n";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 import { Wallet } from "@wallets";
 
-import { KristNameLink } from "../names/KristNameLink";
+import { MistNameLink } from "../names/MistNameLink";
 import { ContextualAddress } from "../addresses/ContextualAddress";
-import { KristValue } from "../krist/KristValue";
+import { MistValue } from "../mist/MistValue";
 
 import {
   InternalTransactionType, INTERNAL_TYPES_SHOW_VALUE
@@ -26,7 +26,7 @@ interface PartBaseProps {
 }
 
 interface PartTxProps extends PartBaseProps {
-  tx: KristTransaction;
+  tx: MistTransaction;
 }
 
 interface PartAddressProps extends PartTxProps {
@@ -46,7 +46,7 @@ export function TransactionName({ tKey, type, name, noLink }: PartBaseProps & {
   return <span className="transaction-name">
     <Trans i18nKey={tKey("itemName")}>
       <span className="transaction-field">Name:</span>
-      <KristNameLink
+      <MistNameLink
         className="transaction-name"
         name={name || ""}
         noLink={noLink}
@@ -160,12 +160,12 @@ export function TransactionPrimaryValue({
     {INTERNAL_TYPES_SHOW_VALUE.includes(type)
       ? (
         // Transaction value
-        <KristValue value={tx.value} highlightZero />
+        <MistValue value={tx.value} highlightZero />
       )
       : (tx.type === "name_transfer"
         ? (
           // Transaction name
-          <KristNameLink
+          <MistNameLink
             name={tx.name || ""}
             className="transaction-name"
             neverCopyable

@@ -1,8 +1,8 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {
-  BackupKristWebV1, KristWebV1Wallet, KristWebV1Contact
+  BackupMistWebV1, MistWebV1Wallet, MistWebV1Contact
 } from "./backupFormats";
 import {
   BackupError, BackupWalletError, BackupContactError, BackupResults
@@ -21,12 +21,12 @@ import { isPlainObject, memoize } from "lodash-es";
 import to from "await-to-js";
 
 import Debug from "debug";
-const debug = Debug("kristweb:backup-import-v1");
+const debug = Debug("mistweb:backup-import-v1");
 
 /** Strips http/https from a sync node to properly compare it. */
 const _cleanSyncNode = memoize((node: string) => node.replace(/^https?:/, ""));
 
-/** Imports a KristWeb v1 backup. */
+/** Imports a MistWeb v1 backup. */
 export async function importV1Backup(
   // Things regarding the app's existing state
   existingWallets: WalletMap,
@@ -37,7 +37,7 @@ export async function importV1Backup(
   nameSuffix: string,
 
   // Things related to the backup
-  backup: BackupKristWebV1,
+  backup: BackupMistWebV1,
   masterPassword: string,
   noOverwrite: boolean,
 
@@ -103,8 +103,8 @@ export async function importV1Backup(
 }
 
 /** Decrypts and validates a V1 wallet or contact. */
-async function importV1Object<T extends KristWebV1Wallet | KristWebV1Contact>(
-  backup: BackupKristWebV1,
+async function importV1Object<T extends MistWebV1Wallet | MistWebV1Contact>(
+  backup: BackupMistWebV1,
   masterPassword: string,
 
   uuid: string,
@@ -159,7 +159,7 @@ function validateSyncNode(
 // WALLET IMPORT
 // =============================================================================
 
-/** Imports a single wallet in the KristWeb v1 format. */
+/** Imports a single wallet in the MistWeb v1 format. */
 export async function importV1Wallet(
   // Things regarding the app's existing state
   existingWallets: WalletMap,
@@ -168,7 +168,7 @@ export async function importV1Wallet(
   addressPrefix: string,
 
   // Things related to the backup
-  backup: BackupKristWebV1,
+  backup: BackupMistWebV1,
   masterPassword: string,
   noOverwrite: boolean,
 
@@ -181,7 +181,7 @@ export async function importV1Wallet(
   const { success, importWarn } = shorthands;
 
   // Decrypt and validate the wallet
-  const wallet = await importV1Object<KristWebV1Wallet>(
+  const wallet = await importV1Object<MistWebV1Wallet>(
     backup, masterPassword, uuid, rawWallet,
     key => new BackupWalletError(key)
   );
@@ -239,7 +239,7 @@ export async function importV1Wallet(
 // CONTACT IMPORT
 // =============================================================================
 
-/** Imports a single contact in the KristWeb v1 format. */
+/** Imports a single contact in the MistWeb v1 format. */
 export async function importV1Contact(
   // Things regarding the app's existing state
   existingContacts: ContactMap,
@@ -248,7 +248,7 @@ export async function importV1Contact(
   nameSuffix: string,
 
   // Things related to the backup
-  backup: BackupKristWebV1,
+  backup: BackupMistWebV1,
   masterPassword: string,
   noOverwrite: boolean,
 
@@ -261,7 +261,7 @@ export async function importV1Contact(
   const { success, importWarn } = shorthands;
 
   // Decrypt and validate the contact
-  const contact = await importV1Object<KristWebV1Contact>(
+  const contact = await importV1Object<MistWebV1Contact>(
     backup, masterPassword, uuid, rawContact,
     key => new BackupContactError(key)
   );

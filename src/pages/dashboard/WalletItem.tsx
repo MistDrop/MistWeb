@@ -1,11 +1,11 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Row, Col } from "antd";
 
 import { Wallet } from "@wallets";
 
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 
 export function WalletItem({ wallet }: { wallet: Wallet }): JSX.Element {
@@ -22,7 +22,7 @@ export function WalletItem({ wallet }: { wallet: Wallet }): JSX.Element {
     </Col>
 
     <Col className="wallet-right">
-      <KristValue value={wallet.balance} highlightZero />
+      <MistValue value={wallet.balance} highlightZero />
     </Col>
   </Row>;
 }

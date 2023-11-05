@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useCallback, useMemo, Dispatch, SetStateAction } from "react";
 import classNames from "classnames";
 import { Table, TablePaginationConfig } from "antd";
@@ -9,7 +9,7 @@ import { ColumnsType } from "antd/lib/table";
 import { useTFns, TStrFn } from "@utils/i18n";
 import { Link } from "react-router-dom";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 import {
   lookupTransactions, LookupTransactionsOptions, LookupTransactionsResponse,
   LookupTransactionType, SortableTransactionFields
@@ -25,8 +25,8 @@ import { TransactionItem } from "@comp/transactions/TransactionItem";
 import { TransactionType, TYPES_SHOW_VALUE } from "@comp/transactions/TransactionType";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { getVerified } from "@comp/addresses/VerifiedAddress";
-import { KristValue } from "@comp/krist/KristValue";
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistValue } from "@comp/mist/MistValue";
+import { MistNameLink } from "@comp/names/MistNameLink";
 import { TransactionConciseMetadata } from "@comp/transactions/TransactionConciseMetadata";
 import { DateTime } from "@comp/DateTime";
 
@@ -34,7 +34,7 @@ import { useWallets } from "@wallets";
 import { useBooleanSetting } from "@utils/settings";
 
 import Debug from "debug";
-const debug = Debug("kristweb:transactions-table");
+const debug = Debug("mistweb:transactions-table");
 
 // Received 'Cannot access LookupTransactionType before initialization' here,
 // this is a crude workaround
@@ -65,7 +65,7 @@ function getLookupSearchType(listingType: ListingType): "address" | "name" | "me
 function getColumns(
   tStr: TStrFn,
   dateColumnWidth: number
-): ColumnsType<KristTransaction> {
+): ColumnsType<MistTransaction> {
   return [
     // ID
     {
@@ -131,7 +131,7 @@ function getColumns(
       dataIndex: "value", key: "value",
 
       render: (value, tx) => TYPES_SHOW_VALUE.includes(tx.type) && (
-        <KristValue value={value} />
+        <MistValue value={value} />
       ),
       width: 100,
 
@@ -143,7 +143,7 @@ function getColumns(
       title: tStr("columnName"),
       dataIndex: "name", key: "name",
 
-      render: name => <KristNameLink name={name} />
+      render: name => <MistNameLink name={name} />
     },
 
     // Metadata
@@ -248,7 +248,7 @@ export function TransactionsTable({
 
   debug("results? %b  res.transactions.length: %d  res.count: %d  res.total: %d", !!res, res?.transactions?.length, res?.count, res?.total);
 
-  const renderMobileItem: RenderItem<KristTransaction> = useCallback(tx => (
+  const renderMobileItem: RenderItem<MistTransaction> = useCallback(tx => (
     <TransactionItem
       transaction={tx}
       wallets={walletAddressMap}
@@ -284,7 +284,7 @@ interface DesktopViewProps {
   loading: boolean;
   res?: LookupTransactionsResponse;
 
-  paginationTableProps: PaginationTableProps<KristTransaction>;
+  paginationTableProps: PaginationTableProps<MistTransaction>;
 
   highlightOwn: boolean;
   highlightVerified: boolean;
@@ -304,7 +304,7 @@ function DesktopView({
     tStr, dateColumnWidth
   ), [tStr, dateColumnWidth]);
 
-  const getRowClasses = useCallback((tx: KristTransaction): string => {
+  const getRowClasses = useCallback((tx: MistTransaction): string => {
     return classNames({
       // Highlight own transactions
       "transaction-row-own": highlightOwn
@@ -318,7 +318,7 @@ function DesktopView({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [highlightOwn, highlightVerified, joinedAddressList]);
 
-  return <Table<KristTransaction>
+  return <Table<MistTransaction>
     className="transactions-table"
     size="small"
     scroll={{ x: true }}

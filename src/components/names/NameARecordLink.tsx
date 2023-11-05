@@ -1,11 +1,11 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import classNames from "classnames";
 
-import { useNameSuffix, stripNameSuffix } from "@utils/krist";
+import { useNameSuffix, stripNameSuffix } from "@utils/mist";
 
-import { KristNameLink } from "./KristNameLink";
+import { MistNameLink } from "./MistNameLink";
 
 import "./NameARecordLink.less";
 
@@ -33,7 +33,7 @@ export function NameARecordLink({ a, className }: Props): JSX.Element | null {
     const withoutPrefix = a.replace(/^\$/, "");
     const nameWithoutSuffix = stripNameSuffix(nameSuffix, withoutPrefix);
 
-    return <KristNameLink
+    return <MistNameLink
       className={classes}
       name={nameWithoutSuffix}
       text={a}

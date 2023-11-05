@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useContext, useState, useEffect } from "react";
 import { v4 as uuid } from "uuid";
 
@@ -11,7 +11,7 @@ import * as actions from "@actions/WebsocketActions";
 import { WebsocketContext } from "./WebsocketProvider";
 
 import Debug from "debug";
-const debug = Debug("kristweb:websocket-subscription");
+const debug = Debug("mistweb:websocket-subscription");
 
 export interface WSSubscription {
   address?: string;

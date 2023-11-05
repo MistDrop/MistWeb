@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "KristWeb"
+    "name": "MistWeb"
   },
 
   "nav": {
@@ -10,7 +10,7 @@
       "connecting": "Verbindung wird hergestellt"
     },
 
-    "search": "Krist-Netzwerk durchsuchen",
+    "search": "Mist-Netzwerk durchsuchen",
 
     "send": "Überweisen",
     "request": "Zahlung anfordern"
@@ -38,10 +38,10 @@
     "madeBy": "Entwickelt von <1>{{authorName}}</1>",
     "supportersTitle": "Unterstützer",
     "supportersDescription": "Dieses Projekt wurde ermöglicht durch die folgenden Personen:",
-    "supportButton": "KristWeb unterstützen",
+    "supportButton": "MistWeb unterstützen",
     "translatorsTitle": "Übersetzer",
     "translatorsDescription": "Dieses Projekt wurde übersetzt von:",
-    "translateButton": "KristWeb übersetzen"
+    "translateButton": "MistWeb übersetzen"
   },
 
   "dialog": {
@@ -71,7 +71,7 @@
     "errorPasswordIncorrect": "Falsches Passwort.",
     "errorUnknown": "Unbekannter Fehler.",
     "helpWalletStorageTitle": "Hilfe: Speicherung von Wallets",
-    "helpWalletStorage": "Wenn du eine neue Wallet zu KristWeb hinzufügst, wird dessen Privatschlüssel mit Hilfe deines Master-Passworts verschlüsselt und in dem lokalen Speicher deines Browsers aufbewahrt.\nAlle Wallets sind mit genau diesem Master-Passwort verschlüsselt. Das bedeutet, dass du das Master-Passwort jedes Mal eingeben musst, wenn du KristWeb öffnest.\n Deine tatsächliche Krist-Wallet wird dabei nicht berührt.\nWenn du dich in KristWeb als Gast anmeldest, kannst du keine Wallets hinzufügen oder benutzen, sondern nur das Krist-Netzwerk durchsuchen."
+    "helpWalletStorage": "Wenn du eine neue Wallet zu MistWeb hinzufügst, wird dessen Privatschlüssel mit Hilfe deines Master-Passworts verschlüsselt und in dem lokalen Speicher deines Browsers aufbewahrt.\nAlle Wallets sind mit genau diesem Master-Passwort verschlüsselt. Das bedeutet, dass du das Master-Passwort jedes Mal eingeben musst, wenn du MistWeb öffnest.\n Deine tatsächliche Mist-Wallet wird dabei nicht berührt.\nWenn du dich in MistWeb als Gast anmeldest, kannst du keine Wallets hinzufügen oder benutzen, sondern nur das Mist-Netzwerk durchsuchen."
   },
 
   "myWallets": {

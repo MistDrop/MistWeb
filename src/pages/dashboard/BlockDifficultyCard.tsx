@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo } from "react";
 import classNames from "classnames";
 import { Card, Skeleton, Empty, Row, Col, Tooltip, Select } from "antd";
@@ -12,7 +12,7 @@ import { useTranslation, Trans } from "react-i18next";
 import { Line } from "react-chartjs-2";
 
 import * as api from "@api";
-import { estimateHashRate } from "@utils/krist";
+import { estimateHashRate } from "@utils/mist";
 
 import { trailingThrottleState } from "@utils";
 import { useBooleanSetting } from "@utils/settings";
@@ -21,7 +21,7 @@ import { SmallResult } from "@comp/results/SmallResult";
 import { Statistic } from "@comp/Statistic";
 
 import Debug from "debug";
-const debug = Debug("kristweb:block-difficulty-card");
+const debug = Debug("mistweb:block-difficulty-card");
 
 // =============================================================================
 // Chart.JS theming options

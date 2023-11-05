@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo, useCallback, Dispatch, SetStateAction } from "react";
 import { Table, TablePaginationConfig } from "antd";
 import { ColumnsType } from "antd/lib/table";
@@ -8,7 +8,7 @@ import { ColumnsType } from "antd/lib/table";
 import { useTFns, TStrFn } from "@utils/i18n";
 import { Link } from "react-router-dom";
 
-import { KristBlock } from "@api/types";
+import { MistBlock } from "@api/types";
 import {
   lookupBlocks, LookupBlocksOptions, LookupBlocksResponse, SortableBlockFields
 } from "@api/lookup";
@@ -19,19 +19,19 @@ import {
 
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { BlockHash } from "./BlockHash";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 
 import { BlockMobileItem } from "./BlockMobileItem";
 
 import Debug from "debug";
-const debug = Debug("kristweb:blocks-table");
+const debug = Debug("mistweb:blocks-table");
 
 function getColumns(
   tStr: TStrFn,
   dateColumnWidth: number,
   lowest: boolean | undefined
-): ColumnsType<KristBlock> {
+): ColumnsType<MistBlock> {
   return [
     // Height
     {
@@ -78,7 +78,7 @@ function getColumns(
       title: tStr("columnValue"),
       dataIndex: "value", key: "value",
 
-      render: value => <KristValue value={value} />,
+      render: value => <MistValue value={value} />,
       width: 100,
 
       sorter: true
@@ -162,7 +162,7 @@ export function BlocksTable({
 
   debug("results? %b  res.blocks.length: %d  res.count: %d  res.total: %d", !!res, res?.blocks?.length, res?.count, res?.total);
 
-  const renderMobileItem: RenderItem<KristBlock> = useCallback(block => (
+  const renderMobileItem: RenderItem<MistBlock> = useCallback(block => (
     <BlockMobileItem block={block} />
   ), []);
 
@@ -195,7 +195,7 @@ interface DesktopViewProps {
 
   lowest?: boolean;
 
-  paginationTableProps: PaginationTableProps<KristBlock>;
+  paginationTableProps: PaginationTableProps<MistBlock>;
 }
 
 function DesktopView({
@@ -211,7 +211,7 @@ function DesktopView({
     tStr, dateColumnWidth, lowest
   ), [tStr, dateColumnWidth, lowest]);
 
-  return <Table<KristBlock>
+  return <Table<MistBlock>
     className="blocks-table"
     size="small"
     scroll={{ x: true }}

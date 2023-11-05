@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under GPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 const path = require("path");
 const CracoAlias = require("craco-alias");
 const CracoLessPlugin = require("@lemmmy/craco-less");
@@ -92,7 +92,7 @@ module.exports = {
         ? [new SentryCliPlugin({
           include: "./build/",
           ignore: ["node_modules", "craco.config.js", "tools", "public"],
-          release: "kristweb2-react@" + gitRevisionPlugin.version()
+          release: "mistweb2-react@" + gitRevisionPlugin.version()
         })]
         : [])
     ],

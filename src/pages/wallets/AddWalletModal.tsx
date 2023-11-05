@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { Modal, Form, Input, Checkbox, Collapse, Button, Tooltip, Typography, Row, Col, message, notification, Grid } from "antd";
 import { ReloadOutlined } from "@ant-design/icons";
@@ -8,7 +8,7 @@ import { ReloadOutlined } from "@ant-design/icons";
 import { useTranslation, Trans } from "react-i18next";
 
 import { generatePassword } from "@utils/crypto";
-import { useAddressPrefix } from "@utils/krist";
+import { useAddressPrefix } from "@utils/mist";
 
 import { FakeUsernameInput } from "@comp/auth/FakeUsernameInput";
 import { CopyInputButton } from "@comp/CopyInputButton";
@@ -57,7 +57,7 @@ export function AddWalletModal({
   if (editing && create)
     throw new Error("AddWalletModal: 'editing' and 'create' simultaneously, uh oh!");
 
-  const initialFormat = editing?.format || "kristwallet";
+  const initialFormat = editing?.format || "mistwallet";
 
   // Required to encrypt new wallets
   const masterPassword = useMasterPasswordOnly();
@@ -166,7 +166,7 @@ export function AddWalletModal({
     if (!create || !form) return;
     const password = generatePassword();
     form.setFieldsValue({ password });
-    updateCalculatedAddress("kristwallet", password);
+    updateCalculatedAddress("mistwallet", password);
   }, [create, form, updateCalculatedAddress]);
 
   useEffect(() => {
@@ -359,7 +359,7 @@ export function AddWalletModal({
             {SelectWalletFormat({ initialFormat })}
           </Form.Item>
 
-          {/* Save in KristWeb checkbox */}
+          {/* Save in MistWeb checkbox */}
           {!editing && <Form.Item name="save" valuePropName="checked" style={{ marginBottom: 0 }}>
             <Checkbox>{t("addWallet.walletSave")}</Checkbox>
           </Form.Item>}

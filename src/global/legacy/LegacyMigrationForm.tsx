@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, Dispatch, SetStateAction} from "react";
 import { Form, notification } from "antd";
 
@@ -13,7 +13,7 @@ import { getMasterPasswordInput } from "@comp/auth/MasterPasswordInput";
 import { useAuth } from "@comp/auth/AuthorisedAction";
 import { setMasterPassword } from "@wallets";
 
-import { BackupKristWebV1 } from "@pages/backup/backupFormats";
+import { BackupMistWebV1 } from "@pages/backup/backupFormats";
 import { IncrProgressFn, InitProgressFn } from "@pages/backup/ImportProgress";
 import { backupVerifyPassword, backupImport } from "@pages/backup/backupImport";
 import { BackupResults } from "@pages/backup/backupResults";
@@ -21,7 +21,7 @@ import { BackupResults } from "@pages/backup/backupResults";
 import { criticalError } from "@utils";
 
 import Debug from "debug";
-const debug = Debug("kristweb:legacy-migration-form");
+const debug = Debug("mistweb:legacy-migration-form");
 
 interface LegacyMigrationFormHookRes {
   form: JSX.Element;
@@ -36,7 +36,7 @@ export function useLegacyMigrationForm(
   onProgress: IncrProgressFn,
   initProgress: InitProgressFn,
 
-  backup: BackupKristWebV1,
+  backup: BackupMistWebV1,
 ): LegacyMigrationFormHookRes {
   const { t, tStr, tKey } = useTFns("legacyMigration.");
 

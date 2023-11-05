@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import base64 from "base64-arraybuffer";
 
 import { toHex, fromHex } from "..";
@@ -103,5 +103,5 @@ export async function aesGcmDecrypt(input: AESEncryptedString, password: string)
 // -----------------------------------------------------------------------------
 
 /** Polyfill for decrypting CryptoJS AES strings. This is used to migrate
- * local storage from KristWeb v1. */
+ * local storage from MistWeb v1. */
 export { decryptCryptoJS } from "./CryptoJS";

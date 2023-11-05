@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, Dispatch, SetStateAction } from "react";
 import { Form, Input, Checkbox, Typography } from "antd";
 
@@ -17,7 +17,7 @@ import { backupVerifyPassword, backupImport } from "./backupImport";
 import { BackupResults } from "./backupResults";
 
 import Debug from "debug";
-const debug = Debug("kristweb:import-backup-modal");
+const debug = Debug("mistweb:import-backup-modal");
 
 const { Paragraph } = Typography;
 const { TextArea } = Input;

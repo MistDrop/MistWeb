@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import { Row, Col, Skeleton, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
@@ -17,12 +17,12 @@ import { APIErrorResult } from "@comp/results/APIErrorResult";
 import { Statistic } from "@comp/Statistic";
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
 import { BlockHash } from "./BlockHash";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 import { ConditionalLink } from "@comp/ConditionalLink";
 
 import * as api from "@api";
-import { KristBlock } from "@api/types";
+import { MistBlock } from "@api/types";
 
 import "./BlockPage.less";
 
@@ -30,7 +30,7 @@ interface ParamTypes {
   id: string;
 }
 
-function PageContents({ block }: { block: KristBlock }): JSX.Element {
+function PageContents({ block }: { block: MistBlock }): JSX.Element {
   return <>
     <Row className="block-info-row">
       {/* Height */}
@@ -50,7 +50,7 @@ function PageContents({ block }: { block: KristBlock }): JSX.Element {
       <Col span={24} md={12} lg={8}>
         <Statistic
           titleKey="block.value"
-          value={<KristValue
+          value={<MistValue
             value={block.value}
             long
             green={block.value > 1}
@@ -82,15 +82,39 @@ function PageContents({ block }: { block: KristBlock }): JSX.Element {
           className="statistic-block-hash"
         />
       </Col>
+
+      {/* X */}
+      <Col span={8} md={12} lg={8}>
+        <Statistic
+          titleKey="block.x"
+          value={block.x.toLocaleString()}
+        />
+      </Col>
+
+      {/* Y */}
+      <Col span={8} md={12} lg={8}>
+        <Statistic
+          titleKey="block.y"
+          value={block.y.toLocaleString()}
+        />
+      </Col>
+
+      {/* Z */}
+      <Col span={8} md={12} lg={8}>
+        <Statistic
+          titleKey="block.z"
+          value={block.z.toLocaleString()}
+        />
+      </Col>
     </Row>
   </>;
 }
 
-function NavButtons({ block }: { block?: KristBlock }): JSX.Element {
+function NavButtons({ block }: { block?: MistBlock }): JSX.Element {
   const { t } = useTranslation();
   const lastBlockID = useSelector((s: RootState) => s.node.lastBlockID);
 
-  // The Krist network's genesis block actually starts at ID 7 due to a
+  // The Mist network's genesis block actually starts at ID 7 due to a
   // migration issue, so the hash is also checked here.
   const hasPrevious = block
     && block.height > 1
@@ -143,21 +167,21 @@ export function BlockPage(): JSX.Element {
   const { t } = useTranslation();
 
   const { id } = useParams<ParamTypes>();
-  const [kristBlock, setKristBlock] = useState<KristBlock | undefined>();
+  const [mistBlock, setMistBlock] = useState<MistBlock | undefined>();
   const [error, setError] = useState<Error | undefined>();
 
   // Load the block on page load
   useEffect(() => {
-    api.get<{ block: KristBlock }>("blocks/" + encodeURIComponent(id))
-      .then(res => setKristBlock(res.block))
+    api.get<{ block: MistBlock }>("blocks/" + encodeURIComponent(id))
+      .then(res => setMistBlock(res.block))
       .catch(err => { console.error(err); setError(err); });
   }, [syncNode, id]);
 
   // Change the page title depending on whether or not the block has loaded
-  const titleData = kristBlock
+  const titleData = mistBlock
     ? {
-      siteTitle: t("block.siteTitleBlock", { id: kristBlock.height }),
-      subTitle: t("block.subTitleBlock", { id: kristBlock.height })
+      siteTitle: t("block.siteTitleBlock", { id: mistBlock.height }),
+      subTitle: t("block.subTitleBlock", { id: mistBlock.height })
     }
     : { siteTitleKey: "block.siteTitle" };
 
@@ -165,7 +189,7 @@ export function BlockPage(): JSX.Element {
     className="block-page"
     titleKey="block.title"
     {...titleData}
-    extra={<NavButtons block={kristBlock} />}
+    extra={<NavButtons block={mistBlock} />}
   >
     {error
       ? (
@@ -180,8 +204,8 @@ export function BlockPage(): JSX.Element {
           notFoundSubTitleKey="block.resultNotFound"
         />
       )
-      : (kristBlock
-        ? <PageContents block={kristBlock} />
+      : (mistBlock
+        ? <PageContents block={mistBlock} />
         : <Skeleton active />)}
   </PageLayout>;
 }

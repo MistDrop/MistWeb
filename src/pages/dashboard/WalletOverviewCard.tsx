@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Card, Row, Col, Button } from "antd";
 
 import { useTranslation } from "react-i18next";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 import { Wallet, useWallets } from "@wallets";
 
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { Statistic } from "@comp/Statistic";
 import { WalletItem } from "./WalletItem";
 
@@ -42,7 +42,7 @@ export function WalletOverviewCard(): JSX.Element {
       <Col span={24} xl={12} className="dashboard-wallets-balance">
         <Statistic
           titleKey="dashboard.walletOverviewTotalBalance"
-          value={<KristValue value={balance} long green={balance > 0} />}
+          value={<MistValue value={balance} long green={balance > 0} />}
         />
       </Col>
 

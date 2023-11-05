@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useTranslation, Trans } from "react-i18next";
 
-import { KristAddressWithNames } from "@api/lookup";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistAddressWithNames } from "@api/lookup";
+import { MistValue } from "@comp/mist/MistValue";
 
 interface Props {
-  address?: KristAddressWithNames;
+  address?: MistAddressWithNames;
   nameHint?: boolean;
 }
 
@@ -25,7 +25,7 @@ export function AddressHint({ address, nameHint }: Props): JSX.Element {
       : (
         // Otherwise, show the balance
         <Trans t={t} i18nKey="addressPicker.addressHint">
-          Balance: <KristValue value={address?.balance || 0} />
+          Balance: <MistValue value={address?.balance || 0} />
         </Trans>
       )
     }

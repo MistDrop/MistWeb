@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useCallback } from "react";
 import { Menu, notification } from "antd";
 import {
@@ -55,7 +55,7 @@ export function WalletMobileItemActions({
       {tStr("actionsViewAddress")}
     </Menu.Item>
 
-    {/* Send Krist */}
+    {/* Send Mist */}
     <Menu.Item key="2" icon={<SendOutlined />}
       onClick={() => promptAuth(false, () => openSendTx(wallet))}>
       {tStr("actionsSendTransaction")}

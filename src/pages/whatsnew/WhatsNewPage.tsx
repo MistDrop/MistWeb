@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import { Row, Col, Typography, Tooltip, Card } from "antd";
 import { GithubOutlined } from "@ant-design/icons";
@@ -24,25 +24,25 @@ import "./WhatsNewPage.less";
 const { Title } = Typography;
 
 declare const __GIT_COMMITS__: Commit[];
-const kristWebCommits: Commit[] = __GIT_COMMITS__;
+const mistWebCommits: Commit[] = __GIT_COMMITS__;
 
 export function WhatsNewPage(): JSX.Element {
   const { t } = useTranslation();
 
   const syncNode = api.useSyncNode();
 
-  const [kristData, setKristData] = useState<WhatsNewResponse>();
+  const [mistData, setMistData] = useState<WhatsNewResponse>();
   const [loading, setLoading] = useState(true);
 
-  // Get the repository URL for KristWeb
-  const kristWebRepo = getAuthorInfo().gitURL;
+  // Get the repository URL for MistWeb
+  const mistWebRepo = getAuthorInfo().gitURL;
   // Get the repository URL for the sync node
-  const kristPackage = useSelector((s: RootState) => s.node.package);
+  const mistPackage = useSelector((s: RootState) => s.node.package);
 
   useEffect(() => {
-    // Fetch the 'whats new' and commits from the Krist sync node
+    // Fetch the 'whats new' and commits from the Mist sync node
     api.get<WhatsNewResponse>("whatsnew")
-      .then(setKristData)
+      .then(setMistData)
       .catch(criticalError) // TODO: show errors to the user
       .finally(() => setLoading(false));
   }, [syncNode]);
@@ -53,14 +53,14 @@ export function WhatsNewPage(): JSX.Element {
 
     className="whats-new-page"
   >
-    {/* KristWeb */}
+    {/* MistWeb */}
     <Title level={2}>
-      {t("whatsNew.titleKristWeb")}
-      <GithubLink repoURL={kristWebRepo} />
+      {t("whatsNew.titleMistWeb")}
+      <GithubLink repoURL={mistWebRepo} />
     </Title>
 
     <Row gutter={16}>
-      {/* KristWeb What's new */}
+      {/* MistWeb What's new */}
       <Col span={24} lg={12}>
         {/* Temporary card */}
         <Card
@@ -79,39 +79,39 @@ export function WhatsNewPage(): JSX.Element {
         </Card>
       </Col>
 
-      {/* KristWeb commits */}
+      {/* MistWeb commits */}
       <Col span={24} lg={12}>
         <CommitsCard
           loading={loading}
-          commits={kristWebCommits}
-          repoURL={kristWebRepo}
+          commits={mistWebCommits}
+          repoURL={mistWebRepo}
         />
       </Col>
     </Row>
 
-    {/* Krist */}
+    {/* Mist */}
     <Title level={2} style={{ marginTop: 16 }}>
-      {t("whatsNew.titleKrist")}
-      <GithubLink repoURL={kristPackage.repository} />
+      {t("whatsNew.titleMist")}
+      <GithubLink repoURL={mistPackage.repository} />
     </Title>
 
     <Row gutter={16}>
-      {/* Krist What's new */}
+      {/* Mist What's new */}
       <Col span={24} lg={12}>
         <WhatsNewCard
           loading={loading}
-          whatsNew={kristData?.whatsNew}
+          whatsNew={mistData?.whatsNew}
           baseURL={syncNode}
-          repoURL={kristPackage.repository}
+          repoURL={mistPackage.repository}
         />
       </Col>
 
-      {/* Krist commits */}
+      {/* Mist commits */}
       <Col span={24} lg={12}>
         <CommitsCard
           loading={loading}
-          commits={kristData?.commits}
-          repoURL={kristPackage.repository}
+          commits={mistData?.commits}
+          repoURL={mistPackage.repository}
         />
       </Col>
     </Row>

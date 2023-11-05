@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import classNames from "classnames";
 
 import { useTranslation } from "react-i18next";
 
 import { ConditionalLink } from "@comp/ConditionalLink";
 
-import { KristTransaction, KristTransactionType } from "@api/types";
+import { MistTransaction, MistTransactionType } from "@api/types";
 import { Wallet, useWallets } from "@wallets";
 
 import "./TransactionType.less";
@@ -19,12 +19,12 @@ export const INTERNAL_TYPES_SHOW_VALUE: InternalTransactionType[] = [
   "transferred", "sent", "received", "mined", "name_purchased", "bumped"
 ];
 
-export const TYPES_SHOW_VALUE: KristTransactionType[] = [
+export const TYPES_SHOW_VALUE: MistTransactionType[] = [
   "transfer", "mined", "name_purchase"
 ];
 
 export function getTransactionType(
-  tx: KristTransaction,
+  tx: MistTransaction,
   from?: Wallet,
   to?: Wallet
 ): InternalTransactionType {
@@ -53,7 +53,7 @@ export function getTransactionType(
 
 interface OwnProps {
   type?: InternalTransactionType;
-  transaction?: KristTransaction;
+  transaction?: MistTransaction;
   from?: Wallet;
   to?: Wallet;
   link?: string;

@@ -1,15 +1,15 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { ReactNode } from "react";
 import { Typography, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 
 import { Trans, useTranslation } from "react-i18next";
 
-import { KristAddress, KristName, KristBlock, KristTransaction } from "@api/types";
-import { KristValue } from "@comp/krist/KristValue";
-import { KristNameLink } from "@comp/names/KristNameLink";
+import { MistAddress, MistName, MistBlock, MistTransaction } from "@api/types";
+import { MistValue } from "@comp/mist/MistValue";
+import { MistNameLink } from "@comp/names/MistNameLink";
 import { DateTime } from "@comp/DateTime";
 
 import "./SearchResults.less";
@@ -59,15 +59,15 @@ export function ExactMatchBase({ typeKey, primaryValue, extraInfo }: ExactMatchB
   </div>;
 }
 
-export function ExactAddressMatch({ address }: { address: KristAddress }): JSX.Element {
+export function ExactAddressMatch({ address }: { address: MistAddress }): JSX.Element {
   return <ExactMatchBase
     typeKey="nav.search.resultAddress"
     primaryValue={address.address}
-    extraInfo={<KristValue value={address.balance} />}
+    extraInfo={<MistValue value={address.balance} />}
   />;
 }
 
-export function ExactNameMatch({ name }: { name: KristName }): JSX.Element {
+export function ExactNameMatch({ name }: { name: MistName }): JSX.Element {
   const { t } = useTranslation();
 
   function Owner() {
@@ -76,7 +76,7 @@ export function ExactNameMatch({ name }: { name: KristName }): JSX.Element {
 
   return <ExactMatchBase
     typeKey="nav.search.resultName"
-    primaryValue={<KristNameLink name={name.name} noLink />}
+    primaryValue={<MistNameLink name={name.name} noLink />}
     extraInfo={<span className="search-name-owner">
       <Trans t={t} i18nKey="nav.search.resultNameOwner">
         Owned by <Owner />
@@ -85,7 +85,7 @@ export function ExactNameMatch({ name }: { name: KristName }): JSX.Element {
   />;
 }
 
-export function ExactBlockMatch({ block }: { block: KristBlock }): JSX.Element {
+export function ExactBlockMatch({ block }: { block: MistBlock }): JSX.Element {
   const { t } = useTranslation();
 
   function Miner() {
@@ -107,12 +107,12 @@ export function ExactBlockMatch({ block }: { block: KristBlock }): JSX.Element {
   />;
 }
 
-export function ExactTransactionMatch({ transaction }: { transaction: KristTransaction }): JSX.Element {
+export function ExactTransactionMatch({ transaction }: { transaction: MistTransaction }): JSX.Element {
   return <ExactMatchBase
     typeKey="nav.search.resultTransactionID"
     primaryValue={transaction.id}
     extraInfo={<>
-      <KristValue value={transaction.value} />
+      <MistValue value={transaction.value} />
       <DateTime date={transaction.time} />
     </>}
   />;
@@ -179,7 +179,7 @@ export function ExtendedNameMatch(props: ExtendedMatchBaseProps): JSX.Element {
   return <ExtendedMatchBase
     {...props}
 
-    query={<KristNameLink name={props.query} noLink />}
+    query={<MistNameLink name={props.query} noLink />}
 
     loadingKey="nav.search.resultTransactionsName"
     resultKey="nav.search.resultTransactionsNameResult"

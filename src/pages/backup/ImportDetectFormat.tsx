@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo, Dispatch, SetStateAction } from "react";
 import { Typography } from "antd";
 
@@ -13,7 +13,7 @@ import { decodeBackup } from "./backupParser";
 import { debounce } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:import-detect-format");
+const debug = Debug("mistweb:import-detect-format");
 
 const { Text, Paragraph } = Typography;
 

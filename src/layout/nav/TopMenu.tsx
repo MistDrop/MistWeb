@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useCallback, useMemo, useContext, createContext, FC, ReactNode } from "react";
 import { Menu, Dropdown } from "antd";
 import {
@@ -16,7 +16,7 @@ import { useBreakpoint } from "@utils/hooks";
 import { OpenSortModalFn, SetOpenSortModalFn } from "@utils/table/SortModal";
 
 import Debug from "debug";
-const debug = Debug("kristweb:top-menu");
+const debug = Debug("mistweb:top-menu");
 
 export type Opts = React.ReactNode | undefined;
 export type SetMenuOptsFn = (opts: Opts) => void;
@@ -44,14 +44,14 @@ export function TopMenu(): JSX.Element {
       trigger={["click"]}
       overlayClassName="site-header-top-dropdown-menu"
       overlay={<Menu>
-        {/* Send Krist */}
+        {/* Send Mist */}
         <Menu.Item>
           <ConditionalLink to="/send" matchTo aria-label={tStr("sendLong")}>
             <div><SendOutlined />{tStr("sendLong")}</div>
           </ConditionalLink>
         </Menu.Item>
 
-        {/* Request Krist */}
+        {/* Request Mist */}
         <Menu.Item>
           <ConditionalLink to="/request" matchTo aria-label={tStr("requestLong")}>
             <div><DownloadOutlined />{tStr("requestLong")}</div>

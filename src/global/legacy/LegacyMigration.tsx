@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 
-import { BackupFormatType, BackupKristWebV1 } from "@pages/backup/backupFormats";
+import { BackupFormatType, BackupMistWebV1 } from "@pages/backup/backupFormats";
 import { LegacyMigrationModal } from "./LegacyMigrationModal";
 
 import Debug from "debug";
-const debug = Debug("kristweb:legacy-migration");
+const debug = Debug("mistweb:legacy-migration");
 
 const MIGRATION_CLEANUP_THRESHOLD = 7 * 24 * 60 * 60 * 1000;
 const LEGACY_KEY_RE = /^(?:(?:Wallet|Friend)(?:-.+)?|salt|tester)$/;
@@ -56,7 +56,7 @@ function removeOldData() {
 }
 
 export function LegacyMigration(): JSX.Element | null {
-  const [backup, setBackup] = useState<BackupKristWebV1>();
+  const [backup, setBackup] = useState<BackupMistWebV1>();
 
   // Check if a legacy migration needs to be performed
   useEffect(() => {
@@ -99,7 +99,7 @@ export function LegacyMigration(): JSX.Element | null {
       Object.keys(wallets).length, Object.keys(contacts).length);
 
     // Construct the backup object prior to showing the modal
-    const backup: BackupKristWebV1 = {
+    const backup: BackupMistWebV1 = {
       type: BackupFormatType.KRISTWEB_V1,
 
       salt,

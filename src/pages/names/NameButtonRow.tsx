@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useEffect } from "react";
 import { Button, Menu, Space } from "antd";
 import { SendOutlined, SwapOutlined, EditOutlined } from "@ant-design/icons";
 
 import { useTFns } from "@utils/i18n";
 
-import { KristName } from "@api/types";
+import { MistName } from "@api/types";
 
 import { useTopMenuOptions } from "@layout/nav/TopMenu";
 import { useAuth } from "@comp/auth";
@@ -15,7 +15,7 @@ import { OpenEditNameFn } from "./mgmt/NameEditModalLink";
 import { OpenSendTxFn } from "@comp/transactions/SendTransactionModalLink";
 
 interface Props {
-  name: KristName;
+  name: MistName;
   nameWithSuffix: string;
   myWallet: boolean;
 
@@ -38,14 +38,14 @@ export function NameButtonRow({
   const [usingTopMenu, set, unset] = useTopMenuOptions();
   useEffect(() => {
     set(<>
-      {/* Send/transfer Krist */}
+      {/* Send/transfer Mist */}
       <Menu.Item
         icon={myWallet ? <SwapOutlined /> : <SendOutlined />}
         onClick={() => promptAuth(false, () =>
           openSendTx(undefined, nameWithSuffix))}
       >
         {t(
-          tKey(myWallet ? "buttonTransferKrist" : "buttonSendKrist"),
+          tKey(myWallet ? "buttonTransferMist" : "buttonSendMist"),
           { name: nameWithSuffix }
         )}
       </Menu.Item>
@@ -107,7 +107,7 @@ function Buttons({
   const promptAuth = useAuth();
 
   return <Space wrap>
-    {/* Send/transfer Krist button */}
+    {/* Send/transfer Mist button */}
     <Button
       type="primary"
       icon={myWallet
@@ -117,7 +117,7 @@ function Buttons({
         openSendTx(undefined, nameWithSuffix))}
     >
       {t(
-        tKey(myWallet ? "buttonTransferKrist" : "buttonSendKrist"),
+        tKey(myWallet ? "buttonTransferMist" : "buttonSendMist"),
         { name: nameWithSuffix }
       )}
     </Button>

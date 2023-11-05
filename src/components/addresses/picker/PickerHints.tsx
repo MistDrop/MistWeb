@@ -1,17 +1,17 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo, useRef } from "react";
 
 import {
   isValidAddress, getNameParts,
   useAddressPrefix, useNameSuffix
-} from "@utils/krist";
+} from "@utils/mist";
 import { useWallets } from "@wallets";
 
 import * as api from "@api";
-import { KristAddressWithNames, lookupAddress } from "@api/lookup";
-import { KristName } from "@api/types";
+import { MistAddressWithNames, lookupAddress } from "@api/lookup";
+import { MistName } from "@api/types";
 
 import { WalletHint } from "./WalletHint";
 import { VerifiedHint } from "./VerifiedHint";
@@ -24,14 +24,14 @@ import { useSubscription } from "@global/ws/WebsocketSubscription";
 import { debounce } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:address-picker-hints");
+const debug = Debug("mistweb:address-picker-hints");
 
 const HINT_LOOKUP_DEBOUNCE = 250;
 
 interface PickerHintsRes {
   pickerHints: JSX.Element | null;
-  foundAddress?: KristAddressWithNames | false;
-  foundName?: KristName | false;
+  foundAddress?: MistAddressWithNames | false;
+  foundName?: MistName | false;
 }
 
 export function usePickerHints(
@@ -47,8 +47,8 @@ export function usePickerHints(
   const nameSuffix = useNameSuffix();
 
   // Handle showing an address or name hint if the value is valid
-  const [foundAddress, setFoundAddress] = useState<KristAddressWithNames | false | undefined>();
-  const [foundName, setFoundName] = useState<KristName | false | undefined>();
+  const [foundAddress, setFoundAddress] = useState<MistAddressWithNames | false | undefined>();
+  const [foundName, setFoundName] = useState<MistName | false | undefined>();
 
   // To auto-refresh address balances, we need to subscribe to the address.
   // This is the address to subscribe to:
@@ -98,7 +98,7 @@ export function usePickerHints(
 
       try {
         const nameParts = getNameParts(nameSuffix, value);
-        const res = await api.get<{ name: KristName }>(
+        const res = await api.get<{ name: MistName }>(
           "names/" + encodeURIComponent(nameParts!.name!)
         );
 

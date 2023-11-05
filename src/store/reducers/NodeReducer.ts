@@ -1,13 +1,13 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { createReducer } from "typesafe-actions";
 import {
-  KristWorkDetailed,
-  KristCurrency, DEFAULT_CURRENCY,
-  KristConstants, DEFAULT_CONSTANTS,
-  KristMOTDBase, DEFAULT_MOTD_BASE,
-  KristMOTDPackage, DEFAULT_PACKAGE
+  MistWorkDetailed,
+  MistCurrency, DEFAULT_CURRENCY,
+  MistConstants, DEFAULT_CONSTANTS,
+  MistMOTDBase, DEFAULT_MOTD_BASE,
+  MistMOTDPackage, DEFAULT_PACKAGE
 } from "@api/types";
 import {
   setLastBlockID, setLastTransactionID, setLastNonMinedTransactionID,
@@ -28,11 +28,11 @@ export interface State {
 
   // Info from the MOTD
   readonly syncNode: string;
-  readonly detailedWork?: KristWorkDetailed;
-  readonly package: KristMOTDPackage;
-  readonly currency: KristCurrency;
-  readonly constants: KristConstants;
-  readonly motd: KristMOTDBase;
+  readonly detailedWork?: MistWorkDetailed;
+  readonly package: MistMOTDPackage;
+  readonly currency: MistCurrency;
+  readonly constants: MistConstants;
+  readonly motd: MistMOTDBase;
 }
 
 export function getInitialNodeState(): State {
@@ -48,7 +48,7 @@ export function getInitialNodeState(): State {
     // Info from the MOTD
     syncNode: (() => {
       const conf = (localStorage.getItem("syncNode") || packageJson.defaultSyncNode);
-      if (conf === "https://krist.ceriat.net") return packageJson.defaultSyncNode;
+      if (conf === "https://krist.dev") return packageJson.defaultSyncNode;
       return conf;
     })(),
     package: DEFAULT_PACKAGE,

@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState } from "react";
 import { Button, Typography } from "antd";
 import { FileExcelOutlined } from "@ant-design/icons";
@@ -39,7 +39,7 @@ export function SettingsTranslations(): JSX.Element {
 
     const data = await generateLanguageCSV(analysed.languages);
     const blob = new Blob([data], { type: "text/csv;charset=utf-8" });
-    saveAs(blob, "kristweb-translations.csv");
+    saveAs(blob, "mistweb-translations.csv");
   }
 
   useMountEffect(() => {

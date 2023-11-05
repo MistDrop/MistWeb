@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Card, Button } from "antd";
 import { CaretLeftOutlined, CaretRightOutlined } from "@ant-design/icons";
 
@@ -13,10 +13,10 @@ import { useMountEffect } from "@utils/hooks";
 import { useTFns } from "@utils/i18n";
 
 import Markdown from "markdown-to-jsx";
-import { useRelativeMarkdownLink } from "@comp/krist/MarkdownLink";
+import { useRelativeMarkdownLink } from "@comp/mist/MarkdownLink";
 
 import Debug from "debug";
-const debug = Debug("kristweb:tips-card");
+const debug = Debug("mistweb:tips-card");
 
 // All the tips must exist in `public/locales/en.json` under `dashboard.tips`.
 export const TIPS: number[] = [

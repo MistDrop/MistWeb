@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2023 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import Icon from "@ant-design/icons";
 
 export const CheeseburgerIconSvg = (): JSX.Element => (

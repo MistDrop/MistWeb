@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { Card, Skeleton, Empty } from "antd";
@@ -15,7 +15,7 @@ import { useSyncNode } from "@api";
 import { SmallResult } from "@comp/results/SmallResult";
 
 import Debug from "debug";
-const debug = Debug("kristweb:name-transactions-card");
+const debug = Debug("mistweb:name-transactions-card");
 
 async function fetchTransactions(name: string, type: LookupTXType): Promise<LookupTransactionsResponse> {
   debug("fetching name transactions (type %d)", type);

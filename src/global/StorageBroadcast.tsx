@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { store } from "@app";
 import * as actions from "@actions/WalletsActions";
 import * as contactActions from "@actions/ContactsActions";
@@ -12,9 +12,9 @@ import { getContactKey, parseContact } from "@contacts";
 import "broadcastchannel-polyfill";
 
 import Debug from "debug";
-const debug = Debug("kristweb:storage-broadcast");
+const debug = Debug("mistweb:storage-broadcast");
 
-export const channel = new BroadcastChannel("kristweb:storage");
+export const channel = new BroadcastChannel("mistweb:storage");
 
 export function broadcastAddWallet(id: string): void {
   debug("broadcasting addWallet event for wallet id %s", id);

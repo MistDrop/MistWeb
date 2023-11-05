@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect, useMemo, Dispatch, SetStateAction } from "react";
 import { Modal, Form, Input, Typography, Button, notification } from "antd";
 
@@ -16,14 +16,14 @@ import { Link } from "react-router-dom";
 import { useWallets, Wallet } from "@wallets";
 import {
   useNameSuffix, BARE_NAME_REGEX, MAX_NAME_LENGTH, isValidName
-} from "@utils/krist";
+} from "@utils/mist";
 
 import { checkName } from "./checkName";
 import { handlePurchaseError } from "./handleErrors";
 import { purchaseName } from "@api/names";
 import { useAuthFailedModal } from "@api/AuthFailed";
 
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { AddressPicker } from "@comp/addresses/picker/AddressPicker";
 
 import awaitTo from "await-to-js";
@@ -150,7 +150,7 @@ export function NamePurchaseModal({
 
     onOk={onSubmit}
     okText={<Trans t={t} i18nKey={tKey("buttonSubmit")}>
-      Purchase (<KristValue value={nameCost} />)
+      Purchase (<MistValue value={nameCost} />)
     </Trans>}
     okButtonProps={submitting ? { loading: true } : undefined}
 
@@ -170,7 +170,7 @@ export function NamePurchaseModal({
       {/* Name cost */}
       <div className="name-purchase-cost" style={{ marginBottom: 24 }}>
         <Trans t={t} i18nKey={tKey("nameCost")}>
-          Cost to purchase: <KristValue long value={nameCost} />
+          Cost to purchase: <MistValue long value={nameCost} />
         </Trans>
       </div>
 

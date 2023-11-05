@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useMemo, useRef, useEffect, useCallback, MutableRefObject, Dispatch, SetStateAction, ReactNode } from "react";
 import { AutoComplete, Input } from "antd";
 import { RefSelectProps } from "antd/lib/select";
@@ -21,7 +21,7 @@ import * as SearchResults from "./SearchResults";
 
 import * as Sentry from "@sentry/react";
 import Debug from "debug";
-const debug = Debug("kristweb:search");
+const debug = Debug("mistweb:search");
 
 const SEARCH_THROTTLE = 500;
 const SEARCH_RATE_LIMIT_WAIT = 5000;

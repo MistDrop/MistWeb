@@ -1,19 +1,19 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useMemo } from "react";
 import classNames from "classnames";
 import { Tooltip } from "antd";
 
 import { useTranslation } from "react-i18next";
 
-import { KristAddress } from "@api/types";
+import { MistAddress } from "@api/types";
 import { Wallet, useWallets } from "@wallets";
 import { Contact, useContacts } from "@contacts";
-import { parseCommonMeta, CommonMeta, useNameSuffix, stripNameSuffix } from "@utils/krist";
+import { parseCommonMeta, CommonMeta, useNameSuffix, stripNameSuffix } from "@utils/mist";
 import { useBooleanSetting } from "@utils/settings";
 
-import { KristNameLink } from "../names/KristNameLink";
+import { MistNameLink } from "../names/MistNameLink";
 import { ConditionalLink } from "@comp/ConditionalLink";
 import { SmallCopyable } from "@comp/SmallCopyable";
 
@@ -22,7 +22,7 @@ import { getVerified, VerifiedAddressLink } from "./VerifiedAddress";
 import "./ContextualAddress.less";
 
 interface Props {
-  address: KristAddress | string;
+  address: MistAddress | string;
   wallet?: Wallet | false;
   contact?: Contact | false;
   metadata?: string;
@@ -247,7 +247,7 @@ export function AddressMetaname({
   return name
     ? <>
       {/* Display the name/metaname (e.g. foo@bar.kst) */}
-      <KristNameLink
+      <MistNameLink
         className="address-name"
         name={nameWithoutSuffix!}
         text={rawMetaname}

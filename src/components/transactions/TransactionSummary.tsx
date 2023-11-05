@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { Row } from "antd";
 
 import { useTranslation } from "react-i18next";
@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 
 import { useWallets } from "@wallets";
 
-import { KristTransaction } from "@api/types";
+import { MistTransaction } from "@api/types";
 import { TransactionItem } from "./TransactionItem";
 
 import "./TransactionSummary.less";
 
 interface Props {
-  transactions?: KristTransaction[];
+  transactions?: MistTransaction[];
 
   seeMoreCount?: number;
   seeMoreKey?: string;

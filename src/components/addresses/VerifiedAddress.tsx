@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import classNames from "classnames";
 import { Row, Col, Card, Tooltip, Button, Typography } from "antd";
 import { GlobalOutlined } from "@ant-design/icons";
@@ -13,7 +13,7 @@ import { ConditionalLink } from "@comp/ConditionalLink";
 import { VerifiedCheck } from "./VerifiedCheck";
 
 import Markdown from "markdown-to-jsx";
-import { useMarkdownLink } from "@comp/krist/MarkdownLink";
+import { useMarkdownLink } from "@comp/mist/MarkdownLink";
 
 const { Text } = Typography;
 

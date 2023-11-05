@@ -1,8 +1,8 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {
-  BackupKristWebV2, KristWebV2Wallet, KristWebV2Contact
+  BackupMistWebV2, MistWebV2Wallet, MistWebV2Contact
 } from "./backupFormats";
 import {
   BackupWalletError, BackupContactError, BackupResults
@@ -19,11 +19,11 @@ import { ContactMap } from "@contacts";
 import { isPlainObject } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:backup-import-v2");
+const debug = Debug("mistweb:backup-import-v2");
 
 const UUID_REGEXP = /[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}/;
 
-/** Imports a KristWeb v2 backup. */
+/** Imports a MistWeb v2 backup. */
 export async function importV2Backup(
   // Things regarding the app's existing state
   existingWallets: WalletMap,
@@ -33,7 +33,7 @@ export async function importV2Backup(
   nameSuffix: string,
 
   // Things related to the backup
-  backup: BackupKristWebV2,
+  backup: BackupMistWebV2,
   masterPassword: string,
   noOverwrite: boolean,
 
@@ -96,7 +96,7 @@ export async function importV2Backup(
   }
 }
 
-/** Imports a single wallet in the KristWeb v2 format. */
+/** Imports a single wallet in the MistWeb v2 format. */
 export async function importV2Wallet(
   // Things regarding the app's existing state
   existingWallets: WalletMap,
@@ -108,7 +108,7 @@ export async function importV2Wallet(
   noOverwrite: boolean,
 
   uuid: string,
-  wallet: KristWebV2Wallet, // The wallet object as found in the backup
+  wallet: MistWebV2Wallet, // The wallet object as found in the backup
 
   results: BackupResults
 ): Promise<void> {
@@ -174,7 +174,7 @@ export async function importV2Wallet(
 // CONTACT IMPORT
 // =============================================================================
 
-/** Imports a single contact in the KristWeb v1 format. */
+/** Imports a single contact in the MistWeb v1 format. */
 export async function importV2Contact(
   // Things regarding the app's existing state
   existingContacts: ContactMap,
@@ -185,7 +185,7 @@ export async function importV2Contact(
   noOverwrite: boolean,
 
   uuid: string,
-  contact: KristWebV2Contact, // The contact object as found in the backup
+  contact: MistWebV2Contact, // The contact object as found in the backup
 
   results: BackupResults
 ): Promise<void> {

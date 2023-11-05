@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useMemo } from "react";
 import { Tag, Collapse } from "antd";
 
@@ -10,7 +10,7 @@ import { useTFns } from "@utils/i18n";
 import { Wallet } from "@wallets";
 
 import { ContextualAddress } from "@comp/addresses/ContextualAddress";
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 import { DateTime } from "@comp/DateTime";
 
 import { OpenEditWalletFn } from "./WalletEditButton";
@@ -39,7 +39,7 @@ export function WalletMobileItem({
     <div className="wallet-mobile-item-header">
       {/* Wallet balance */}
       <div className="wallet-value">
-        <KristValue value={wallet.balance} hideNullish />
+        <MistValue value={wallet.balance} hideNullish />
       </div>
 
       {/* Label, if possible */}

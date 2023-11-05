@@ -1,12 +1,12 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 
 import { Wallet } from "@wallets";
 import { Contact } from "@contacts";
-import { NameParts } from "@utils/krist";
+import { NameParts } from "@utils/mist";
 
-import { KristValue } from "@comp/krist/KristValue";
+import { MistValue } from "@comp/mist/MistValue";
 
 import { OptionValue } from "./options";
 
@@ -77,7 +77,7 @@ export function getAddressItem(props: AddressItemProps, type?: string): OptionVa
         </div>
 
         {/* Wallet balance, if available */}
-        {wallet && <KristValue hideNullish value={wallet.balance} />}
+        {wallet && <MistValue hideNullish value={wallet.balance} />}
       </div>
     ),
 

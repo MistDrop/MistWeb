@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { Card, Skeleton, Empty, Row } from "antd";
@@ -16,7 +16,7 @@ import { useSyncNode } from "@api";
 import { SmallResult } from "@comp/results/SmallResult";
 
 import Debug from "debug";
-const debug = Debug("kristweb:address-names-card");
+const debug = Debug("mistweb:address-names-card");
 
 async function fetchNames(address: string): Promise<LookupNamesResponse> {
   debug("fetching names");

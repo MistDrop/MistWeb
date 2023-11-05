@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import { store } from "@app";
 
 import { TranslatedError } from "@utils/i18n";
@@ -8,7 +8,7 @@ import { TranslatedError } from "@utils/i18n";
 import { aesGcmDecrypt, decryptCryptoJS } from "@utils/crypto";
 
 import {
-  Backup, BackupFormatType, isBackupKristWebV1, isBackupKristWebV2
+  Backup, BackupFormatType, isBackupMistWebV1, isBackupMistWebV2
 } from "./backupFormats";
 import { BackupResults } from "./backupResults";
 import { importV1Backup } from "./backupImportV1";
@@ -17,7 +17,7 @@ import { importV2Backup } from "./backupImportV2";
 import { IncrProgressFn, InitProgressFn } from "./ImportProgress";
 
 import Debug from "debug";
-const debug = Debug("kristweb:backup-import");
+const debug = Debug("mistweb:backup-import");
 
 /**
  * Attempts to decrypt a given value using the appropriate function for the
@@ -31,14 +31,14 @@ export async function backupDecryptValue(
 ): Promise<string | false> {
   try {
     switch (format) {
-    // KristWeb v1 used Crypto.JS for its cryptography (SubtleCrypto was not
+    // MistWeb v1 used Crypto.JS for its cryptography (SubtleCrypto was not
     // yet widespread enough), which uses its own funky key derivation
     // algorithm. Use our polyfill for it.
     // For more info, see `utils/CryptoJS.ts`.
     case BackupFormatType.KRISTWEB_V1:
       return await decryptCryptoJS(value, masterPassword);
 
-    // KristWeb v2 simply uses WebCrypto/SubtleCrypto.
+    // MistWeb v2 simply uses WebCrypto/SubtleCrypto.
     // For more info, see `utils/crypto.ts`.
     case BackupFormatType.KRISTWEB_V2:
       return await aesGcmDecrypt(value, masterPassword);
@@ -113,7 +113,7 @@ export async function backupImport(
   const results = new BackupResults(onProgress, initProgress);
 
   // Attempt to add the wallets
-  if (isBackupKristWebV1(backup)) {
+  if (isBackupMistWebV1(backup)) {
     await importV1Backup(
       existingWallets, existingContacts,
       appMasterPassword, appSyncNode,
@@ -121,7 +121,7 @@ export async function backupImport(
       backup, masterPassword, noOverwrite,
       results
     );
-  } else if (isBackupKristWebV2(backup)) {
+  } else if (isBackupMistWebV2(backup)) {
     await importV2Backup(
       existingWallets, existingContacts,
       appMasterPassword,

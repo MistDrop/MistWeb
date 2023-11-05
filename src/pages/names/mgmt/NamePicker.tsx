@@ -1,6 +1,6 @@
 // Copyright (c) 2020-2021 Drew Lemmy
 // This file is part of KristWeb 2 under AGPL-3.0.
-// Full details: https://github.com/tmpim/KristWeb2/blob/master/LICENSE.txt
+// Full details: https://github.com/MistDrop/MistWeb/blob/master/LICENSE.txt
 import {
   useState, useEffect, useMemo, useRef, Dispatch, SetStateAction, Ref,
   MutableRefObject
@@ -16,13 +16,13 @@ import { RootState } from "@store";
 import { WalletAddressMap, useWallets } from "@wallets";
 import { NameOptionGroup, fetchNames } from "./lookupNames";
 
-import { useNameSuffix } from "@utils/krist";
+import { useNameSuffix } from "@utils/mist";
 import shallowEqual from "shallowequal";
 
 import { throttle } from "lodash-es";
 
 import Debug from "debug";
-const debug = Debug("kristweb:name-picker");
+const debug = Debug("mistweb:name-picker");
 
 const FETCH_THROTTLE = 2000;
 export async function _fetchNames(
