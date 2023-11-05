@@ -9,7 +9,7 @@ COPY ["yarn.lock", "./"]
 RUN yarn global add rimraf @craco/craco@^6.1.1
 
 COPY ["package.json", "./"]
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 COPY . .
 
