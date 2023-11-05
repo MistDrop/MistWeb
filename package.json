@@ -142,5 +142,8 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
     ]
+  },
+  "resolutions": {
+    "babel-plugin-lodash/@babel/types": "~7.20.0"
   }
 }
